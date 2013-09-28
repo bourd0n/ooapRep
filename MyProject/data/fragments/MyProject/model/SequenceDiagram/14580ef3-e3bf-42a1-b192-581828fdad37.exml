@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Interaction Sequence diagram" version="3">
+  <DEPS>
+    <ID name="Interaction Sequence diagram" mc="SequenceDiagram" uid="14580ef3-e3bf-42a1-b192-581828fdad37"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Interaction Sequence diagram" mc="SequenceDiagram" uid="14580ef3-e3bf-42a1-b192-581828fdad37"/>
+    <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+    <ATTRIBUTES>
+      <ATT name="UiDataVersion">14</ATT>
+      <ATT name="UiData"><![CDATA[eJyNUVtPwjAU/itN31fYgDiTAQ9gDBEvkcRXc7aeYbEXbDuEf28nGwkYF57afD3f+S7NpnslyQ6tE0aPacz6lEwn2XO+wcITwQNEiT9scUyNXTNlOEphGBewtqAYcuGNZQ6/KtQFMpSoUHt3QtrBe7VqkPkRoUTBxtj3k3SfTrIXa7Zo/YFoUEFRwsFUfg4ewtsbyAobK7qSkvYmWa8l/KGu/EEiPQuSdAVx9bxjhbHIjtwr/M3AFcCRt2J3e/+K5ZUqT2FFwyS49/N8ETz+XusLxxIq6S9C9o5xuoJblOCRBx8XnT3WENnVSKjn/DNIPBylfSwHEQ7yMhomEEd5fJtEozROk7TkwAc33YVLcP5Bm2+9hBzlhfbKW6HXJ/WF9mih8KFX0johTUfdKtZIXOiZUVvjRM3vFupeNvsQklusdyyFq1ttjn8ZS6E/Xcd4+z8/IMArqw==]]></ATT>
+      <ATT name="PdeProperties"></ATT>
+      <ATT name="Name"><![CDATA[Interaction Sequence diagram]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

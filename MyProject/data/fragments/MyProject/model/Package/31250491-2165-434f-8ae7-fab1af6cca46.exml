@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Analysis Model" version="3">
+  <DEPS>
+    <ID name="Analysis Model" mc="Package" uid="31250491-2165-434f-8ae7-fab1af6cca46"/>
+    <COMPID name="Course" mc="Class" uid="72805292-dde3-4132-9ac1-b2277e7f50e2"/>
+    <COMPID name="CourseCatalogSystem" mc="Class" uid="ee968a3a-58d5-426f-8406-08e9ad6228d8"/>
+    <COMPID name="CourseOffering" mc="Class" uid="a453e17a-b737-489c-89b0-afabdd16e749"/>
+    <COMPID name="Key Abstractions" mc="ClassDiagram" uid="ca0f8569-60ba-40bd-8fa5-dbb64e850a92"/>
+    <COMPID name="Professor" mc="Class" uid="e1bce0c2-4e02-40bc-9019-eb05e89657d1"/>
+    <COMPID name="RegisterForCoursesForm" mc="Class" uid="0ef2b7bb-54a0-489c-889f-9527e57f36f9"/>
+    <COMPID name="RegistrationController" mc="Class" uid="e39eb5ee-15df-48f6-8882-884505645287"/>
+    <COMPID name="Schedule" mc="Class" uid="2d2c825e-7be1-4881-90a6-7e7e269518da"/>
+    <COMPID name="Student" mc="Class" uid="d5450e9c-90a7-4b7d-b056-1b47969aab9e"/>
+    <COMPID name="Use Case Realizations" mc="Package" uid="25e7d68b-fe31-4209-a0ac-0ac32f7980e6"/>
+    <EXTID name="model" mc="Stereotype" uid="f75794cc-275e-4a8a-917f-2d05de475859"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Analysis Model" mc="Package" uid="31250491-2165-434f-8ae7-fab1af6cca46"/>
+    <PID name="Logical View" mc="Package" uid="a527613b-6fcf-4c4a-93e5-c004f737c6f3"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Analysis Model]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Use Case Realizations" mc="Package" uid="25e7d68b-fe31-4209-a0ac-0ac32f7980e6"/>
+        <COMPID name="Course" mc="Class" uid="72805292-dde3-4132-9ac1-b2277e7f50e2"/>
+        <COMPID name="CourseOffering" mc="Class" uid="a453e17a-b737-489c-89b0-afabdd16e749"/>
+        <COMPID name="Professor" mc="Class" uid="e1bce0c2-4e02-40bc-9019-eb05e89657d1"/>
+        <COMPID name="Student" mc="Class" uid="d5450e9c-90a7-4b7d-b056-1b47969aab9e"/>
+        <COMPID name="Schedule" mc="Class" uid="2d2c825e-7be1-4881-90a6-7e7e269518da"/>
+        <COMPID name="RegisterForCoursesForm" mc="Class" uid="0ef2b7bb-54a0-489c-889f-9527e57f36f9"/>
+        <COMPID name="CourseCatalogSystem" mc="Class" uid="ee968a3a-58d5-426f-8406-08e9ad6228d8"/>
+        <COMPID name="RegistrationController" mc="Class" uid="e39eb5ee-15df-48f6-8882-884505645287"/>
+      </COMP>
+      <LINK relation="Extension">
+        <ID name="model" mc="Stereotype" uid="f75794cc-275e-4a8a-917f-2d05de475859"/>
+      </LINK>
+      <COMP relation="Product">
+        <COMPID name="Key Abstractions" mc="ClassDiagram" uid="ca0f8569-60ba-40bd-8fa5-dbb64e850a92"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

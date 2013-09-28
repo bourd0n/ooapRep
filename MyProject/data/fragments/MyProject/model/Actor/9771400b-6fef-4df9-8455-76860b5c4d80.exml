@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Каталог курсов" version="3">
+  <DEPS>
+    <ID name="Каталог курсов" mc="Actor" uid="9771400b-6fef-4df9-8455-76860b5c4d80"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Каталог курсов" mc="Actor" uid="9771400b-6fef-4df9-8455-76860b5c4d80"/>
+    <PID name="Use Case Model" mc="Package" uid="945d76f4-e635-449a-b041-9a8068c815e4"/>
+    <ATTRIBUTES>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Каталог курсов]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

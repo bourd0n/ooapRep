@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Use Case Realizations" version="3">
+  <DEPS>
+    <ID name="Use Case Realizations" mc="Package" uid="25e7d68b-fe31-4209-a0ac-0ac32f7980e6"/>
+    <COMPID name="CloseRegistration" mc="Interaction" uid="e5e6a25d-a361-4c98-af3b-5320e3d28484"/>
+    <COMPID name="Login" mc="Interaction" uid="b338d10b-67da-458d-a42d-27922cedfa2b"/>
+    <COMPID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+    <COMPID name="VOPC CloseRegistration" mc="ClassDiagram" uid="15e35f79-3f7c-41ea-a778-422cbda78fa1"/>
+    <COMPID name="VOPC Login" mc="ClassDiagram" uid="c768080f-4b1f-4dd4-a888-1d30972754ca"/>
+    <COMPID name="VOPC RegisterForCourses" mc="ClassDiagram" uid="fc2ace3c-ed9e-4ae3-aec0-bf1f11b7990e"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Use Case Realizations" mc="Package" uid="25e7d68b-fe31-4209-a0ac-0ac32f7980e6"/>
+    <PID name="Analysis Model" mc="Package" uid="31250491-2165-434f-8ae7-fab1af6cca46"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Use Case Realizations]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+        <COMPID name="Login" mc="Interaction" uid="b338d10b-67da-458d-a42d-27922cedfa2b"/>
+        <COMPID name="CloseRegistration" mc="Interaction" uid="e5e6a25d-a361-4c98-af3b-5320e3d28484"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="VOPC Login" mc="ClassDiagram" uid="c768080f-4b1f-4dd4-a888-1d30972754ca"/>
+        <COMPID name="VOPC RegisterForCourses" mc="ClassDiagram" uid="fc2ace3c-ed9e-4ae3-aec0-bf1f11b7990e"/>
+        <COMPID name="VOPC CloseRegistration" mc="ClassDiagram" uid="15e35f79-3f7c-41ea-a778-422cbda78fa1"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

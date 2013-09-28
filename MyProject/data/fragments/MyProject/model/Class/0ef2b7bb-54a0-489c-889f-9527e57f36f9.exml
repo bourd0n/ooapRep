@@ -1,0 +1,59 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="RegisterForCoursesForm" version="3">
+  <DEPS>
+    <ID name="RegisterForCoursesForm" mc="Class" uid="0ef2b7bb-54a0-489c-889f-9527e57f36f9"/>
+    <EXTID name="boundary" mc="Stereotype" uid="808d0985-851b-4d82-858e-2471bdb9ce66"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="RegisterForCoursesForm" mc="Class" uid="0ef2b7bb-54a0-489c-889f-9527e57f36f9"/>
+    <PID name="Analysis Model" mc="Package" uid="31250491-2165-434f-8ae7-fab1af6cca46"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[RegisterForCoursesForm]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedOperation">
+        <OBJECT>
+          <ID name="//registerForCourses" mc="Operation" uid="3d881e9b-511a-4a83-8e7f-fcb7ffd1bb4b"/>
+          <PID name="RegisterForCoursesForm" mc="Class" uid="0ef2b7bb-54a0-489c-889f-9527e57f36f9"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[//registerForCourses]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="//displayError" mc="Operation" uid="1bc88702-ade5-4e3f-ad80-7b11795ab82e"/>
+          <PID name="RegisterForCoursesForm" mc="Class" uid="0ef2b7bb-54a0-489c-889f-9527e57f36f9"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[//displayError]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <LINK relation="Extension">
+        <ID name="boundary" mc="Stereotype" uid="808d0985-851b-4d82-858e-2471bdb9ce66"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

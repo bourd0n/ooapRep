@@ -1,0 +1,128 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Войти в систему" version="3">
+  <DEPS>
+    <ID name="Войти в систему" mc="UseCase" uid="d63387c1-8b85-477f-9709-3301672e9c5f"/>
+    <COMPID name="Войти в систему" mc="Activity" uid="8f15fbc6-673d-4eb4-9070-38eb5a13877a"/>
+    <FOREIGNID name="constraint" mc="NoteType" uid="00bc0b8c-0000-251b-0000-000000000000"/>
+    <FOREIGNID name="description" mc="NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+    <FOREIGNID name="exception" mc="NoteType" uid="00bc0b8c-0000-2519-0000-000000000000"/>
+    <FOREIGNID name="non-functional constraint" mc="NoteType" uid="00bc0c08-0000-242c-0000-000000000000"/>
+    <FOREIGNID name="postcondition" mc="NoteType" uid="00bc0b8c-0000-2517-0000-000000000000"/>
+    <FOREIGNID name="precondition" mc="NoteType" uid="00bc0b8c-0000-2515-0000-000000000000"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Войти в систему" mc="UseCase" uid="d63387c1-8b85-477f-9709-3301672e9c5f"/>
+    <PID name="Система регистрации на курсы" mc="Class" uid="1c3cfd9d-a70c-4b9a-8bb2-75bd8c85f31b"/>
+    <ATTRIBUTES>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Войти в систему]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Войти в систему" mc="Activity" uid="8f15fbc6-673d-4eb4-9070-38eb5a13877a"/>
+      </COMP>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Note" uid="2e91f617-db1a-423c-990c-ad0538519669"/>
+          <PID name="Войти в систему" mc="UseCase" uid="d63387c1-8b85-477f-9709-3301672e9c5f"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[Краткое описание
+Данный вариант использования описывает вход пользователя в систему регистрации курсов.
+Основной поток событий
+1. Система запрашивает имя пользователя и пароль.
+2. Пользователь вводит имя и пароль.
+3. Система подтверждает правильность имени и пароля, определяет тип пользователя (студент, профессор или регистратор) и выводит главное меню, дающее доступ к функциям системы в соответствии с типом пользователя.
+Альтернативные потоки
+3А. Неправильное имя/пароль
+1. Система обнаруживает, что комбинация имени и пароля не верна.
+2. Система сообщает об ошибке и предлагает пользователю либо заново ввести имя и пароль, либо отказаться от входа в систему.
+3. Пользователь сообщает системе свой выбор.
+4. В соответствии с выбором пользователя либо выполнение переходит на начало основного потока, либо вариант использования завершается.]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Note" uid="8cfe89d8-695e-4b3a-9f4a-858589813e84"/>
+          <PID name="Войти в систему" mc="UseCase" uid="d63387c1-8b85-477f-9709-3301672e9c5f"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[...]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="constraint" mc="NoteType" uid="00bc0b8c-0000-251b-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Note" uid="3cdf7ee2-e74a-4893-abbc-5373dd02a67a"/>
+          <PID name="Войти в систему" mc="UseCase" uid="d63387c1-8b85-477f-9709-3301672e9c5f"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[...]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="non-functional constraint" mc="NoteType" uid="00bc0c08-0000-242c-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Note" uid="05459090-ee0a-4d19-9458-ef22bb8d43e0"/>
+          <PID name="Войти в систему" mc="UseCase" uid="d63387c1-8b85-477f-9709-3301672e9c5f"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[...]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="exception" mc="NoteType" uid="00bc0b8c-0000-2519-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Note" uid="e9258f6f-9f90-4540-bcc7-14a6f23d44e8"/>
+          <PID name="Войти в систему" mc="UseCase" uid="d63387c1-8b85-477f-9709-3301672e9c5f"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[...]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="precondition" mc="NoteType" uid="00bc0b8c-0000-2515-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Note" uid="6f1a74bb-8303-4bee-93ab-409d4ccae552"/>
+          <PID name="Войти в систему" mc="UseCase" uid="d63387c1-8b85-477f-9709-3301672e9c5f"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[Если вариант использования выполнен успешно, система предоставляет доступ к главному меню пользователю, сообщившему верную комбинацию имени и пароля. В противном случае система гарантирует, что пользователю, сообщившему неверную комбинацию имени и пароля, доступ к меню не будет предоставлен.]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="postcondition" mc="NoteType" uid="00bc0b8c-0000-2517-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

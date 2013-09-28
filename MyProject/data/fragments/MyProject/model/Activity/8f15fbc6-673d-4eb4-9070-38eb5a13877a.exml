@@ -1,0 +1,471 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Войти в систему" version="3">
+  <DEPS>
+    <ID name="Войти в систему" mc="Activity" uid="8f15fbc6-673d-4eb4-9070-38eb5a13877a"/>
+    <COMPID name="Activity Activity diagram" mc="ActivityDiagram" uid="3b39b041-aa1a-4a1b-9113-87bbde9bd030"/>
+    <EXTID name="Пользователь" mc="Actor" uid="53b9eab9-c9e7-4a0f-8082-a310a43579d2"/>
+    <EXTID name="Система регистрации на курсы" mc="Class" uid="1c3cfd9d-a70c-4b9a-8bb2-75bd8c85f31b"/>
+    <FOREIGNID name="description" mc="NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Войти в систему" mc="Activity" uid="8f15fbc6-673d-4eb4-9070-38eb5a13877a"/>
+    <PID name="Войти в систему" mc="UseCase" uid="d63387c1-8b85-477f-9709-3301672e9c5f"/>
+    <ATTRIBUTES>
+      <ATT name="IsSingleExecution">false</ATT>
+      <ATT name="IsReadOnly">false</ATT>
+      <ATT name="IsReentrant">false</ATT>
+      <ATT name="Name"><![CDATA[Войти в систему]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedGroup">
+        <OBJECT>
+          <ID name="Пользователь" mc="ActivityPartition" uid="aabf759d-4957-45ec-8b5f-bb1e1349b4d9"/>
+          <PID name="Войти в систему" mc="Activity" uid="8f15fbc6-673d-4eb4-9070-38eb5a13877a"/>
+          <ATTRIBUTES>
+            <ATT name="IsDimension">false</ATT>
+            <ATT name="IsExternal">false</ATT>
+            <ATT name="Name"><![CDATA[Пользователь]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Represented">
+              <ID name="Пользователь" mc="Actor" uid="53b9eab9-c9e7-4a0f-8082-a310a43579d2"/>
+            </LINK>
+            <COMP relation="ContainedNode">
+              <OBJECT>
+                <ID name="Ввод имени и пароля" mc="OpaqueAction" uid="d01cbeb4-b770-4825-a3b2-c7ec18fb6b55"/>
+                <PID name="Войти в систему" mc="Activity" uid="8f15fbc6-673d-4eb4-9070-38eb5a13877a"/>
+                <ATTRIBUTES>
+                  <ATT name="Body"></ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[Ввод имени и пароля]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="a3aad5c2-6de4-4bbf-9eee-9c2668f10ef0"/>
+                      <PID name="Войти в систему" mc="Activity" uid="8f15fbc6-673d-4eb4-9070-38eb5a13877a"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Проверка имени и пароля" mc="OpaqueAction" uid="f49364c9-a13e-4f23-8101-183d78c2f12e"/>
+                            <PID name="Войти в систему" mc="Activity" uid="8f15fbc6-673d-4eb4-9070-38eb5a13877a"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Выбор действия" mc="OpaqueAction" uid="f458124e-d02f-40a7-886f-6e4a3611061e"/>
+                <PID name="Войти в систему" mc="Activity" uid="8f15fbc6-673d-4eb4-9070-38eb5a13877a"/>
+                <ATTRIBUTES>
+                  <ATT name="Body"></ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[Выбор действия]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="0e871597-9750-48b4-9e26-34a778668d2b"/>
+                      <PID name="Войти в систему" mc="Activity" uid="8f15fbc6-673d-4eb4-9070-38eb5a13877a"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Decision-Merge" mc="DecisionMergeNode" uid="90928311-24f3-4094-86ea-3669ab3d5110"/>
+                            <PID name="Войти в систему" mc="Activity" uid="8f15fbc6-673d-4eb4-9070-38eb5a13877a"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Decision-Merge" mc="DecisionMergeNode" uid="90928311-24f3-4094-86ea-3669ab3d5110"/>
+                <PID name="Войти в систему" mc="Activity" uid="8f15fbc6-673d-4eb4-9070-38eb5a13877a"/>
+                <ATTRIBUTES>
+                  <ATT name="DecisionKind">ExclusiveDecision</ATT>
+                  <ATT name="DecisionInputBehavior"></ATT>
+                  <ATT name="Name"><![CDATA[Decision-Merge]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="83547dac-5e17-4917-9c66-48be39b3a347"/>
+                      <PID name="Войти в систему" mc="Activity" uid="8f15fbc6-673d-4eb4-9070-38eb5a13877a"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"><![CDATA[выбран отказ от входа]]></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Activity Final Node" mc="ActivityFinalNode" uid="c0ae091a-4ce9-4d8b-9bc3-a9a158e5f49b"/>
+                            <PID name="Войти в систему" mc="Activity" uid="8f15fbc6-673d-4eb4-9070-38eb5a13877a"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="9704d34f-eed8-4972-b807-e0c62664eba1"/>
+                      <PID name="Войти в систему" mc="Activity" uid="8f15fbc6-673d-4eb4-9070-38eb5a13877a"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"><![CDATA[else]]></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Decision-Merge1" mc="DecisionMergeNode" uid="5c3145bd-5cb8-450a-888c-c17e5135733c"/>
+                            <PID name="Войти в систему" mc="Activity" uid="8f15fbc6-673d-4eb4-9070-38eb5a13877a"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Система" mc="ActivityPartition" uid="2d089f9a-8ed4-48c9-9b10-3843b9159352"/>
+          <PID name="Войти в систему" mc="Activity" uid="8f15fbc6-673d-4eb4-9070-38eb5a13877a"/>
+          <ATTRIBUTES>
+            <ATT name="IsDimension">false</ATT>
+            <ATT name="IsExternal">false</ATT>
+            <ATT name="Name"><![CDATA[Система]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Represented">
+              <ID name="Система регистрации на курсы" mc="Class" uid="1c3cfd9d-a70c-4b9a-8bb2-75bd8c85f31b"/>
+            </LINK>
+            <COMP relation="ContainedNode">
+              <OBJECT>
+                <ID name="Initial Node" mc="InitialNode" uid="1b961b22-52de-48fb-9a45-21dc0f2ff24e"/>
+                <PID name="Войти в систему" mc="Activity" uid="8f15fbc6-673d-4eb4-9070-38eb5a13877a"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Initial Node]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="ae8911ef-9a78-4251-b80f-5e878ad2e4fa"/>
+                      <PID name="Войти в систему" mc="Activity" uid="8f15fbc6-673d-4eb4-9070-38eb5a13877a"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Decision-Merge1" mc="DecisionMergeNode" uid="5c3145bd-5cb8-450a-888c-c17e5135733c"/>
+                            <PID name="Войти в систему" mc="Activity" uid="8f15fbc6-673d-4eb4-9070-38eb5a13877a"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Запрос имени и пароля" mc="OpaqueAction" uid="2a3f526f-40aa-488d-8356-d4668e582b46"/>
+                <PID name="Войти в систему" mc="Activity" uid="8f15fbc6-673d-4eb4-9070-38eb5a13877a"/>
+                <ATTRIBUTES>
+                  <ATT name="Body"></ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[Запрос имени и пароля]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="04f58e3f-0589-450d-a536-9bb7bb8c8f9b"/>
+                      <PID name="Войти в систему" mc="Activity" uid="8f15fbc6-673d-4eb4-9070-38eb5a13877a"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Ввод имени и пароля" mc="OpaqueAction" uid="d01cbeb4-b770-4825-a3b2-c7ec18fb6b55"/>
+                            <PID name="Войти в систему" mc="Activity" uid="8f15fbc6-673d-4eb4-9070-38eb5a13877a"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Проверка имени и пароля" mc="OpaqueAction" uid="f49364c9-a13e-4f23-8101-183d78c2f12e"/>
+                <PID name="Войти в систему" mc="Activity" uid="8f15fbc6-673d-4eb4-9070-38eb5a13877a"/>
+                <ATTRIBUTES>
+                  <ATT name="Body"></ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[Проверка имени и пароля]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="78f98202-7a93-4c9d-8477-d6f1e9eee0eb"/>
+                      <PID name="Войти в систему" mc="Activity" uid="8f15fbc6-673d-4eb4-9070-38eb5a13877a"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Decision-Merge" mc="DecisionMergeNode" uid="1908197b-1cb2-40ac-b37d-a084be5f9605"/>
+                            <PID name="Войти в систему" mc="Activity" uid="8f15fbc6-673d-4eb4-9070-38eb5a13877a"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Вывод предупреждения" mc="OpaqueAction" uid="d83033fe-fa30-4653-883b-2e04452acb2c"/>
+                <PID name="Войти в систему" mc="Activity" uid="8f15fbc6-673d-4eb4-9070-38eb5a13877a"/>
+                <ATTRIBUTES>
+                  <ATT name="Body"></ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[Вывод предупреждения]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="e39b245c-6c15-4447-9156-91eb18e8d0fb"/>
+                      <PID name="Войти в систему" mc="Activity" uid="8f15fbc6-673d-4eb4-9070-38eb5a13877a"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Выбор действия" mc="OpaqueAction" uid="f458124e-d02f-40a7-886f-6e4a3611061e"/>
+                            <PID name="Войти в систему" mc="Activity" uid="8f15fbc6-673d-4eb4-9070-38eb5a13877a"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Decision-Merge" mc="DecisionMergeNode" uid="1908197b-1cb2-40ac-b37d-a084be5f9605"/>
+                <PID name="Войти в систему" mc="Activity" uid="8f15fbc6-673d-4eb4-9070-38eb5a13877a"/>
+                <ATTRIBUTES>
+                  <ATT name="DecisionKind">ExclusiveDecision</ATT>
+                  <ATT name="DecisionInputBehavior"></ATT>
+                  <ATT name="Name"><![CDATA[Decision-Merge]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="0bd0efbf-21d2-46cc-8f28-8833426958b1"/>
+                      <PID name="Войти в систему" mc="Activity" uid="8f15fbc6-673d-4eb4-9070-38eb5a13877a"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"><![CDATA[else]]></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Вывод предупреждения" mc="OpaqueAction" uid="d83033fe-fa30-4653-883b-2e04452acb2c"/>
+                            <PID name="Войти в систему" mc="Activity" uid="8f15fbc6-673d-4eb4-9070-38eb5a13877a"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="6b680e34-9262-40fa-93eb-078288ace62b"/>
+                      <PID name="Войти в систему" mc="Activity" uid="8f15fbc6-673d-4eb4-9070-38eb5a13877a"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"><![CDATA[имя и пароль верны]]></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Вывод главного меню" mc="OpaqueAction" uid="dd816128-0e8f-4c31-874f-59b547c4be3d"/>
+                            <PID name="Войти в систему" mc="Activity" uid="8f15fbc6-673d-4eb4-9070-38eb5a13877a"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Вывод главного меню" mc="OpaqueAction" uid="dd816128-0e8f-4c31-874f-59b547c4be3d"/>
+                <PID name="Войти в систему" mc="Activity" uid="8f15fbc6-673d-4eb4-9070-38eb5a13877a"/>
+                <ATTRIBUTES>
+                  <ATT name="Body"></ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[Вывод главного меню]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Activity Final Node" mc="ActivityFinalNode" uid="c0ae091a-4ce9-4d8b-9bc3-a9a158e5f49b"/>
+                <PID name="Войти в систему" mc="Activity" uid="8f15fbc6-673d-4eb4-9070-38eb5a13877a"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Activity Final Node]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="Note" mc="Note" uid="4eccc53f-6334-46d5-8f46-f46f6d3710f7"/>
+                      <PID name="Войти в систему" mc="Activity" uid="8f15fbc6-673d-4eb4-9070-38eb5a13877a"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[неуспех
+]]></ATT>
+                        <ATT name="Name"><![CDATA[Note]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="description" mc="NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Activity Final Node1" mc="ActivityFinalNode" uid="32390b9b-dba5-4ff8-a93b-b4b64731e7ff"/>
+                <PID name="Войти в систему" mc="Activity" uid="8f15fbc6-673d-4eb4-9070-38eb5a13877a"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Activity Final Node1]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="Note" mc="Note" uid="4bb37a4f-f9b1-47cf-a8c3-476a4b3257fe"/>
+                      <PID name="Войти в систему" mc="Activity" uid="8f15fbc6-673d-4eb4-9070-38eb5a13877a"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[успех
+]]></ATT>
+                        <ATT name="Name"><![CDATA[Note]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="description" mc="NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Decision-Merge1" mc="DecisionMergeNode" uid="5c3145bd-5cb8-450a-888c-c17e5135733c"/>
+                <PID name="Войти в систему" mc="Activity" uid="8f15fbc6-673d-4eb4-9070-38eb5a13877a"/>
+                <ATTRIBUTES>
+                  <ATT name="DecisionKind">ExclusiveDecision</ATT>
+                  <ATT name="DecisionInputBehavior"></ATT>
+                  <ATT name="Name"><![CDATA[Decision-Merge1]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="228db930-b17f-4f65-a091-d044719d18ab"/>
+                      <PID name="Войти в систему" mc="Activity" uid="8f15fbc6-673d-4eb4-9070-38eb5a13877a"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Запрос имени и пароля" mc="OpaqueAction" uid="2a3f526f-40aa-488d-8356-d4668e582b46"/>
+                            <PID name="Войти в систему" mc="Activity" uid="8f15fbc6-673d-4eb4-9070-38eb5a13877a"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedCollaboration">
+        <OBJECT>
+          <ID name="locals" mc="Collaboration" uid="8cc3ff61-5d1e-4296-9c01-1e849dee34f3"/>
+          <PID name="Войти в систему" mc="Activity" uid="8f15fbc6-673d-4eb4-9070-38eb5a13877a"/>
+          <ATTRIBUTES>
+            <ATT name="IsConcurrent">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[locals]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Activity Activity diagram" mc="ActivityDiagram" uid="3b39b041-aa1a-4a1b-9113-87bbde9bd030"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
