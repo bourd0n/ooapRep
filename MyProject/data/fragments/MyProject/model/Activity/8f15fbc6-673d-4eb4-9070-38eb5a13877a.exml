@@ -129,7 +129,7 @@
                       </DEPENDENCIES>
                     </OBJECT>
                     <OBJECT>
-                      <ID name="ControlFlow" mc="ControlFlow" uid="9704d34f-eed8-4972-b807-e0c62664eba1"/>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="a76608a4-99e2-4078-9922-beb9865c3a9c"/>
                       <PID name="Войти в систему" mc="Activity" uid="8f15fbc6-673d-4eb4-9070-38eb5a13877a"/>
                       <ATTRIBUTES>
                         <ATT name="Guard"><![CDATA[else]]></ATT>
@@ -355,7 +355,28 @@
                   <ATT name="Name"><![CDATA[Вывод главного меню]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
-                <DEPENDENCIES></DEPENDENCIES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="a9525e2a-6520-4a07-a1cc-af59923ac371"/>
+                      <PID name="Войти в систему" mc="Activity" uid="8f15fbc6-673d-4eb4-9070-38eb5a13877a"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Activity Final Node1" mc="ActivityFinalNode" uid="32390b9b-dba5-4ff8-a93b-b4b64731e7ff"/>
+                            <PID name="Войти в систему" mc="Activity" uid="8f15fbc6-673d-4eb4-9070-38eb5a13877a"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
                 <ID name="Activity Final Node" mc="ActivityFinalNode" uid="c0ae091a-4ce9-4d8b-9bc3-a9a158e5f49b"/>

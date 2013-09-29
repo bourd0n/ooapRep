@@ -2,6 +2,7 @@
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Зарегистрироваться на курсы" version="3">
   <DEPS>
     <ID name="Зарегистрироваться на курсы" mc="UseCase" uid="04ae44ab-05ca-42ff-897b-53ad8669ab23"/>
+    <COMPID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
     <EXTID name="Каталог курсов" mc="Actor" uid="9771400b-6fef-4df9-8455-76860b5c4d80"/>
     <FOREIGNID name="constraint" mc="NoteType" uid="00bc0b8c-0000-251b-0000-000000000000"/>
     <FOREIGNID name="description" mc="NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
@@ -96,6 +97,9 @@
             </COMP>
           </DEPENDENCIES>
         </OBJECT>
+      </COMP>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
       </COMP>
       <COMP relation="Descriptor">
         <OBJECT>
