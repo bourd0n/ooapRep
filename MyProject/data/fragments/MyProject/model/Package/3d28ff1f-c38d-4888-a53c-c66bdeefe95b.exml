@@ -1,0 +1,46 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="CourseCatalogSystem" version="3">
+  <DEPS>
+    <ID name="CourseCatalogSystem" mc="Package" uid="3d28ff1f-c38d-4888-a53c-c66bdeefe95b"/>
+    <COMPID name="CourseCatalogSystem" mc="Class" uid="6532bb1b-2344-4cc6-b851-f90d0a426f79"/>
+    <EXTID name="Interfaces" mc="Package" uid="1ddfccc2-db57-4679-a278-bdd04c8693b5"/>
+    <FOREIGNID name="subsystem" mc="Stereotype" uid="00700680-0000-01d3-0000-000000000000"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="CourseCatalogSystem" mc="Package" uid="3d28ff1f-c38d-4888-a53c-c66bdeefe95b"/>
+    <PID name="BusinessServices" mc="Package" uid="a66f3ccf-eee4-4d67-af3a-1c398627d6ba"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[CourseCatalogSystem]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedPackageImport">
+        <OBJECT>
+          <ID name="PackageImport" mc="PackageImport" uid="ae0e04cb-1140-4211-bb83-02b3c97600ba"/>
+          <PID name="CourseCatalogSystem" mc="Package" uid="3d28ff1f-c38d-4888-a53c-c66bdeefe95b"/>
+          <ATTRIBUTES>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="Name"><![CDATA[PackageImport]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="ImportedPackage">
+              <ID name="Interfaces" mc="Package" uid="1ddfccc2-db57-4679-a278-bdd04c8693b5"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <COMPID name="CourseCatalogSystem" mc="Class" uid="6532bb1b-2344-4cc6-b851-f90d0a426f79"/>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="subsystem" mc="Stereotype" uid="00700680-0000-01d3-0000-000000000000"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

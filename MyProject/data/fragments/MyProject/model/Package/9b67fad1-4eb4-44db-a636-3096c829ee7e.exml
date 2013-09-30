@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="UniversityArtefacts" version="3">
+  <DEPS>
+    <ID name="UniversityArtefacts" mc="Package" uid="9b67fad1-4eb4-44db-a636-3096c829ee7e"/>
+    <COMPID name="Course" mc="Class" uid="e354f2b4-27a5-4e69-84e6-7c3c256e38da"/>
+    <COMPID name="CourseOffering" mc="Class" uid="917427ed-73a2-478e-94a1-ad3b97607fad"/>
+    <COMPID name="FullTimeStudent" mc="Class" uid="620e35bc-bff3-402b-91a3-bc80b647c18b"/>
+    <COMPID name="Key Abstractions" mc="ClassDiagram" uid="aedb5ed5-0057-4be6-bc7f-654b311cbfed"/>
+    <COMPID name="PartTimeStudent" mc="Class" uid="42ffee88-088c-47d0-a066-609941437684"/>
+    <COMPID name="Professor" mc="Class" uid="4202c952-eb71-4faa-9f52-a460ce5fbc4e"/>
+    <COMPID name="Schedule" mc="Class" uid="63f29c0b-fbfd-40cc-aa6d-c278ad946fc9"/>
+    <COMPID name="Student" mc="Class" uid="12bb94b2-674e-4bf6-aebf-049d5cea6c20"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="UniversityArtefacts" mc="Package" uid="9b67fad1-4eb4-44db-a636-3096c829ee7e"/>
+    <PID name="BusinessServices" mc="Package" uid="a66f3ccf-eee4-4d67-af3a-1c398627d6ba"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[UniversityArtefacts]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Schedule" mc="Class" uid="63f29c0b-fbfd-40cc-aa6d-c278ad946fc9"/>
+        <COMPID name="PartTimeStudent" mc="Class" uid="42ffee88-088c-47d0-a066-609941437684"/>
+        <COMPID name="FullTimeStudent" mc="Class" uid="620e35bc-bff3-402b-91a3-bc80b647c18b"/>
+        <COMPID name="CourseOffering" mc="Class" uid="917427ed-73a2-478e-94a1-ad3b97607fad"/>
+        <COMPID name="Student" mc="Class" uid="12bb94b2-674e-4bf6-aebf-049d5cea6c20"/>
+        <COMPID name="Professor" mc="Class" uid="4202c952-eb71-4faa-9f52-a460ce5fbc4e"/>
+        <COMPID name="Course" mc="Class" uid="e354f2b4-27a5-4e69-84e6-7c3c256e38da"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Key Abstractions" mc="ClassDiagram" uid="aedb5ed5-0057-4be6-bc7f-654b311cbfed"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

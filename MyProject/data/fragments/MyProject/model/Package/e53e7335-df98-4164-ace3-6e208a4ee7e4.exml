@@ -1,0 +1,46 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Application" version="3">
+  <DEPS>
+    <ID name="Application" mc="Package" uid="e53e7335-df98-4164-ace3-6e208a4ee7e4"/>
+    <COMPID name="Registration" mc="Package" uid="fbf51014-7b4a-401f-b86a-e693994ce59a"/>
+    <EXTID name="BusinessServices" mc="Package" uid="a66f3ccf-eee4-4d67-af3a-1c398627d6ba"/>
+    <EXTID name="layer" mc="Stereotype" uid="d8e7d1c9-1729-4d52-8ff9-8835e1cd3ebf"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Application" mc="Package" uid="e53e7335-df98-4164-ace3-6e208a4ee7e4"/>
+    <PID name="Design Model" mc="Package" uid="26347e9f-d8e4-40e5-871c-1bf107bcd743"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Application]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedPackageImport">
+        <OBJECT>
+          <ID name="PackageImport" mc="PackageImport" uid="59dc0bce-c27a-4c2c-9590-1cf51737a444"/>
+          <PID name="Application" mc="Package" uid="e53e7335-df98-4164-ace3-6e208a4ee7e4"/>
+          <ATTRIBUTES>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="Name"><![CDATA[PackageImport]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="ImportedPackage">
+              <ID name="BusinessServices" mc="Package" uid="a66f3ccf-eee4-4d67-af3a-1c398627d6ba"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <COMPID name="Registration" mc="Package" uid="fbf51014-7b4a-401f-b86a-e693994ce59a"/>
+      </COMP>
+      <LINK relation="Extension">
+        <ID name="layer" mc="Stereotype" uid="d8e7d1c9-1729-4d52-8ff9-8835e1cd3ebf"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

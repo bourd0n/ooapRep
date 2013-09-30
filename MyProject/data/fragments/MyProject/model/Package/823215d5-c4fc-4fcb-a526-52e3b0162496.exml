@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Use Case Realizations" version="3">
+  <DEPS>
+    <ID name="Use Case Realizations" mc="Package" uid="823215d5-c4fc-4fcb-a526-52e3b0162496"/>
+    <COMPID name="CloseRegistration" mc="Interaction" uid="34b3934e-57df-4501-9572-da6414359f80"/>
+    <COMPID name="Login" mc="Interaction" uid="2d0c3179-13a6-407e-b05f-1ef697fc5c5f"/>
+    <COMPID name="RegisterForCourses" mc="Interaction" uid="d4e84265-cb2a-4207-9fd5-35c407158c46"/>
+    <COMPID name="VOPC CloseRegistration" mc="ClassDiagram" uid="a575fbb8-104a-4710-8c51-89127193224d"/>
+    <COMPID name="VOPC Login" mc="ClassDiagram" uid="31cf0785-d4ca-4033-8591-55359f84625b"/>
+    <COMPID name="VOPC RegisterForCourses" mc="ClassDiagram" uid="98d96c7d-e262-4d60-b852-9b6acef8f8d1"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Use Case Realizations" mc="Package" uid="823215d5-c4fc-4fcb-a526-52e3b0162496"/>
+    <PID name="Design Model" mc="Package" uid="26347e9f-d8e4-40e5-871c-1bf107bcd743"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Use Case Realizations]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="RegisterForCourses" mc="Interaction" uid="d4e84265-cb2a-4207-9fd5-35c407158c46"/>
+        <COMPID name="Login" mc="Interaction" uid="2d0c3179-13a6-407e-b05f-1ef697fc5c5f"/>
+        <COMPID name="CloseRegistration" mc="Interaction" uid="34b3934e-57df-4501-9572-da6414359f80"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="VOPC Login" mc="ClassDiagram" uid="31cf0785-d4ca-4033-8591-55359f84625b"/>
+        <COMPID name="VOPC RegisterForCourses" mc="ClassDiagram" uid="98d96c7d-e262-4d60-b852-9b6acef8f8d1"/>
+        <COMPID name="VOPC CloseRegistration" mc="ClassDiagram" uid="a575fbb8-104a-4710-8c51-89127193224d"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

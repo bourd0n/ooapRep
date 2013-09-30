@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Application" version="3">
+  <DEPS>
+    <ID name="Application" mc="Package" uid="268e9753-9cd9-4cd6-be87-ff9c44cd74de"/>
+    <EXTID name="BusinessServices" mc="Package" uid="ef2d5698-6c85-4ecc-ad97-28901de2cc5e"/>
+    <EXTID name="layer" mc="Stereotype" uid="d8e7d1c9-1729-4d52-8ff9-8835e1cd3ebf"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Application" mc="Package" uid="268e9753-9cd9-4cd6-be87-ff9c44cd74de"/>
+    <PID name="Design Model" mc="Package" uid="26347e9f-d8e4-40e5-871c-1bf107bcd743"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Application]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedPackageImport">
+        <OBJECT>
+          <ID name="PackageImport" mc="PackageImport" uid="10b9f234-4894-46b0-8b7f-855d126a9f4e"/>
+          <PID name="Application" mc="Package" uid="268e9753-9cd9-4cd6-be87-ff9c44cd74de"/>
+          <ATTRIBUTES>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="Name"><![CDATA[PackageImport]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="ImportedPackage">
+              <ID name="BusinessServices" mc="Package" uid="ef2d5698-6c85-4ecc-ad97-28901de2cc5e"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <LINK relation="Extension">
+        <ID name="layer" mc="Stereotype" uid="d8e7d1c9-1729-4d52-8ff9-8835e1cd3ebf"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="CloseRegistration" version="3">
+  <DEPS>
+    <ID name="CloseRegistration" mc="Interaction" uid="34b3934e-57df-4501-9572-da6414359f80"/>
+    <COMPID name="Basic Flow" mc="SequenceDiagram" uid="9f8a044a-872f-4503-89e1-956a3b5ca3e5"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="CloseRegistration" mc="Interaction" uid="34b3934e-57df-4501-9572-da6414359f80"/>
+    <PID name="Use Case Realizations" mc="Package" uid="823215d5-c4fc-4fcb-a526-52e3b0162496"/>
+    <ATTRIBUTES>
+      <ATT name="IsReentrant">false</ATT>
+      <ATT name="Name"><![CDATA[CloseRegistration]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedCollaboration">
+        <OBJECT>
+          <ID name="locals" mc="Collaboration" uid="f1395638-80e5-44c6-b0a4-2fe651993690"/>
+          <PID name="CloseRegistration" mc="Interaction" uid="34b3934e-57df-4501-9572-da6414359f80"/>
+          <ATTRIBUTES>
+            <ATT name="IsConcurrent">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[locals]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Basic Flow" mc="SequenceDiagram" uid="9f8a044a-872f-4503-89e1-956a3b5ca3e5"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="VOPC Login" version="3">
+  <DEPS>
+    <ID name="VOPC Login" mc="ClassDiagram" uid="31cf0785-d4ca-4033-8591-55359f84625b"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="VOPC Login" mc="ClassDiagram" uid="31cf0785-d4ca-4033-8591-55359f84625b"/>
+    <PID name="Use Case Realizations" mc="Package" uid="823215d5-c4fc-4fcb-a526-52e3b0162496"/>
+    <ATTRIBUTES>
+      <ATT name="UiDataVersion">7</ATT>
+      <ATT name="UiData"><![CDATA[eJyNUV9vgjAQ/yoN7yCKbC5BfcBlMWPTzMTXpdCDVUtr2sPJt18RMZnLiE/0jvv9u4vmp1KQI2jDlZw6Q893yHwWrdIdZEg4sy2HYH2AqaN04ZWKgeDKY5wWmpYeMI5KewYp8r0HAkqQaNo664Zeys25XrS1Q0q6U/rzKuo7s2it1QE01kTS0moJWqsKFxSp/belooKLCVkJ4Qxm0aAD/IFusBbg/Iow6otgmnnjZUqD12Lv8BdTk1EGrBN7PuEH5HeqvFuKC5LACRfp0no8P5sHg5xWAm9CDto4fcE1CIrArI+bnb01LXJsOta5oMZcLkGCYZb7j5PQZeOMumM/CNxJ+DR0wzAIn/LJ+GEUpv3btmz4KtW3TGgK4kZ4g5rL4iq9Xa1jkqiCy35OrQQsZazKgzIc7Qn6afvJ4i8umIaGI+GmWeDl8y8i4XJvesa7U/wAHpEfyw==]]></ATT>
+      <ATT name="PdeProperties"></ATT>
+      <ATT name="Name"><![CDATA[VOPC Login]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

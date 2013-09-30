@@ -1,0 +1,68 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="ICourseCatalogSystem" version="3">
+  <DEPS>
+    <ID name="ICourseCatalogSystem" mc="Interface" uid="8a78d3ce-5e32-44f9-9373-46f3d3d3bc14"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="ICourseCatalogSystem" mc="Interface" uid="8a78d3ce-5e32-44f9-9373-46f3d3d3bc14"/>
+    <PID name="Interfaces" mc="Package" uid="1ddfccc2-db57-4679-a278-bdd04c8693b5"/>
+    <ATTRIBUTES>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">true</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[ICourseCatalogSystem]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedOperation">
+        <OBJECT>
+          <ID name="//getCourseOfferings" mc="Operation" uid="4b2f7b45-85ac-43cd-a2ed-a554444b9688"/>
+          <PID name="ICourseCatalogSystem" mc="Interface" uid="8a78d3ce-5e32-44f9-9373-46f3d3d3bc14"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[//getCourseOfferings]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="//connectWithCatalog" mc="Operation" uid="21450ea8-b1e9-4dc1-b52d-3707c4c97fe7"/>
+          <PID name="ICourseCatalogSystem" mc="Interface" uid="8a78d3ce-5e32-44f9-9373-46f3d3d3bc14"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[//connectWithCatalog]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="//disconnectWithCatalog" mc="Operation" uid="d96cd1b8-9a98-4bf6-8c33-c0e2c080285f"/>
+          <PID name="ICourseCatalogSystem" mc="Interface" uid="8a78d3ce-5e32-44f9-9373-46f3d3d3bc14"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[//disconnectWithCatalog]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

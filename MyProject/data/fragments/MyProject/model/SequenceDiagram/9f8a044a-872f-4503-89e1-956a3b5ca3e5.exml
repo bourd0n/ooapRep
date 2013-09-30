@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Basic Flow" version="3">
+  <DEPS>
+    <ID name="Basic Flow" mc="SequenceDiagram" uid="9f8a044a-872f-4503-89e1-956a3b5ca3e5"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Basic Flow" mc="SequenceDiagram" uid="9f8a044a-872f-4503-89e1-956a3b5ca3e5"/>
+    <PID name="CloseRegistration" mc="Interaction" uid="34b3934e-57df-4501-9572-da6414359f80"/>
+    <ATTRIBUTES>
+      <ATT name="UiDataVersion">24</ATT>
+      <ATT name="UiData"><![CDATA[eJyNUV1PwkAQ/CuXe+9RgSokBRJBDRE/IomvZtvb4uF94N0V6L+3lZYEjA1Pt5nbmdnZjSd7JckWrRNGj+gVCymZjOOXZI2pJ4KXECW+2OCIGrtiynCUwjAuYGVBMeTCG8scfueoU2QoUaH27og0jQ9qWSOzA0KJgrWxH0frkI7jV2s2aH1BNKjSUUJhcj8DD+XfO8gc61F0LiXtjONOQ/hDXfpCIj0J0m0L4qp+x1JjkR24F8w3BZcCR96Y3e39G2YXujyXEjWT4N7Pknk5429ZFRwzyKU/C9k5xGkLblGCR17Ocbazpwoi2wop13N6DDLMBhD2+xAMbrpZ0I/CXjAY4lUwjK6hl0Qp9DBqX7gE5x+12ekFJCjPvJfeCr06ut+CEym5l2bXrmmNxLmeGrUxTvjyCu2y7WLTTyG5xUpjIVy1w/r5l7EQ+su1tDfX+AFvdSRT]]></ATT>
+      <ATT name="PdeProperties"></ATT>
+      <ATT name="Name"><![CDATA[Basic Flow]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

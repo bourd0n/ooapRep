@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Basic Flow" version="3">
+  <DEPS>
+    <ID name="Basic Flow" mc="SequenceDiagram" uid="315ec592-7761-48c2-8087-5a139979718d"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Basic Flow" mc="SequenceDiagram" uid="315ec592-7761-48c2-8087-5a139979718d"/>
+    <PID name="Login" mc="Interaction" uid="2d0c3179-13a6-407e-b05f-1ef697fc5c5f"/>
+    <ATTRIBUTES>
+      <ATT name="UiDataVersion">0</ATT>
+      <ATT name="UiData"></ATT>
+      <ATT name="PdeProperties"></ATT>
+      <ATT name="Name"><![CDATA[Basic Flow]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,63 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Registration" version="3">
+  <DEPS>
+    <ID name="Registration" mc="Package" uid="fbf51014-7b4a-401f-b86a-e693994ce59a"/>
+    <COMPID name="Dependencies" mc="ClassDiagram" uid="73f38643-09a2-4f5d-bbd5-2306554e5e00"/>
+    <COMPID name="RegisterForCoursesForm" mc="Class" uid="6c733912-93d3-4c1d-afb2-8b5104801e6f"/>
+    <COMPID name="RegistrationController" mc="Class" uid="4b9ea2a8-6a94-415b-a696-af31ea8611ce"/>
+    <EXTID name="Interfaces" mc="Package" uid="1ddfccc2-db57-4679-a278-bdd04c8693b5"/>
+    <EXTID name="UniversityArtefacts" mc="Package" uid="9b67fad1-4eb4-44db-a636-3096c829ee7e"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Registration" mc="Package" uid="fbf51014-7b4a-401f-b86a-e693994ce59a"/>
+    <PID name="Application" mc="Package" uid="e53e7335-df98-4164-ace3-6e208a4ee7e4"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Registration]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedPackageImport">
+        <OBJECT>
+          <ID name="PackageImport" mc="PackageImport" uid="99e7e93a-ba19-481a-af9c-32344b4fa3c3"/>
+          <PID name="Registration" mc="Package" uid="fbf51014-7b4a-401f-b86a-e693994ce59a"/>
+          <ATTRIBUTES>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="Name"><![CDATA[PackageImport]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="ImportedPackage">
+              <ID name="UniversityArtefacts" mc="Package" uid="9b67fad1-4eb4-44db-a636-3096c829ee7e"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="PackageImport" mc="PackageImport" uid="13e2602f-0dd7-486f-aba0-65fae69fe0b3"/>
+          <PID name="Registration" mc="Package" uid="fbf51014-7b4a-401f-b86a-e693994ce59a"/>
+          <ATTRIBUTES>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="Name"><![CDATA[PackageImport]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="ImportedPackage">
+              <ID name="Interfaces" mc="Package" uid="1ddfccc2-db57-4679-a278-bdd04c8693b5"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <COMPID name="RegisterForCoursesForm" mc="Class" uid="6c733912-93d3-4c1d-afb2-8b5104801e6f"/>
+        <COMPID name="RegistrationController" mc="Class" uid="4b9ea2a8-6a94-415b-a696-af31ea8611ce"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Dependencies" mc="ClassDiagram" uid="73f38643-09a2-4f5d-bbd5-2306554e5e00"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

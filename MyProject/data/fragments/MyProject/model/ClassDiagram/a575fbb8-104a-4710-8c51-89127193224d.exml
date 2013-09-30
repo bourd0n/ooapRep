@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="VOPC CloseRegistration" version="3">
+  <DEPS>
+    <ID name="VOPC CloseRegistration" mc="ClassDiagram" uid="a575fbb8-104a-4710-8c51-89127193224d"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="VOPC CloseRegistration" mc="ClassDiagram" uid="a575fbb8-104a-4710-8c51-89127193224d"/>
+    <PID name="Use Case Realizations" mc="Package" uid="823215d5-c4fc-4fcb-a526-52e3b0162496"/>
+    <ATTRIBUTES>
+      <ATT name="UiDataVersion">16</ATT>
+      <ATT name="UiData"><![CDATA[eJyNUsluwjAQ/RUrd0KSggCJ5RCqCpUWBBLXahIPqcGxkT2h5O/rkFCpVI042TN+yzzb49kll+yMxgqtJl7oBx6bTcer5IApMcFdy2NUnnDiaZP5ueYohfa5gMxA7iMXpI1vCUgcfZSYoyJb1+kN9JJvr/W8rj2Ww0Gbjx/TwJuO10af0FDJFOTOS0KpC5oDgTvbgSywGUIVUnrd6bh7I/yhbqmU6P2KELVFsBXe+qk26NfcB+aLwabAkd/Mni+0wf2DLu9OomEyvNA8WbgZr9tqw3EPhaS7kN06TltwgxIIuZvj7s7eqhY7Vx03uQRrm5dg0B/090ky7IRBDzq9QRh0hmk/7AxHYTQIR09R1OPtt+3U6FXpL7WEBOWd8ZaMUNmP9W61jlkstcUNZsKScZ9Cq3Z9oyUuVKzzk7biCm+1aBeLP4XkBiuNpfN30Gb5l7EU6mhb4Ldn+QZBFCS0]]></ATT>
+      <ATT name="PdeProperties"></ATT>
+      <ATT name="Name"><![CDATA[VOPC CloseRegistration]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

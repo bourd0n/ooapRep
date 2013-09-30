@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Interfaces" version="3">
+  <DEPS>
+    <ID name="Interfaces" mc="Package" uid="1ddfccc2-db57-4679-a278-bdd04c8693b5"/>
+    <COMPID name="ICourseCatalogSystem" mc="Interface" uid="8a78d3ce-5e32-44f9-9373-46f3d3d3bc14"/>
+    <EXTID name="UniversityArtefacts" mc="Package" uid="9b67fad1-4eb4-44db-a636-3096c829ee7e"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Interfaces" mc="Package" uid="1ddfccc2-db57-4679-a278-bdd04c8693b5"/>
+    <PID name="BusinessServices" mc="Package" uid="a66f3ccf-eee4-4d67-af3a-1c398627d6ba"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Interfaces]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedPackageImport">
+        <OBJECT>
+          <ID name="PackageImport" mc="PackageImport" uid="996b05e2-c336-4b94-8475-5fdd667f7491"/>
+          <PID name="Interfaces" mc="Package" uid="1ddfccc2-db57-4679-a278-bdd04c8693b5"/>
+          <ATTRIBUTES>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="Name"><![CDATA[PackageImport]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="ImportedPackage">
+              <ID name="UniversityArtefacts" mc="Package" uid="9b67fad1-4eb4-44db-a636-3096c829ee7e"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <COMPID name="ICourseCatalogSystem" mc="Interface" uid="8a78d3ce-5e32-44f9-9373-46f3d3d3bc14"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

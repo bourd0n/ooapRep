@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="BusinessServices" version="3">
+  <DEPS>
+    <ID name="BusinessServices" mc="Package" uid="a66f3ccf-eee4-4d67-af3a-1c398627d6ba"/>
+    <COMPID name="CourseCatalogSystem" mc="Package" uid="3d28ff1f-c38d-4888-a53c-c66bdeefe95b"/>
+    <COMPID name="Interfaces" mc="Package" uid="1ddfccc2-db57-4679-a278-bdd04c8693b5"/>
+    <COMPID name="Main" mc="ClassDiagram" uid="a3dc2115-d74a-4122-8c7e-bad2e850f728"/>
+    <COMPID name="UniversityArtefacts" mc="Package" uid="9b67fad1-4eb4-44db-a636-3096c829ee7e"/>
+    <EXTID name="Middleware" mc="Package" uid="d5480057-6bbe-4238-9ef0-68b6937d17f6"/>
+    <EXTID name="layer" mc="Stereotype" uid="d8e7d1c9-1729-4d52-8ff9-8835e1cd3ebf"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="BusinessServices" mc="Package" uid="a66f3ccf-eee4-4d67-af3a-1c398627d6ba"/>
+    <PID name="Design Model" mc="Package" uid="26347e9f-d8e4-40e5-871c-1bf107bcd743"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[BusinessServices]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedPackageImport">
+        <OBJECT>
+          <ID name="PackageImport" mc="PackageImport" uid="2e8c80ec-9557-44d9-b856-e3e710b07cea"/>
+          <PID name="BusinessServices" mc="Package" uid="a66f3ccf-eee4-4d67-af3a-1c398627d6ba"/>
+          <ATTRIBUTES>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="Name"><![CDATA[PackageImport]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="ImportedPackage">
+              <ID name="Middleware" mc="Package" uid="d5480057-6bbe-4238-9ef0-68b6937d17f6"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <COMPID name="UniversityArtefacts" mc="Package" uid="9b67fad1-4eb4-44db-a636-3096c829ee7e"/>
+        <COMPID name="Interfaces" mc="Package" uid="1ddfccc2-db57-4679-a278-bdd04c8693b5"/>
+        <COMPID name="CourseCatalogSystem" mc="Package" uid="3d28ff1f-c38d-4888-a53c-c66bdeefe95b"/>
+      </COMP>
+      <LINK relation="Extension">
+        <ID name="layer" mc="Stereotype" uid="d8e7d1c9-1729-4d52-8ff9-8835e1cd3ebf"/>
+      </LINK>
+      <COMP relation="Product">
+        <COMPID name="Main" mc="ClassDiagram" uid="a3dc2115-d74a-4122-8c7e-bad2e850f728"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
