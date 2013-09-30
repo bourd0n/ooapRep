@@ -4,6 +4,7 @@
     <ID name="Schedule" mc="Class" uid="2d2c825e-7be1-4881-90a6-7e7e269518da"/>
     <EXTID name="CourseOffering" mc="Class" uid="a453e17a-b737-489c-89b0-afabdd16e749"/>
     <EXTID name="entity" mc="Stereotype" uid="9020c6e6-d043-4f26-899a-037950006692"/>
+    <FOREIGNID name="undefined" mc="DataType" uid="00000004-0000-000f-0000-000000000000"/>
   </DEPS>
   <OBJECT>
     <ID name="Schedule" mc="Class" uid="2d2c825e-7be1-4881-90a6-7e7e269518da"/>
@@ -20,6 +21,50 @@
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
+      <COMP relation="OwnedOperation">
+        <OBJECT>
+          <ID name="//createScheduleWithOfferings" mc="Operation" uid="02b5c75b-b5ab-4201-a0c3-edc251a730e1"/>
+          <PID name="Schedule" mc="Class" uid="2d2c825e-7be1-4881-90a6-7e7e269518da"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[//createScheduleWithOfferings]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedAttribute">
+        <OBJECT>
+          <ID name="semester" mc="Attribute" uid="dcba5de1-05c2-4382-96bf-5d1f9519abd9"/>
+          <PID name="Schedule" mc="Class" uid="2d2c825e-7be1-4881-90a6-7e7e269518da"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">ReadWrite</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[semester]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="undefined" mc="DataType" uid="00000004-0000-000f-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
       <COMP relation="OwnedEnd">
         <OBJECT>
           <ID name="primaryCourses" mc="AssociationEnd" uid="8d992d0f-3933-457f-9a78-b1df08bb75ef"/>
@@ -55,7 +100,7 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="altCourses" mc="AssociationEnd" uid="0d4e5c5c-4ad7-4c08-ad5a-6f5b203992d9"/>
+          <ID name="alternativeCourses" mc="AssociationEnd" uid="0d4e5c5c-4ad7-4c08-ad5a-6f5b203992d9"/>
           <PID name="Schedule" mc="Class" uid="2d2c825e-7be1-4881-90a6-7e7e269518da"/>
           <ATTRIBUTES>
             <ATT name="Aggregation">KindIsAssociation</ATT>
@@ -69,7 +114,7 @@
             <ATT name="Visibility">Private</ATT>
             <ATT name="IsClass">false</ATT>
             <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"><![CDATA[altCourses]]></ATT>
+            <ATT name="Name"><![CDATA[alternativeCourses]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
@@ -87,6 +132,14 @@
             </COMP>
           </DEPENDENCIES>
         </OBJECT>
+        <REFOBJ>
+          <ID name="primaryCourses" mc="AssociationEnd" uid="598dc5b2-27ea-4f56-bfef-0f2fe21b6a5c"/>
+          <PID name="CourseOffering" mc="Class" uid="a453e17a-b737-489c-89b0-afabdd16e749"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="alternativeCourses" mc="AssociationEnd" uid="8e1bc5c6-26a8-4b77-9aa2-ac9bbba66501"/>
+          <PID name="CourseOffering" mc="Class" uid="a453e17a-b737-489c-89b0-afabdd16e749"/>
+        </REFOBJ>
       </COMP>
       <LINK relation="Extension">
         <ID name="entity" mc="Stereotype" uid="9020c6e6-d043-4f26-899a-037950006692"/>

@@ -3,6 +3,10 @@
   <DEPS>
     <ID name="Зарегистрироваться на курсы" mc="UseCase" uid="04ae44ab-05ca-42ff-897b-53ad8669ab23"/>
     <COMPID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+    <COMPID name="Обновить график" mc="Activity" uid="f0a1f2ad-811f-46bc-a6a7-165f00b3e688"/>
+    <COMPID name="Создать график" mc="Activity" uid="6bbd33b1-b6f8-441f-b23a-7fb15256d845"/>
+    <COMPID name="Удалить график" mc="Activity" uid="7c8fb291-2b28-498c-a7a6-f06cf3d3237e"/>
+    <COMPID name="Утвердить график" mc="Activity" uid="12957535-4e97-4d9f-8603-1e8edf5a23a2"/>
     <EXTID name="Каталог курсов" mc="Actor" uid="9771400b-6fef-4df9-8455-76860b5c4d80"/>
     <FOREIGNID name="constraint" mc="NoteType" uid="00bc0b8c-0000-251b-0000-000000000000"/>
     <FOREIGNID name="description" mc="NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
@@ -100,6 +104,10 @@
       </COMP>
       <COMP relation="OwnedBehavior">
         <COMPID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+        <COMPID name="Создать график" mc="Activity" uid="6bbd33b1-b6f8-441f-b23a-7fb15256d845"/>
+        <COMPID name="Обновить график" mc="Activity" uid="f0a1f2ad-811f-46bc-a6a7-165f00b3e688"/>
+        <COMPID name="Удалить график" mc="Activity" uid="7c8fb291-2b28-498c-a7a6-f06cf3d3237e"/>
+        <COMPID name="Утвердить график" mc="Activity" uid="12957535-4e97-4d9f-8603-1e8edf5a23a2"/>
       </COMP>
       <COMP relation="Descriptor">
         <OBJECT>

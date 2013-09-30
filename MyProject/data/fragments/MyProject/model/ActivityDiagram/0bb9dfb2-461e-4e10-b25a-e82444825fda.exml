@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Activity diagram" version="3">
+  <DEPS>
+    <ID name="Activity diagram" mc="ActivityDiagram" uid="0bb9dfb2-461e-4e10-b25a-e82444825fda"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Activity diagram" mc="ActivityDiagram" uid="0bb9dfb2-461e-4e10-b25a-e82444825fda"/>
+    <PID name="Удалить график" mc="Activity" uid="7c8fb291-2b28-498c-a7a6-f06cf3d3237e"/>
+    <ATTRIBUTES>
+      <ATT name="IsVertical">false</ATT>
+      <ATT name="UiDataVersion">3</ATT>
+      <ATT name="UiData"><![CDATA[eJyNUe9rwjAQ/VdCvhtrqcNBVYaOIXM/mLCv49pcXVyaSHJ19r9fO1thlRU/5Xi59969u3h+zDU7oPPKmikfiYCz+Sx+SXaYElOygjijco9Tbt1W5FaiVlZIBVsHuUCpyDoBKamDolKgxhwN+TPSNj7kdw2yPCGc5bCz7uNsHfBZ/OrsHh2VzEBeOWoobUFLIKj+3kEX2IxiCq35cBYPW8IFdUOlRv4nSNgXxNf9XqTWoThxr5hvAT4FibI1uz/SG2ZXujxXEg2T4ZGWyaqa8besC4kZFJo6IYenOH3BHWoglNUcnZ091RA71MiUd47BgiS5lVkSDqKbEQ4iHAWDJBzDACdhFEWTcJxJ6F+4Bk+Pxn6bNSSoO94bcspsL9xZs5d+ZWc1rszC5nvrFVW36BfvF1t8Ki0d1hpr5etNNs+/jLUyX76nvb3JDx7rJ8Q=]]></ATT>
+      <ATT name="PdeProperties"></ATT>
+      <ATT name="Name"><![CDATA[Activity diagram]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

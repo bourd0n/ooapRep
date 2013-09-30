@@ -1,0 +1,958 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Зарегистрироваться на курсы" version="3">
+  <DEPS>
+    <ID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+    <COMPID name="Activity Activity diagram" mc="ActivityDiagram" uid="e140975a-26e0-4c0b-a5e7-0ac4b9bbdfb1"/>
+    <EXTID name="Каталог курсов" mc="Actor" uid="9771400b-6fef-4df9-8455-76860b5c4d80"/>
+    <EXTID name="Обновить график" mc="Activity" uid="f0a1f2ad-811f-46bc-a6a7-165f00b3e688"/>
+    <EXTID name="Система регистрации на курсы" mc="Class" uid="1c3cfd9d-a70c-4b9a-8bb2-75bd8c85f31b"/>
+    <EXTID name="Создать график" mc="Activity" uid="6bbd33b1-b6f8-441f-b23a-7fb15256d845"/>
+    <EXTID name="Студент" mc="Actor" uid="66891f72-f20d-4d39-b162-4e88ce05a6ce"/>
+    <EXTID name="Удалить график" mc="Activity" uid="7c8fb291-2b28-498c-a7a6-f06cf3d3237e"/>
+    <EXTID name="Утвердить график" mc="Activity" uid="12957535-4e97-4d9f-8603-1e8edf5a23a2"/>
+    <FOREIGNID name="description" mc="NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+    <PID name="Зарегистрироваться на курсы" mc="UseCase" uid="04ae44ab-05ca-42ff-897b-53ad8669ab23"/>
+    <ATTRIBUTES>
+      <ATT name="IsSingleExecution">false</ATT>
+      <ATT name="IsReadOnly">false</ATT>
+      <ATT name="IsReentrant">false</ATT>
+      <ATT name="Name"><![CDATA[Зарегистрироваться на курсы]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedGroup">
+        <OBJECT>
+          <ID name="st" mc="ActivityPartition" uid="de06d7a2-f9a1-46af-b9ee-9be2c8d60fd4"/>
+          <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+          <ATTRIBUTES>
+            <ATT name="IsDimension">false</ATT>
+            <ATT name="IsExternal">false</ATT>
+            <ATT name="Name"><![CDATA[st]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Represented">
+              <ID name="Студент" mc="Actor" uid="66891f72-f20d-4d39-b162-4e88ce05a6ce"/>
+            </LINK>
+            <COMP relation="ContainedNode">
+              <OBJECT>
+                <ID name="Initial Node" mc="InitialNode" uid="320fac52-2ef9-4d40-930e-8914eaf064aa"/>
+                <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Initial Node]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="7d5b4c7c-4b97-4dbb-a231-c63e9d2ae5f1"/>
+                      <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Запрос регистрации" mc="OpaqueAction" uid="fd13dc6b-18ed-45bd-9ab2-0566edf7ae79"/>
+                            <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Запрос регистрации" mc="OpaqueAction" uid="fd13dc6b-18ed-45bd-9ab2-0566edf7ae79"/>
+                <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                <ATTRIBUTES>
+                  <ATT name="Body"></ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[Запрос регистрации]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="82876897-5184-40ea-9404-08e81130f4cb"/>
+                      <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Проверка состояния регистрации" mc="OpaqueAction" uid="d613145e-6203-4666-80fa-aa6af462acd8"/>
+                            <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Выбор действия" mc="OpaqueAction" uid="5678d7ee-cce6-49ed-b9b7-895974031f44"/>
+                <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                <ATTRIBUTES>
+                  <ATT name="Body"></ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[Выбор действия]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="886f7e23-54f8-47e0-ab6e-225716a947e9"/>
+                      <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Decision-Merge" mc="DecisionMergeNode" uid="b8ed1ff5-2844-46de-ac56-40ab2d484cd6"/>
+                            <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Decision-Merge" mc="DecisionMergeNode" uid="b8ed1ff5-2844-46de-ac56-40ab2d484cd6"/>
+                <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                <ATTRIBUTES>
+                  <ATT name="DecisionKind">ExclusiveDecision</ATT>
+                  <ATT name="DecisionInputBehavior"></ATT>
+                  <ATT name="Name"><![CDATA[Decision-Merge]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="1fb166df-5ec4-4bfd-b65c-17e39e359953"/>
+                      <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"><![CDATA[else]]></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Вывод сообщения об ошибке" mc="OpaqueAction" uid="0c852094-d486-4ce4-be39-4fd9dd1a75b9"/>
+                            <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="03c58a5e-640c-4c9c-a4f5-9f4e1294547f"/>
+                      <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"><![CDATA[выбрано создание и оно возможно]]></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="с1" mc="CallBehaviorAction" uid="bb2efe95-cf4a-40a2-966e-5c97d6437881"/>
+                            <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="d49be900-17c9-4f15-83dc-e75c7ed31851"/>
+                      <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"><![CDATA[выбрано обновление и оно возможно]]></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="c2" mc="CallBehaviorAction" uid="4430e870-6132-484f-b7dc-5c3afdd6c466"/>
+                            <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="74af6ba3-164b-47a3-aa88-6e1f6c4018c3"/>
+                      <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"><![CDATA[выбрано удаление и оно возможно]]></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="c3" mc="CallBehaviorAction" uid="c416b1de-b68b-41f9-b4d5-9c8652dc0497"/>
+                            <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="78550f5f-5507-45b9-bc7a-c5ed2886cba8"/>
+                      <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"><![CDATA[выбрано утверждение и оно возможно]]></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="c4" mc="CallBehaviorAction" uid="e4a8dd2d-38ca-4e79-821a-4bf3c5b9f6e9"/>
+                            <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="sys" mc="ActivityPartition" uid="260236d8-6cca-4f27-b6da-5346b9633309"/>
+          <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+          <ATTRIBUTES>
+            <ATT name="IsDimension">false</ATT>
+            <ATT name="IsExternal">false</ATT>
+            <ATT name="Name"><![CDATA[sys]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Represented">
+              <ID name="Система регистрации на курсы" mc="Class" uid="1c3cfd9d-a70c-4b9a-8bb2-75bd8c85f31b"/>
+            </LINK>
+            <COMP relation="ContainedNode">
+              <OBJECT>
+                <ID name="Проверка состояния регистрации" mc="OpaqueAction" uid="d613145e-6203-4666-80fa-aa6af462acd8"/>
+                <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                <ATTRIBUTES>
+                  <ATT name="Body"></ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[Проверка состояния регистрации]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="f4916e79-bea1-406d-a5dc-c01ed0211a3a"/>
+                      <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Decision-Merge" mc="DecisionMergeNode" uid="94f69adc-5e03-4a5a-8791-2ed7f9d7d51b"/>
+                            <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Decision-Merge" mc="DecisionMergeNode" uid="94f69adc-5e03-4a5a-8791-2ed7f9d7d51b"/>
+                <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                <ATTRIBUTES>
+                  <ATT name="DecisionKind">ExclusiveDecision</ATT>
+                  <ATT name="DecisionInputBehavior"></ATT>
+                  <ATT name="Name"><![CDATA[Decision-Merge]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="bf5ca946-353c-427e-9d2a-077fcf9c7352"/>
+                      <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"><![CDATA[регистрация открыта]]></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Запрос сеанса" mc="OpaqueAction" uid="62ee5c90-69b7-4ca5-8c58-8cb66d6ee1d0"/>
+                            <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="a69ffd54-f979-47de-b192-8f4d9e88112c"/>
+                      <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"><![CDATA[else]]></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Decision-Merge1" mc="DecisionMergeNode" uid="6423cba0-13b3-48ba-abfd-85a45fd59323"/>
+                            <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Запрос сеанса" mc="OpaqueAction" uid="62ee5c90-69b7-4ca5-8c58-8cb66d6ee1d0"/>
+                <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                <ATTRIBUTES>
+                  <ATT name="Body"></ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[Запрос сеанса]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="1542923b-0d87-4b3f-bcc6-7780f5ea1393"/>
+                      <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Decision-Merge" mc="DecisionMergeNode" uid="8c3224d6-1803-4945-9c58-88ab6bd1107f"/>
+                            <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Decision-Merge1" mc="DecisionMergeNode" uid="6423cba0-13b3-48ba-abfd-85a45fd59323"/>
+                <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                <ATTRIBUTES>
+                  <ATT name="DecisionKind">ExclusiveDecision</ATT>
+                  <ATT name="DecisionInputBehavior"></ATT>
+                  <ATT name="Name"><![CDATA[Decision-Merge1]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="0e41683a-d85f-4d97-8e2b-01a5a7029fd1"/>
+                      <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Вывод сообщения об ошибке" mc="OpaqueAction" uid="d2f72d2a-2c9c-4ce2-9bec-b76e17205cf2"/>
+                            <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Вывод сообщения об ошибке" mc="OpaqueAction" uid="d2f72d2a-2c9c-4ce2-9bec-b76e17205cf2"/>
+                <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                <ATTRIBUTES>
+                  <ATT name="Body"></ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[Вывод сообщения об ошибке]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="3db424f7-7272-499b-899c-b919ffc96b43"/>
+                      <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Activity Final Node" mc="ActivityFinalNode" uid="bd86e921-c6a9-440e-81c2-4765fb73bb26"/>
+                            <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Activity Final Node" mc="ActivityFinalNode" uid="bd86e921-c6a9-440e-81c2-4765fb73bb26"/>
+                <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Activity Final Node]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="Note" mc="Note" uid="65a44a3c-4c0a-49e1-b641-37866e9efe68"/>
+                      <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[неуспех
+]]></ATT>
+                        <ATT name="Name"><![CDATA[Note]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="description" mc="NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Вывод вариантов действий" mc="OpaqueAction" uid="52531470-b538-448a-a873-62c8b15ae243"/>
+                <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                <ATTRIBUTES>
+                  <ATT name="Body"></ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[Вывод вариантов действий]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="e7dc5dcd-e32b-40e7-883e-3fb71b701b0d"/>
+                      <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Выбор действия" mc="OpaqueAction" uid="5678d7ee-cce6-49ed-b9b7-895974031f44"/>
+                            <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Decision-Merge2" mc="DecisionMergeNode" uid="84e6377c-362d-4a40-8a2b-a17dcca8a992"/>
+                <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                <ATTRIBUTES>
+                  <ATT name="DecisionKind">ExclusiveDecision</ATT>
+                  <ATT name="DecisionInputBehavior"></ATT>
+                  <ATT name="Name"><![CDATA[Decision-Merge2]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="d1ffdca1-1a4b-4225-8695-104d35b151e9"/>
+                      <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Вывод вариантов действий" mc="OpaqueAction" uid="52531470-b538-448a-a873-62c8b15ae243"/>
+                            <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Вывод сообщения об ошибке" mc="OpaqueAction" uid="0c852094-d486-4ce4-be39-4fd9dd1a75b9"/>
+                <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                <ATTRIBUTES>
+                  <ATT name="Body"></ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[Вывод сообщения об ошибке]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="2c07ca5f-2d8d-4291-bb73-6fe686d3a708"/>
+                      <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Decision-Merge2" mc="DecisionMergeNode" uid="84e6377c-362d-4a40-8a2b-a17dcca8a992"/>
+                            <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="с1" mc="CallBehaviorAction" uid="bb2efe95-cf4a-40a2-966e-5c97d6437881"/>
+                <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                <ATTRIBUTES>
+                  <ATT name="IsSynchronous">true</ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[с1]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Called">
+                    <ID name="Создать график" mc="Activity" uid="6bbd33b1-b6f8-441f-b23a-7fb15256d845"/>
+                  </LINK>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="e1598038-2d8c-4ecf-ab95-4732003aa489"/>
+                      <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Decision-Merge3" mc="DecisionMergeNode" uid="3acb5d22-1528-4991-9c06-f379728c59da"/>
+                            <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="c2" mc="CallBehaviorAction" uid="4430e870-6132-484f-b7dc-5c3afdd6c466"/>
+                <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                <ATTRIBUTES>
+                  <ATT name="IsSynchronous">true</ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[c2]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Called">
+                    <ID name="Обновить график" mc="Activity" uid="f0a1f2ad-811f-46bc-a6a7-165f00b3e688"/>
+                  </LINK>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="496e054d-f6c3-4ac0-979f-db1354a6fe3d"/>
+                      <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Decision-Merge3" mc="DecisionMergeNode" uid="3acb5d22-1528-4991-9c06-f379728c59da"/>
+                            <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="c3" mc="CallBehaviorAction" uid="c416b1de-b68b-41f9-b4d5-9c8652dc0497"/>
+                <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                <ATTRIBUTES>
+                  <ATT name="IsSynchronous">true</ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[c3]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Called">
+                    <ID name="Удалить график" mc="Activity" uid="7c8fb291-2b28-498c-a7a6-f06cf3d3237e"/>
+                  </LINK>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="3790f234-5a2f-466c-bf67-8efd6f2cd479"/>
+                      <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Decision-Merge3" mc="DecisionMergeNode" uid="3acb5d22-1528-4991-9c06-f379728c59da"/>
+                            <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="c4" mc="CallBehaviorAction" uid="e4a8dd2d-38ca-4e79-821a-4bf3c5b9f6e9"/>
+                <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                <ATTRIBUTES>
+                  <ATT name="IsSynchronous">true</ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[c4]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Called">
+                    <ID name="Утвердить график" mc="Activity" uid="12957535-4e97-4d9f-8603-1e8edf5a23a2"/>
+                  </LINK>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="d21934e0-a58a-4548-ad15-12975b9fac3e"/>
+                      <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Decision-Merge3" mc="DecisionMergeNode" uid="3acb5d22-1528-4991-9c06-f379728c59da"/>
+                            <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Decision-Merge3" mc="DecisionMergeNode" uid="3acb5d22-1528-4991-9c06-f379728c59da"/>
+                <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                <ATTRIBUTES>
+                  <ATT name="DecisionKind">ExclusiveDecision</ATT>
+                  <ATT name="DecisionInputBehavior"></ATT>
+                  <ATT name="Name"><![CDATA[Decision-Merge3]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="d7c53ff0-ab8b-4c8c-b137-9be098b842d0"/>
+                      <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Завершение сеанса" mc="OpaqueAction" uid="4a860305-6893-4395-a824-7d88fd2107d3"/>
+                            <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Завершение сеанса" mc="OpaqueAction" uid="4a860305-6893-4395-a824-7d88fd2107d3"/>
+                <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                <ATTRIBUTES>
+                  <ATT name="Body"></ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[Завершение сеанса]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="465ea493-0fb8-4364-8924-c523dc71c937"/>
+                      <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Подтверждение завершения" mc="OpaqueAction" uid="55558ed0-fb62-4493-8d8c-e0951ccd5fff"/>
+                            <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="c" mc="ActivityPartition" uid="d27f5227-5a26-4f8a-aecc-f870cc91aef6"/>
+          <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+          <ATTRIBUTES>
+            <ATT name="IsDimension">false</ATT>
+            <ATT name="IsExternal">false</ATT>
+            <ATT name="Name"><![CDATA[c]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Represented">
+              <ID name="Каталог курсов" mc="Actor" uid="9771400b-6fef-4df9-8455-76860b5c4d80"/>
+            </LINK>
+            <COMP relation="ContainedNode">
+              <OBJECT>
+                <ID name="Decision-Merge" mc="DecisionMergeNode" uid="8c3224d6-1803-4945-9c58-88ab6bd1107f"/>
+                <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                <ATTRIBUTES>
+                  <ATT name="DecisionKind">ExclusiveDecision</ATT>
+                  <ATT name="DecisionInputBehavior"></ATT>
+                  <ATT name="Name"><![CDATA[Decision-Merge]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="85ea9d60-2e1b-4512-850d-aeba7bb6743e"/>
+                      <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"><![CDATA[каталог доступен]]></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Подтверждение сеанса" mc="OpaqueAction" uid="206e5e12-a17b-45ad-b3f2-4299cc89be9b"/>
+                            <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="1c5cdeb3-68a9-4486-a8b0-9630f4082b0b"/>
+                      <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"><![CDATA[else]]></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Decision-Merge1" mc="DecisionMergeNode" uid="6423cba0-13b3-48ba-abfd-85a45fd59323"/>
+                            <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Подтверждение сеанса" mc="OpaqueAction" uid="206e5e12-a17b-45ad-b3f2-4299cc89be9b"/>
+                <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                <ATTRIBUTES>
+                  <ATT name="Body"></ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[Подтверждение сеанса]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="0d069c01-6274-441b-855c-70ffa1f4b00d"/>
+                      <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Decision-Merge2" mc="DecisionMergeNode" uid="84e6377c-362d-4a40-8a2b-a17dcca8a992"/>
+                            <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Подтверждение завершения" mc="OpaqueAction" uid="55558ed0-fb62-4493-8d8c-e0951ccd5fff"/>
+                <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                <ATTRIBUTES>
+                  <ATT name="Body"></ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[Подтверждение завершения]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="951d67ae-65e9-4927-bb35-045e56f09792"/>
+                      <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Activity Final Node" mc="ActivityFinalNode" uid="054bf8ba-9d6e-4ec0-9fdc-78b96adb93c6"/>
+                            <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Activity Final Node" mc="ActivityFinalNode" uid="054bf8ba-9d6e-4ec0-9fdc-78b96adb93c6"/>
+                <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Activity Final Node]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="Note" mc="Note" uid="7ee93ebf-9e32-4b2d-9bac-5f450fc8d6b5"/>
+                      <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[успех
+]]></ATT>
+                        <ATT name="Name"><![CDATA[Note]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="description" mc="NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedCollaboration">
+        <OBJECT>
+          <ID name="locals" mc="Collaboration" uid="030ff1c3-716d-4c8d-a19b-fa0388702193"/>
+          <PID name="Зарегистрироваться на курсы" mc="Activity" uid="48d3cc46-ea63-440f-8099-94c0da35fb7b"/>
+          <ATTRIBUTES>
+            <ATT name="IsConcurrent">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[locals]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Activity Activity diagram" mc="ActivityDiagram" uid="e140975a-26e0-4c0b-a5e7-0ac4b9bbdfb1"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

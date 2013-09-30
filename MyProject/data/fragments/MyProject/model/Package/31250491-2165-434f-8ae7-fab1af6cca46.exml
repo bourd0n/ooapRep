@@ -5,7 +5,9 @@
     <COMPID name="Course" mc="Class" uid="72805292-dde3-4132-9ac1-b2277e7f50e2"/>
     <COMPID name="CourseCatalogSystem" mc="Class" uid="ee968a3a-58d5-426f-8406-08e9ad6228d8"/>
     <COMPID name="CourseOffering" mc="Class" uid="a453e17a-b737-489c-89b0-afabdd16e749"/>
+    <COMPID name="FullTimeStudent" mc="Class" uid="7d8172f5-feff-4e05-b720-d991a4b48545"/>
     <COMPID name="Key Abstractions" mc="ClassDiagram" uid="ca0f8569-60ba-40bd-8fa5-dbb64e850a92"/>
+    <COMPID name="PartTimeStudent" mc="Class" uid="2cb8a739-9bb7-49a2-b935-98e2c6705eac"/>
     <COMPID name="Professor" mc="Class" uid="e1bce0c2-4e02-40bc-9019-eb05e89657d1"/>
     <COMPID name="RegisterForCoursesForm" mc="Class" uid="0ef2b7bb-54a0-489c-889f-9527e57f36f9"/>
     <COMPID name="RegistrationController" mc="Class" uid="e39eb5ee-15df-48f6-8882-884505645287"/>
@@ -37,6 +39,8 @@
         <COMPID name="RegisterForCoursesForm" mc="Class" uid="0ef2b7bb-54a0-489c-889f-9527e57f36f9"/>
         <COMPID name="CourseCatalogSystem" mc="Class" uid="ee968a3a-58d5-426f-8406-08e9ad6228d8"/>
         <COMPID name="RegistrationController" mc="Class" uid="e39eb5ee-15df-48f6-8882-884505645287"/>
+        <COMPID name="FullTimeStudent" mc="Class" uid="7d8172f5-feff-4e05-b720-d991a4b48545"/>
+        <COMPID name="PartTimeStudent" mc="Class" uid="2cb8a739-9bb7-49a2-b935-98e2c6705eac"/>
       </COMP>
       <LINK relation="Extension">
         <ID name="model" mc="Stereotype" uid="f75794cc-275e-4a8a-917f-2d05de475859"/>

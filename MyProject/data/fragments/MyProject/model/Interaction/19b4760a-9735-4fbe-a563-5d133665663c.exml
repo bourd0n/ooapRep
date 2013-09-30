@@ -3,6 +3,12 @@
   <DEPS>
     <ID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
     <COMPID name="Interaction Sequence diagram" mc="SequenceDiagram" uid="14580ef3-e3bf-42a1-b192-581828fdad37"/>
+    <EXTID name="CourseCatalogSystem" mc="Class" uid="ee968a3a-58d5-426f-8406-08e9ad6228d8"/>
+    <EXTID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+    <EXTID name="RegisterForCoursesForm" mc="Class" uid="0ef2b7bb-54a0-489c-889f-9527e57f36f9"/>
+    <EXTID name="RegistrationController" mc="Class" uid="e39eb5ee-15df-48f6-8882-884505645287"/>
+    <EXTID name="Schedule" mc="Class" uid="2d2c825e-7be1-4881-90a6-7e7e269518da"/>
+    <EXTID name="Student" mc="Class" uid="d5450e9c-90a7-4b7d-b056-1b47969aab9e"/>
   </DEPS>
   <OBJECT>
     <ID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
@@ -13,6 +19,1813 @@
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
+      <COMP relation="Fragment">
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="570c2696-385b-4029-becc-54ba09fd3984"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">80</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="481efefb-1e7b-499b-a44b-b16736d62b22"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="st" mc="Lifeline" uid="b388b59b-ed36-442a-8199-c6ba46b2937c"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="776f18c3-7a87-4097-b431-94b3efbfc36e"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">681</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="st" mc="Lifeline" uid="b388b59b-ed36-442a-8199-c6ba46b2937c"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="481efefb-1e7b-499b-a44b-b16736d62b22"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">80</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="776f18c3-7a87-4097-b431-94b3efbfc36e"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="st" mc="Lifeline" uid="b388b59b-ed36-442a-8199-c6ba46b2937c"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="5e480411-f02c-4cd5-9679-8681453de4c7"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">95</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="createSchedule" mc="Message" uid="d402d3d5-76bc-4a36-a46b-b17a34b82410"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"><![CDATA[createSchedule]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="735264c7-4636-437b-b818-7b18f628f8a9"/>
+                      <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="Invoked">
+                    <REFOBJ>
+                      <ID name="//createSchedule" mc="Operation" uid="3906e328-df32-4b6d-a284-090df54d0426"/>
+                      <PID name="RegisterForCoursesForm" mc="Class" uid="0ef2b7bb-54a0-489c-889f-9527e57f36f9"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="st" mc="Lifeline" uid="b388b59b-ed36-442a-8199-c6ba46b2937c"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="735264c7-4636-437b-b818-7b18f628f8a9"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">95</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="7bf45e0c-45fa-4ef1-a588-c6e48d7c4f44"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="menu" mc="Lifeline" uid="4957c941-1fe0-4507-94a7-0674cf034f07"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="cd2d3f81-f4bf-4c17-ae7f-50e65854bca6"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">381</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="menu" mc="Lifeline" uid="4957c941-1fe0-4507-94a7-0674cf034f07"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="7bf45e0c-45fa-4ef1-a588-c6e48d7c4f44"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">95</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="cd2d3f81-f4bf-4c17-ae7f-50e65854bca6"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="menu" mc="Lifeline" uid="4957c941-1fe0-4507-94a7-0674cf034f07"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="febc0596-fee2-4e04-8df4-4b30fcbf576e"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">115</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="st" mc="Lifeline" uid="b388b59b-ed36-442a-8199-c6ba46b2937c"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="1aff26e5-2e28-4677-aca6-cb640d8edfe9"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">106</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="createSchedule" mc="Message" uid="6493edad-405d-4f75-9179-ee6dff936d10"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"><![CDATA[createSchedule]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="585eb471-ca7b-4b92-aca8-8f643c0f36d8"/>
+                      <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="Invoked">
+                    <REFOBJ>
+                      <ID name="//createSchedule" mc="Operation" uid="8d7a13c2-fcf6-41e5-8862-cfa503aad654"/>
+                      <PID name="RegistrationController" mc="Class" uid="e39eb5ee-15df-48f6-8882-884505645287"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="menu" mc="Lifeline" uid="4957c941-1fe0-4507-94a7-0674cf034f07"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="585eb471-ca7b-4b92-aca8-8f643c0f36d8"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">106</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="90a88295-e2ed-4d0b-a4a3-bb290237c5a7"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="controll" mc="Lifeline" uid="15db4f5e-9312-4105-aa99-d6a789070096"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="8208454f-013e-47d3-bc26-2fdceef01aca"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">241</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="controll" mc="Lifeline" uid="15db4f5e-9312-4105-aa99-d6a789070096"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="90a88295-e2ed-4d0b-a4a3-bb290237c5a7"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">106</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="8208454f-013e-47d3-bc26-2fdceef01aca"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="controll" mc="Lifeline" uid="15db4f5e-9312-4105-aa99-d6a789070096"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="5eb6ebe2-1f24-4001-97f1-e89abd01c406"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">126</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="menu" mc="Lifeline" uid="4957c941-1fe0-4507-94a7-0674cf034f07"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="b48d31d1-3ee9-4905-8a09-a452891403d4"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">122</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="hasSchedule" mc="Message" uid="c076503c-e7e1-480b-835a-49d48755c397"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"><![CDATA[hasSchedule]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="7359b81c-68f1-470f-99a0-02508d3f006a"/>
+                      <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="Invoked">
+                    <REFOBJ>
+                      <ID name="//hasSchedule" mc="Operation" uid="0a4ffb3e-3dcc-4a5a-8cb5-a5b1357a9fc0"/>
+                      <PID name="Student" mc="Class" uid="d5450e9c-90a7-4b7d-b056-1b47969aab9e"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="controll" mc="Lifeline" uid="15db4f5e-9312-4105-aa99-d6a789070096"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="7359b81c-68f1-470f-99a0-02508d3f006a"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">122</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="a0ac67df-288f-486a-865d-c3240ba835a4"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="currentStudent" mc="Lifeline" uid="28958b29-f4ef-4183-80a7-0870b598e2da"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="fd31b22b-3391-4a92-b753-79712eeb8208"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">142</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="currentStudent" mc="Lifeline" uid="28958b29-f4ef-4183-80a7-0870b598e2da"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="a0ac67df-288f-486a-865d-c3240ba835a4"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">122</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="fd31b22b-3391-4a92-b753-79712eeb8208"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="currentStudent" mc="Lifeline" uid="28958b29-f4ef-4183-80a7-0870b598e2da"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="ea7f2597-209f-40f5-b08e-583fa1a0dddc"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">142</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="controll" mc="Lifeline" uid="15db4f5e-9312-4105-aa99-d6a789070096"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="CombinedFragment" mc="CombinedFragment" uid="f75b53b1-05b1-4a1e-815d-a19a9feb0e3f"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="Operator">OptOp</ATT>
+            <ATT name="LineNumber">166</ATT>
+            <ATT name="Name"><![CDATA[CombinedFragment]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Operand">
+              <OBJECT>
+                <ID name="" mc="InteractionOperand" uid="caac89bd-27e2-49d0-ac9b-50cdb20fd90c"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"><![CDATA[план-график на новый семестр отсутствует]]></ATT>
+                  <ATT name="EndLineNumber">681</ATT>
+                  <ATT name="LineNumber">166</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="b60466e9-2eaf-4cb6-b676-b484cd152e54"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">186</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="getCourseOfferings" mc="Message" uid="74444cd9-a8cf-4d3f-a2d0-201f56372846"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"><![CDATA[getCourseOfferings]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="2c18b862-4c0d-48ac-b2a8-27412cd6fe5b"/>
+                      <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="Invoked">
+                    <REFOBJ>
+                      <ID name="//getCourseOfferings" mc="Operation" uid="c0ec5ea9-5baa-42c1-854a-bdb517f67d56"/>
+                      <PID name="CourseCatalogSystem" mc="Class" uid="ee968a3a-58d5-426f-8406-08e9ad6228d8"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="controll" mc="Lifeline" uid="15db4f5e-9312-4105-aa99-d6a789070096"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="2c18b862-4c0d-48ac-b2a8-27412cd6fe5b"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">186</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="5ccc96dd-68e1-4e98-b6d1-dd714cb0c8fd"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="catsys" mc="Lifeline" uid="dff91925-985f-4bdc-8df2-ee6e5e73c3f2"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="9fbc7c58-c4b9-471c-b9c6-a3fa370cbf48"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">221</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="catsys" mc="Lifeline" uid="dff91925-985f-4bdc-8df2-ee6e5e73c3f2"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="5ccc96dd-68e1-4e98-b6d1-dd714cb0c8fd"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">186</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="9fbc7c58-c4b9-471c-b9c6-a3fa370cbf48"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="catsys" mc="Lifeline" uid="dff91925-985f-4bdc-8df2-ee6e5e73c3f2"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="5a360849-87f7-45df-9092-8da3ccab05df"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">185</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="controll" mc="Lifeline" uid="15db4f5e-9312-4105-aa99-d6a789070096"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="57e04e65-4617-44cf-8a28-62d2a03e72a1"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">196</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="getCourses" mc="Message" uid="25e67dc6-379d-4b19-8176-60ce03dae0c4"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"><![CDATA[getCourses]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="b30b5ba6-0b9f-4836-a36b-10e262c2cc9b"/>
+                      <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="catsys" mc="Lifeline" uid="dff91925-985f-4bdc-8df2-ee6e5e73c3f2"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="b30b5ba6-0b9f-4836-a36b-10e262c2cc9b"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">196</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="d974be0a-69d3-43a2-8df7-c3faaa8eb935"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="catalog " mc="Lifeline" uid="94810a86-e080-4f19-be67-275f48ff14e3"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="0baf0337-7450-4d47-929d-35f8b6f23ee4"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">216</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="catalog " mc="Lifeline" uid="94810a86-e080-4f19-be67-275f48ff14e3"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="d974be0a-69d3-43a2-8df7-c3faaa8eb935"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">196</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="0baf0337-7450-4d47-929d-35f8b6f23ee4"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="catalog " mc="Lifeline" uid="94810a86-e080-4f19-be67-275f48ff14e3"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="b5591bec-ffc2-478a-bc5e-6cc496047d34"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">224</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="catsys" mc="Lifeline" uid="dff91925-985f-4bdc-8df2-ee6e5e73c3f2"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="970db2b7-2f0c-481e-aeed-7c69fd38778e"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">253</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="displayBlankSchedule" mc="Message" uid="bef87888-935e-47c1-99e0-a12e637dd062"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"><![CDATA[displayBlankSchedule]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="ebf2a792-eba7-4889-b25a-6db9df4232ef"/>
+                      <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="Invoked">
+                    <REFOBJ>
+                      <ID name="//displayBlankSchedule" mc="Operation" uid="cce22b6e-12da-4ebf-8c3d-775eadeb7638"/>
+                      <PID name="RegisterForCoursesForm" mc="Class" uid="0ef2b7bb-54a0-489c-889f-9527e57f36f9"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="menu" mc="Lifeline" uid="4957c941-1fe0-4507-94a7-0674cf034f07"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="ebf2a792-eba7-4889-b25a-6db9df4232ef"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">278</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="53f1a574-8efe-4273-8882-7d0eff933c64"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="menu" mc="Lifeline" uid="4957c941-1fe0-4507-94a7-0674cf034f07"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="0d8f01a1-13d5-43b8-b59c-345d61582a3e"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">298</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="menu" mc="Lifeline" uid="4957c941-1fe0-4507-94a7-0674cf034f07"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="53f1a574-8efe-4273-8882-7d0eff933c64"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">278</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="0d8f01a1-13d5-43b8-b59c-345d61582a3e"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="menu" mc="Lifeline" uid="4957c941-1fe0-4507-94a7-0674cf034f07"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="eda87230-c63c-451a-9b63-1a149dd0a979"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">285</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="menu" mc="Lifeline" uid="4957c941-1fe0-4507-94a7-0674cf034f07"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="c7760be4-bfc2-40ea-b5d3-8d11589c5d67"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">318</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="" mc="Message" uid="9e19a658-6ff4-4b5a-95c2-ab33bb268e51"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="818fa2c8-a8ea-4f88-989c-bbb20cfa1695"/>
+                      <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="Invoked">
+                    <REFOBJ>
+                      <ID name="//displayCourseOfferings" mc="Operation" uid="ef43fbf3-aa7f-400c-a83c-e5255dfefa69"/>
+                      <PID name="RegisterForCoursesForm" mc="Class" uid="0ef2b7bb-54a0-489c-889f-9527e57f36f9"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="menu" mc="Lifeline" uid="4957c941-1fe0-4507-94a7-0674cf034f07"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="818fa2c8-a8ea-4f88-989c-bbb20cfa1695"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">333</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="7cdfe6c3-01bf-4d27-b369-6746693f58c9"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="menu" mc="Lifeline" uid="4957c941-1fe0-4507-94a7-0674cf034f07"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="cce5e77f-f612-461d-a794-714f17841a71"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">353</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="menu" mc="Lifeline" uid="4957c941-1fe0-4507-94a7-0674cf034f07"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="7cdfe6c3-01bf-4d27-b369-6746693f58c9"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">333</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="cce5e77f-f612-461d-a794-714f17841a71"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="menu" mc="Lifeline" uid="4957c941-1fe0-4507-94a7-0674cf034f07"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="b9d14607-316f-4c8c-85f3-7d6b33ccf9d6"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">353</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="menu" mc="Lifeline" uid="4957c941-1fe0-4507-94a7-0674cf034f07"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="CombinedFragment" mc="CombinedFragment" uid="7b39e60b-7654-4fb0-8bdf-2f00c169136d"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="Operator">LoopOp</ATT>
+            <ATT name="LineNumber">386</ATT>
+            <ATT name="Name"><![CDATA[CombinedFragment]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Operand">
+              <OBJECT>
+                <ID name="" mc="InteractionOperand" uid="eebdd109-5f15-4189-8324-bcceafc66480"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"><![CDATA[1, 4]]></ATT>
+                  <ATT name="EndLineNumber">439</ATT>
+                  <ATT name="LineNumber">386</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="8dec7bf5-0585-4795-9ab5-21bacccaebe3"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">411</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="selectPrimaryCoures" mc="Message" uid="32a2b32f-7ade-4ffb-9ba1-c2a39ab1f426"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"><![CDATA[selectPrimaryCoures]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="0ec54065-6612-46da-ae06-ee4b28bd1f36"/>
+                      <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="Invoked">
+                    <REFOBJ>
+                      <ID name="//selectPrimaryCoures" mc="Operation" uid="a43e89e4-0fd0-423e-8401-27cc02fa9e43"/>
+                      <PID name="RegisterForCoursesForm" mc="Class" uid="0ef2b7bb-54a0-489c-889f-9527e57f36f9"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="st" mc="Lifeline" uid="b388b59b-ed36-442a-8199-c6ba46b2937c"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="0ec54065-6612-46da-ae06-ee4b28bd1f36"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">411</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="fa868090-aca0-4329-a75b-dc1fa5782e14"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="menu" mc="Lifeline" uid="4957c941-1fe0-4507-94a7-0674cf034f07"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="29fa8cc9-6fa4-416d-a35f-7d1cf20c68fd"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">431</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="menu" mc="Lifeline" uid="4957c941-1fe0-4507-94a7-0674cf034f07"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="fa868090-aca0-4329-a75b-dc1fa5782e14"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">411</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="29fa8cc9-6fa4-416d-a35f-7d1cf20c68fd"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="menu" mc="Lifeline" uid="4957c941-1fe0-4507-94a7-0674cf034f07"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="ac5a28c8-7790-47d7-b491-ce5b8a58d241"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">431</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="st" mc="Lifeline" uid="b388b59b-ed36-442a-8199-c6ba46b2937c"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="CombinedFragment" mc="CombinedFragment" uid="9f55c0c4-7aea-43ce-bb0a-2dc6458c0efd"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="Operator">LoopOp</ATT>
+            <ATT name="LineNumber">486</ATT>
+            <ATT name="Name"><![CDATA[CombinedFragment]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Operand">
+              <OBJECT>
+                <ID name="" mc="InteractionOperand" uid="26bc8fa4-8cb2-4198-9051-fc10879c8a80"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"><![CDATA[1, 2]]></ATT>
+                  <ATT name="EndLineNumber">539</ATT>
+                  <ATT name="LineNumber">486</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="4bcf0a9e-d830-4875-8904-3ebf293ed0cc"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">510</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="" mc="Message" uid="411a1cca-4a12-47a2-9f9f-bb81800294cb"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="d1d16673-b92d-4691-80d2-e78bd3d5b244"/>
+                      <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="Invoked">
+                    <REFOBJ>
+                      <ID name="//selectAlternativeCourses" mc="Operation" uid="de726e98-802b-48f2-980f-b36305b93eaa"/>
+                      <PID name="RegisterForCoursesForm" mc="Class" uid="0ef2b7bb-54a0-489c-889f-9527e57f36f9"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="st" mc="Lifeline" uid="b388b59b-ed36-442a-8199-c6ba46b2937c"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="d1d16673-b92d-4691-80d2-e78bd3d5b244"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">510</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="85e71385-d2ca-4154-b98b-7eee011f0071"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="menu" mc="Lifeline" uid="4957c941-1fe0-4507-94a7-0674cf034f07"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="d0ea5092-9ddd-410f-9f51-36de1de527ed"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">530</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="menu" mc="Lifeline" uid="4957c941-1fe0-4507-94a7-0674cf034f07"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="85e71385-d2ca-4154-b98b-7eee011f0071"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">510</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="d0ea5092-9ddd-410f-9f51-36de1de527ed"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="menu" mc="Lifeline" uid="4957c941-1fe0-4507-94a7-0674cf034f07"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="c39f5a0d-9566-4831-8ef8-7065e7c16837"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">530</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="st" mc="Lifeline" uid="b388b59b-ed36-442a-8199-c6ba46b2937c"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="39f0e268-67f0-4356-abad-04c4238fdbc3"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">567</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="" mc="Message" uid="63d8f1e4-368e-4bc7-9409-e2c7fab78f2c"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="78e9de30-34e6-4770-9450-32b3516e854a"/>
+                      <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="Invoked">
+                    <REFOBJ>
+                      <ID name="//submitSelection" mc="Operation" uid="adfd8559-5af0-45eb-a5a8-ef1ed3b592ac"/>
+                      <PID name="RegisterForCoursesForm" mc="Class" uid="0ef2b7bb-54a0-489c-889f-9527e57f36f9"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="st" mc="Lifeline" uid="b388b59b-ed36-442a-8199-c6ba46b2937c"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="78e9de30-34e6-4770-9450-32b3516e854a"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">567</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="67575088-9398-4792-b0a8-10e39958a7b8"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="menu" mc="Lifeline" uid="4957c941-1fe0-4507-94a7-0674cf034f07"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="70bccaea-95d8-48f9-836b-f17e342554b3"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">681</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="menu" mc="Lifeline" uid="4957c941-1fe0-4507-94a7-0674cf034f07"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="67575088-9398-4792-b0a8-10e39958a7b8"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">567</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="70bccaea-95d8-48f9-836b-f17e342554b3"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="menu" mc="Lifeline" uid="4957c941-1fe0-4507-94a7-0674cf034f07"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="2064e12e-b742-452c-b1a0-6398b28ac4a3"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">587</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="st" mc="Lifeline" uid="b388b59b-ed36-442a-8199-c6ba46b2937c"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="a717dac7-abc8-47a4-8e2d-ff12cf67e8c5"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">580</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="" mc="Message" uid="1a08744b-df69-44ef-b525-784393e95e1d"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="79838367-801e-4b0d-b61a-8a491e563032"/>
+                      <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="Invoked">
+                    <REFOBJ>
+                      <ID name="//newScheduleWithSelection" mc="Operation" uid="2ce14e2e-4d0d-4ccf-9f56-bfc4853da0f8"/>
+                      <PID name="RegistrationController" mc="Class" uid="e39eb5ee-15df-48f6-8882-884505645287"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="menu" mc="Lifeline" uid="4957c941-1fe0-4507-94a7-0674cf034f07"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="79838367-801e-4b0d-b61a-8a491e563032"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">580</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="c25252cf-9c5b-422d-b94a-ddbac11d7b2b"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="controll" mc="Lifeline" uid="15db4f5e-9312-4105-aa99-d6a789070096"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="1ea09fe2-324b-42d0-8da0-faad85222020"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">661</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="controll" mc="Lifeline" uid="15db4f5e-9312-4105-aa99-d6a789070096"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="c25252cf-9c5b-422d-b94a-ddbac11d7b2b"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">580</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="1ea09fe2-324b-42d0-8da0-faad85222020"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="controll" mc="Lifeline" uid="15db4f5e-9312-4105-aa99-d6a789070096"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="4957a670-4bf7-4e1e-9b63-5a19205dcfdf"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">600</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="menu" mc="Lifeline" uid="4957c941-1fe0-4507-94a7-0674cf034f07"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="3efbf0f8-9f9e-4666-9c56-47f052801b99"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">593</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="create" mc="Message" uid="34bc5c61-68b6-4eaa-b925-6b96ee785680"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">CreateMessage</ATT>
+                  <ATT name="Name"><![CDATA[create]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="9a86182e-1b32-4ddb-ad63-82ab35ac764c"/>
+                      <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="Invoked">
+                    <REFOBJ>
+                      <ID name="//createScheduleWithOfferings" mc="Operation" uid="02b5c75b-b5ab-4201-a0c3-edc251a730e1"/>
+                      <PID name="Schedule" mc="Class" uid="2d2c825e-7be1-4881-90a6-7e7e269518da"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="controll" mc="Lifeline" uid="15db4f5e-9312-4105-aa99-d6a789070096"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="9a86182e-1b32-4ddb-ad63-82ab35ac764c"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">593</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Lifeline" mc="Lifeline" uid="a45e306c-616d-4345-a4c7-92b8b1318367"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="d6281e6f-1c57-41e8-8823-305e51a9e0c8"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">636</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="" mc="Message" uid="5c6663b0-e68d-451e-b92a-7cad027ee458"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="5fe3ecdd-b20e-4a15-800b-fad98afd4ffe"/>
+                      <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="Invoked">
+                    <REFOBJ>
+                      <ID name="//addSchedule" mc="Operation" uid="e012a283-200d-438c-b146-442743bb46c8"/>
+                      <PID name="Student" mc="Class" uid="d5450e9c-90a7-4b7d-b056-1b47969aab9e"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="controll" mc="Lifeline" uid="15db4f5e-9312-4105-aa99-d6a789070096"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="5fe3ecdd-b20e-4a15-800b-fad98afd4ffe"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">636</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="f064855f-a97c-4b9e-b4a0-a146ef3d8a6d"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="currentStudent" mc="Lifeline" uid="28958b29-f4ef-4183-80a7-0870b598e2da"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="b9d09957-6c3d-4657-9f20-fffe2c3a09ff"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">656</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="currentStudent" mc="Lifeline" uid="28958b29-f4ef-4183-80a7-0870b598e2da"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="f064855f-a97c-4b9e-b4a0-a146ef3d8a6d"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">636</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="b9d09957-6c3d-4657-9f20-fffe2c3a09ff"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="currentStudent" mc="Lifeline" uid="28958b29-f4ef-4183-80a7-0870b598e2da"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="f00dcbf5-dc85-4a98-b2a1-32eaeb7f76c3"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">660</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="controll" mc="Lifeline" uid="15db4f5e-9312-4105-aa99-d6a789070096"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedLine">
+        <OBJECT>
+          <ID name="st" mc="Lifeline" uid="b388b59b-ed36-442a-8199-c6ba46b2937c"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="Selector"></ATT>
+            <ATT name="Name"><![CDATA[st]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Represented">
+              <REFOBJ>
+                <ID name="st" mc="BindableInstance" uid="5f066edb-b874-4e15-a632-e0871f98cfdf"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="menu" mc="Lifeline" uid="4957c941-1fe0-4507-94a7-0674cf034f07"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="Selector"></ATT>
+            <ATT name="Name"><![CDATA[menu]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Represented">
+              <REFOBJ>
+                <ID name="menu" mc="BindableInstance" uid="f1694605-21d7-4eaa-8907-2751d0385143"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="controll" mc="Lifeline" uid="15db4f5e-9312-4105-aa99-d6a789070096"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="Selector"></ATT>
+            <ATT name="Name"><![CDATA[controll]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Represented">
+              <REFOBJ>
+                <ID name="controll" mc="BindableInstance" uid="6e6ab402-e38f-43a5-9f83-2d4595680b23"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="currentStudent" mc="Lifeline" uid="28958b29-f4ef-4183-80a7-0870b598e2da"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="Selector"></ATT>
+            <ATT name="Name"><![CDATA[currentStudent]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Represented">
+              <REFOBJ>
+                <ID name="currentStudent" mc="BindableInstance" uid="26c7735a-20f1-456a-8beb-eec499e8e9ca"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="catsys" mc="Lifeline" uid="dff91925-985f-4bdc-8df2-ee6e5e73c3f2"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="Selector"></ATT>
+            <ATT name="Name"><![CDATA[catsys]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Represented">
+              <REFOBJ>
+                <ID name="catsys" mc="BindableInstance" uid="b46fff5d-6acf-428e-b1ec-0adaab4d8bd1"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="catalog " mc="Lifeline" uid="94810a86-e080-4f19-be67-275f48ff14e3"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="Selector"></ATT>
+            <ATT name="Name"><![CDATA[catalog ]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Represented">
+              <REFOBJ>
+                <ID name="catalog " mc="BindableInstance" uid="f9550809-d627-45a6-aa04-7e2a619d6d9d"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Lifeline" mc="Lifeline" uid="a45e306c-616d-4345-a4c7-92b8b1318367"/>
+          <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+          <ATTRIBUTES>
+            <ATT name="Selector"></ATT>
+            <ATT name="Name"><![CDATA[Lifeline]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Represented">
+              <REFOBJ>
+                <ID name="currentSchedule" mc="BindableInstance" uid="65ed5025-b159-4eb2-a105-d47a97d0eb76"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
       <COMP relation="OwnedCollaboration">
         <OBJECT>
           <ID name="locals" mc="Collaboration" uid="2e3b6b1a-c959-402a-a48c-f58e0aa92260"/>
@@ -26,7 +1839,44 @@
             <ATT name="Name"><![CDATA[locals]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
-          <DEPENDENCIES></DEPENDENCIES>
+          <DEPENDENCIES>
+            <COMP relation="Declared">
+              <OBJECT>
+                <ID name="currentStudent" mc="BindableInstance" uid="26c7735a-20f1-456a-8beb-eec499e8e9ca"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+                <ATTRIBUTES>
+                  <ATT name="IsConstant">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"><![CDATA[currentStudent]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Base">
+                    <ID name="Student" mc="Class" uid="d5450e9c-90a7-4b7d-b056-1b47969aab9e"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="currentSchedule" mc="BindableInstance" uid="65ed5025-b159-4eb2-a105-d47a97d0eb76"/>
+                <PID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+                <ATTRIBUTES>
+                  <ATT name="IsConstant">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"><![CDATA[currentSchedule]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Base">
+                    <ID name="Schedule" mc="Class" uid="2d2c825e-7be1-4881-90a6-7e7e269518da"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
         </OBJECT>
       </COMP>
       <COMP relation="Product">

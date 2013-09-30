@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Interaction Sequence diagram" version="3">
+  <DEPS>
+    <ID name="Interaction Sequence diagram" mc="SequenceDiagram" uid="ffefef72-269b-4476-93ca-c5f68f9b308e"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Interaction Sequence diagram" mc="SequenceDiagram" uid="ffefef72-269b-4476-93ca-c5f68f9b308e"/>
+    <PID name="Delete Schedule subflow" mc="Interaction" uid="c8759d0f-baaa-44b7-b630-f8a47601fa5a"/>
+    <ATTRIBUTES>
+      <ATT name="UiDataVersion">6</ATT>
+      <ATT name="UiData"><![CDATA[eJyNUcluwjAQ/RUrdwwFyiIFOEBVodJFReq1msQTauqF2hNK/r5OSZCgaoRyiPU8b97ieHbQiu3ReWnNJLrhnYjNpvFzssWUmBQBihgVO5xE1m24tgKVtFxI2DjQHIUk67jHrxxNihwVajTkT0g9eK/XFbI4IhHTsLXu/STdiabxi7M7dFQwAzooKihsTgsgCHdvoHKsrJhcqag9jds14Q91TYXC6CxItymIL+c9T61DfuRe4W8OPgWBoha7O9ArZleqPIUVFZPhgRbJMnj8PZYHgRnkii5Cto9xmoI7VEAogo+Lzh5LiO1LJNRz/hgsyzB8w26rOxgnrX5/OGiNeym00ttsMMrGSa8zwubCFXh6MPbbrCBBdaG9JifN5qS+NIQOUgq9stoJqzpqVnFW4dLMrd5ZL0t+s1DzsvmHVMJhuWMlfdlq9fuXsZLm0zeM1+/zAwTDLFw=]]></ATT>
+      <ATT name="PdeProperties"></ATT>
+      <ATT name="Name"><![CDATA[Interaction Sequence diagram]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

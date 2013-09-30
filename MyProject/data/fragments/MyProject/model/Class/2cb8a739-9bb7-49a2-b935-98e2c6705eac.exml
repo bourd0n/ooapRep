@@ -1,0 +1,72 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="PartTimeStudent" version="3">
+  <DEPS>
+    <ID name="PartTimeStudent" mc="Class" uid="2cb8a739-9bb7-49a2-b935-98e2c6705eac"/>
+    <EXTID name="Student" mc="Class" uid="d5450e9c-90a7-4b7d-b056-1b47969aab9e"/>
+    <EXTID name="entity" mc="Stereotype" uid="9020c6e6-d043-4f26-899a-037950006692"/>
+    <FOREIGNID name="undefined" mc="DataType" uid="00000004-0000-000f-0000-000000000000"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="PartTimeStudent" mc="Class" uid="2cb8a739-9bb7-49a2-b935-98e2c6705eac"/>
+    <PID name="Analysis Model" mc="Package" uid="31250491-2165-434f-8ae7-fab1af6cca46"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[PartTimeStudent]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedAttribute">
+        <OBJECT>
+          <ID name="maxNumOfCourses" mc="Attribute" uid="d9071343-54b5-4559-9979-b0edb3999a64"/>
+          <PID name="PartTimeStudent" mc="Class" uid="2cb8a739-9bb7-49a2-b935-98e2c6705eac"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">ReadWrite</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[maxNumOfCourses]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="undefined" mc="DataType" uid="00000004-0000-000f-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Parent">
+        <OBJECT>
+          <ID name="Generalization" mc="Generalization" uid="3e924ad7-52be-40e0-ae60-096e43976340"/>
+          <PID name="PartTimeStudent" mc="Class" uid="2cb8a739-9bb7-49a2-b935-98e2c6705eac"/>
+          <ATTRIBUTES>
+            <ATT name="Discriminator"></ATT>
+            <ATT name="Name"><![CDATA[Generalization]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="SuperType">
+              <ID name="Student" mc="Class" uid="d5450e9c-90a7-4b7d-b056-1b47969aab9e"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <LINK relation="Extension">
+        <ID name="entity" mc="Stereotype" uid="9020c6e6-d043-4f26-899a-037950006692"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

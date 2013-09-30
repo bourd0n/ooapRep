@@ -4,9 +4,16 @@
     <ID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
     <COMPID name="Basic Flow" mc="SequenceDiagram" uid="e26df210-4ca7-4d8c-8c88-6e06a75782a3"/>
     <COMPID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+    <COMPID name="Delete Schedule subflow" mc="Interaction" uid="c8759d0f-baaa-44b7-b630-f8a47601fa5a"/>
+    <COMPID name="Submit Schedule subflow" mc="Interaction" uid="3f9a8afd-1848-4a10-a57e-07f33b02b6f4"/>
+    <COMPID name="Update Schedule subflow" mc="Interaction" uid="bee35185-4a64-4afa-ad55-e521c2ea47f2"/>
     <EXTID name="CourseCatalogSystem" mc="Class" uid="ee968a3a-58d5-426f-8406-08e9ad6228d8"/>
+    <EXTID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+    <EXTID name="Delete Schedule subflow" mc="Interaction" uid="c8759d0f-baaa-44b7-b630-f8a47601fa5a"/>
     <EXTID name="RegisterForCoursesForm" mc="Class" uid="0ef2b7bb-54a0-489c-889f-9527e57f36f9"/>
     <EXTID name="RegistrationController" mc="Class" uid="e39eb5ee-15df-48f6-8882-884505645287"/>
+    <EXTID name="Submit Schedule subflow" mc="Interaction" uid="3f9a8afd-1848-4a10-a57e-07f33b02b6f4"/>
+    <EXTID name="Update Schedule subflow" mc="Interaction" uid="bee35185-4a64-4afa-ad55-e521c2ea47f2"/>
     <EXTID name="Каталог курсов" mc="Actor" uid="9771400b-6fef-4df9-8455-76860b5c4d80"/>
     <EXTID name="Студент" mc="Actor" uid="66891f72-f20d-4d39-b162-4e88ce05a6ce"/>
   </DEPS>
@@ -47,7 +54,7 @@
           <ID name="" mc="ExecutionOccurenceSpecification" uid="7d5d913e-2630-40b7-b877-02e046ab0502"/>
           <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
           <ATTRIBUTES>
-            <ATT name="LineNumber">241</ATT>
+            <ATT name="LineNumber">1041</ATT>
             <ATT name="Name"></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
@@ -154,7 +161,7 @@
           <ID name="" mc="ExecutionOccurenceSpecification" uid="08e70af9-43c8-4f6d-bb21-f9265310af5a"/>
           <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
           <ATTRIBUTES>
-            <ATT name="LineNumber">381</ATT>
+            <ATT name="LineNumber">921</ATT>
             <ATT name="Name"></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
@@ -278,7 +285,7 @@
           <ID name="" mc="ExecutionOccurenceSpecification" uid="136d9fcb-fa64-4f9e-b219-e7f393f9b575"/>
           <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
           <ATTRIBUTES>
-            <ATT name="LineNumber">282</ATT>
+            <ATT name="LineNumber">305</ATT>
             <ATT name="Name"></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
@@ -339,7 +346,7 @@
           <ID name="" mc="ExecutionOccurenceSpecification" uid="70f99b61-c765-4c6a-8492-0cd577b2437e"/>
           <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
           <ATTRIBUTES>
-            <ATT name="LineNumber">282</ATT>
+            <ATT name="LineNumber">305</ATT>
             <ATT name="Name"></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
@@ -481,7 +488,7 @@
           <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
           <ATTRIBUTES>
             <ATT name="Operator">AltOp</ATT>
-            <ATT name="LineNumber">235</ATT>
+            <ATT name="LineNumber">226</ATT>
             <ATT name="Name"><![CDATA[CombinedFragment]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
@@ -492,8 +499,8 @@
                 <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
                 <ATTRIBUTES>
                   <ATT name="Guard"><![CDATA[регистрация открыта]]></ATT>
-                  <ATT name="EndLineNumber">505</ATT>
-                  <ATT name="LineNumber">235</ATT>
+                  <ATT name="EndLineNumber">933</ATT>
+                  <ATT name="LineNumber">226</ATT>
                   <ATT name="Name"></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
@@ -504,8 +511,8 @@
                 <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
                 <ATTRIBUTES>
                   <ATT name="Guard"><![CDATA[else]]></ATT>
-                  <ATT name="EndLineNumber">619</ATT>
-                  <ATT name="LineNumber">506</ATT>
+                  <ATT name="EndLineNumber">1039</ATT>
+                  <ATT name="LineNumber">934</ATT>
                   <ATT name="Name"><![CDATA[InteractionOperand]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
@@ -519,8 +526,8 @@
           <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
           <ATTRIBUTES>
             <ATT name="Guard"><![CDATA[else]]></ATT>
-            <ATT name="EndLineNumber">619</ATT>
-            <ATT name="LineNumber">506</ATT>
+            <ATT name="EndLineNumber">1039</ATT>
+            <ATT name="LineNumber">934</ATT>
             <ATT name="Name"><![CDATA[InteractionOperand]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
@@ -561,84 +568,6 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="ExecutionOccurenceSpecification" uid="8be2dd59-4a49-4280-a10c-c74531db583b"/>
-          <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
-          <ATTRIBUTES>
-            <ATT name="LineNumber">587</ATT>
-            <ATT name="Name"></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="Covered">
-              <REFOBJ>
-                <ID name="menu" mc="Lifeline" uid="4465cf04-432f-4644-8efc-d45949bf798e"/>
-                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
-              </REFOBJ>
-            </LINK>
-          </DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
-          <ID name="" mc="ExecutionOccurenceSpecification" uid="ded49fcf-39f8-4dc4-a97b-7a25d8192e82"/>
-          <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
-          <ATTRIBUTES>
-            <ATT name="LineNumber">549</ATT>
-            <ATT name="Name"></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <COMP relation="SentMessage">
-              <OBJECT>
-                <ID name="" mc="Message" uid="eda1cfd8-63b9-4919-a700-a4231b6cfae0"/>
-                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
-                <ATTRIBUTES>
-                  <ATT name="Argument"></ATT>
-                  <ATT name="KindOfMessage">CompleteKind</ATT>
-                  <ATT name="SortOfMessage">ReturnMessage</ATT>
-                  <ATT name="Name"></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <LINK relation="ReceiveEvent">
-                    <REFOBJ>
-                      <ID name="" mc="ExecutionOccurenceSpecification" uid="ee170eac-49b0-400b-8d28-8286fa56b213"/>
-                      <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
-                    </REFOBJ>
-                  </LINK>
-                </DEPENDENCIES>
-              </OBJECT>
-            </COMP>
-            <LINK relation="Covered">
-              <REFOBJ>
-                <ID name="controll" mc="Lifeline" uid="742a0cca-4d2f-4319-bfa4-01bc586fe0a5"/>
-                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
-              </REFOBJ>
-            </LINK>
-          </DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
-          <ID name="" mc="ExecutionOccurenceSpecification" uid="ee170eac-49b0-400b-8d28-8286fa56b213"/>
-          <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
-          <ATTRIBUTES>
-            <ATT name="LineNumber">549</ATT>
-            <ATT name="Name"></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="Started">
-              <REFOBJ>
-                <ID name="" mc="ExecutionSpecification" uid="0be7ee98-a970-45f6-b2d8-e497bf65ec9e"/>
-                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
-              </REFOBJ>
-            </LINK>
-            <LINK relation="Covered">
-              <REFOBJ>
-                <ID name="menu" mc="Lifeline" uid="4465cf04-432f-4644-8efc-d45949bf798e"/>
-                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
-              </REFOBJ>
-            </LINK>
-          </DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
           <ID name="" mc="ExecutionOccurenceSpecification" uid="70d29e3d-0971-4a49-a27d-98c72586386e"/>
           <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
           <ATTRIBUTES>
@@ -656,29 +585,6 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="ExecutionSpecification" uid="0be7ee98-a970-45f6-b2d8-e497bf65ec9e"/>
-          <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
-          <ATTRIBUTES>
-            <ATT name="LineNumber">549</ATT>
-            <ATT name="Name"></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="Finish">
-              <REFOBJ>
-                <ID name="" mc="ExecutionOccurenceSpecification" uid="70d29e3d-0971-4a49-a27d-98c72586386e"/>
-                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
-              </REFOBJ>
-            </LINK>
-            <LINK relation="Covered">
-              <REFOBJ>
-                <ID name="menu" mc="Lifeline" uid="4465cf04-432f-4644-8efc-d45949bf798e"/>
-                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
-              </REFOBJ>
-            </LINK>
-          </DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
           <ID name="" mc="ExecutionOccurenceSpecification" uid="9c34e781-3ea9-4381-8a49-108e68a8961f"/>
           <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
           <ATTRIBUTES>
@@ -687,12 +593,6 @@
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
-            <LINK relation="Started">
-              <REFOBJ>
-                <ID name="" mc="ExecutionSpecification" uid="8e423b2e-741e-4eb6-9244-ebba034a5f9b"/>
-                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
-              </REFOBJ>
-            </LINK>
             <LINK relation="Covered">
               <REFOBJ>
                 <ID name="controll" mc="Lifeline" uid="742a0cca-4d2f-4319-bfa4-01bc586fe0a5"/>
@@ -719,29 +619,6 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="ExecutionSpecification" uid="8e423b2e-741e-4eb6-9244-ebba034a5f9b"/>
-          <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
-          <ATTRIBUTES>
-            <ATT name="LineNumber">520</ATT>
-            <ATT name="Name"></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="Finish">
-              <REFOBJ>
-                <ID name="" mc="ExecutionOccurenceSpecification" uid="fd889c92-5cd8-4ec4-b81e-c9c19ed27277"/>
-                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
-              </REFOBJ>
-            </LINK>
-            <LINK relation="Covered">
-              <REFOBJ>
-                <ID name="controll" mc="Lifeline" uid="742a0cca-4d2f-4319-bfa4-01bc586fe0a5"/>
-                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
-              </REFOBJ>
-            </LINK>
-          </DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
           <ID name="" mc="ExecutionOccurenceSpecification" uid="bcd6d7d5-1bee-41f1-8f10-2c85c271162f"/>
           <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
           <ATTRIBUTES>
@@ -750,33 +627,6 @@
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
-            <COMP relation="SentMessage">
-              <OBJECT>
-                <ID name="displayError" mc="Message" uid="6039e575-91fb-4399-9b16-1fd69a529a9b"/>
-                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
-                <ATTRIBUTES>
-                  <ATT name="Argument"></ATT>
-                  <ATT name="KindOfMessage">CompleteKind</ATT>
-                  <ATT name="SortOfMessage">SyncCall</ATT>
-                  <ATT name="Name"><![CDATA[displayError]]></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <LINK relation="ReceiveEvent">
-                    <REFOBJ>
-                      <ID name="" mc="ExecutionOccurenceSpecification" uid="b58ca7e7-6dc8-4aed-885e-62490feaaae5"/>
-                      <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
-                    </REFOBJ>
-                  </LINK>
-                  <LINK relation="Invoked">
-                    <REFOBJ>
-                      <ID name="//displayError" mc="Operation" uid="1bc88702-ade5-4e3f-ad80-7b11795ab82e"/>
-                      <PID name="RegisterForCoursesForm" mc="Class" uid="0ef2b7bb-54a0-489c-889f-9527e57f36f9"/>
-                    </REFOBJ>
-                  </LINK>
-                </DEPENDENCIES>
-              </OBJECT>
-            </COMP>
             <LINK relation="Covered">
               <REFOBJ>
                 <ID name="menu" mc="Lifeline" uid="4465cf04-432f-4644-8efc-d45949bf798e"/>
@@ -794,12 +644,6 @@
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
-            <LINK relation="Started">
-              <REFOBJ>
-                <ID name="" mc="ExecutionSpecification" uid="08dd3307-1b16-406f-a6ff-d5d40a63966d"/>
-                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
-              </REFOBJ>
-            </LINK>
             <LINK relation="Covered">
               <REFOBJ>
                 <ID name="menu" mc="Lifeline" uid="4465cf04-432f-4644-8efc-d45949bf798e"/>
@@ -817,29 +661,6 @@
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
-            <LINK relation="Covered">
-              <REFOBJ>
-                <ID name="menu" mc="Lifeline" uid="4465cf04-432f-4644-8efc-d45949bf798e"/>
-                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
-              </REFOBJ>
-            </LINK>
-          </DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
-          <ID name="" mc="ExecutionSpecification" uid="08dd3307-1b16-406f-a6ff-d5d40a63966d"/>
-          <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
-          <ATTRIBUTES>
-            <ATT name="LineNumber">574</ATT>
-            <ATT name="Name"></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="Finish">
-              <REFOBJ>
-                <ID name="" mc="ExecutionOccurenceSpecification" uid="ff5cbd39-bc81-464f-b074-bbd6c47a9447"/>
-                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
-              </REFOBJ>
-            </LINK>
             <LINK relation="Covered">
               <REFOBJ>
                 <ID name="menu" mc="Lifeline" uid="4465cf04-432f-4644-8efc-d45949bf798e"/>
@@ -892,6 +713,12 @@
                       <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
                     </REFOBJ>
                   </LINK>
+                  <LINK relation="Invoked">
+                    <REFOBJ>
+                      <ID name="//connectWithCatalog" mc="Operation" uid="b3b2012d-ddf0-44d2-8e79-2282580285a0"/>
+                      <PID name="CourseCatalogSystem" mc="Class" uid="ee968a3a-58d5-426f-8406-08e9ad6228d8"/>
+                    </REFOBJ>
+                  </LINK>
                 </DEPENDENCIES>
               </OBJECT>
             </COMP>
@@ -930,7 +757,7 @@
           <ID name="" mc="ExecutionOccurenceSpecification" uid="46d66b7a-8cca-4f7a-b0ec-94b1090f927f"/>
           <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
           <ATTRIBUTES>
-            <ATT name="LineNumber">272</ATT>
+            <ATT name="LineNumber">287</ATT>
             <ATT name="Name"></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
@@ -991,7 +818,7 @@
           <ID name="" mc="ExecutionOccurenceSpecification" uid="69165414-558b-4087-b264-4d46e52e44a9"/>
           <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
           <ATTRIBUTES>
-            <ATT name="LineNumber">272</ATT>
+            <ATT name="LineNumber">287</ATT>
             <ATT name="Name"></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
@@ -1015,13 +842,13 @@
           <DEPENDENCIES>
             <COMP relation="SentMessage">
               <OBJECT>
-                <ID name="" mc="Message" uid="928be080-8bfe-446e-8154-bfdd6bb3477e"/>
+                <ID name="startSession" mc="Message" uid="928be080-8bfe-446e-8154-bfdd6bb3477e"/>
                 <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
                 <ATTRIBUTES>
                   <ATT name="Argument"></ATT>
                   <ATT name="KindOfMessage">CompleteKind</ATT>
                   <ATT name="SortOfMessage">SyncCall</ATT>
-                  <ATT name="Name"></ATT>
+                  <ATT name="Name"><![CDATA[startSession]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
@@ -1069,7 +896,7 @@
           <ID name="" mc="ExecutionOccurenceSpecification" uid="d83a62f0-6dc5-48da-855a-039f9e5bca3a"/>
           <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
           <ATTRIBUTES>
-            <ATT name="LineNumber">279</ATT>
+            <ATT name="LineNumber">280</ATT>
             <ATT name="Name"></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
@@ -1130,7 +957,7 @@
           <ID name="" mc="ExecutionOccurenceSpecification" uid="ce78257d-659a-4d93-a85f-7a4a1d2e1c4d"/>
           <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
           <ATTRIBUTES>
-            <ATT name="LineNumber">279</ATT>
+            <ATT name="LineNumber">280</ATT>
             <ATT name="Name"></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
@@ -1144,24 +971,324 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="CombinedFragment" mc="CombinedFragment" uid="39b68230-9252-4429-b412-3e568e0a5d4b"/>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="e181317f-0606-4d50-94cd-7f3ec3620591"/>
           <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
           <ATTRIBUTES>
-            <ATT name="Operator">SeqOp</ATT>
-            <ATT name="LineNumber">366</ATT>
+            <ATT name="LineNumber">957</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="" mc="Message" uid="4ea9c2aa-de5f-4d5b-aae4-2b90a42b8600"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">ReturnMessage</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="8de9615a-5f5f-4e8b-b8d4-46aa5d852d2d"/>
+                      <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="controll" mc="Lifeline" uid="742a0cca-4d2f-4319-bfa4-01bc586fe0a5"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="8de9615a-5f5f-4e8b-b8d4-46aa5d852d2d"/>
+          <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">957</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="5c23fcc3-8251-44bf-943f-45a47093baca"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="menu" mc="Lifeline" uid="4465cf04-432f-4644-8efc-d45949bf798e"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="939d01d3-3af9-42bc-821a-9930368af910"/>
+          <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">1021</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="menu" mc="Lifeline" uid="4465cf04-432f-4644-8efc-d45949bf798e"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="5c23fcc3-8251-44bf-943f-45a47093baca"/>
+          <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">957</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="939d01d3-3af9-42bc-821a-9930368af910"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="menu" mc="Lifeline" uid="4465cf04-432f-4644-8efc-d45949bf798e"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="fe4fe3c2-9640-4d6c-bbd8-9c190c9ea8a7"/>
+          <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">940</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="9d405794-5e19-48b1-b026-aad3869a0ba7"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="controll" mc="Lifeline" uid="742a0cca-4d2f-4319-bfa4-01bc586fe0a5"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="2c24c17d-8330-42fa-bedd-b182b79a3f64"/>
+          <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">1021</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="controll" mc="Lifeline" uid="742a0cca-4d2f-4319-bfa4-01bc586fe0a5"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="9d405794-5e19-48b1-b026-aad3869a0ba7"/>
+          <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">940</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="2c24c17d-8330-42fa-bedd-b182b79a3f64"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="controll" mc="Lifeline" uid="742a0cca-4d2f-4319-bfa4-01bc586fe0a5"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="de65a1e9-9d95-4cab-966c-8c8c582639fb"/>
+          <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">970</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="displayError" mc="Message" uid="c93e2d37-fdac-4141-a0b1-bfbcc3ec201a"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"><![CDATA[displayError]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="5e38b584-76d6-4d41-b73c-1891ca3bb86c"/>
+                      <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="Invoked">
+                    <REFOBJ>
+                      <ID name="//displayError" mc="Operation" uid="1bc88702-ade5-4e3f-ad80-7b11795ab82e"/>
+                      <PID name="RegisterForCoursesForm" mc="Class" uid="0ef2b7bb-54a0-489c-889f-9527e57f36f9"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="menu" mc="Lifeline" uid="4465cf04-432f-4644-8efc-d45949bf798e"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="5e38b584-76d6-4d41-b73c-1891ca3bb86c"/>
+          <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">980</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="83d088e8-7a4f-4c04-90f5-ef0adf202026"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="menu" mc="Lifeline" uid="4465cf04-432f-4644-8efc-d45949bf798e"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="513f4340-8c29-4c3c-9210-d462777594d8"/>
+          <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">1000</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="menu" mc="Lifeline" uid="4465cf04-432f-4644-8efc-d45949bf798e"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="83d088e8-7a4f-4c04-90f5-ef0adf202026"/>
+          <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">980</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="513f4340-8c29-4c3c-9210-d462777594d8"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="menu" mc="Lifeline" uid="4465cf04-432f-4644-8efc-d45949bf798e"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="7faf368c-15d0-4998-b805-8ed189b6aef0"/>
+          <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">1000</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="menu" mc="Lifeline" uid="4465cf04-432f-4644-8efc-d45949bf798e"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="CombinedFragment" mc="CombinedFragment" uid="f6da8cf8-3de2-44df-99c2-ae8a1220e043"/>
+          <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+          <ATTRIBUTES>
+            <ATT name="Operator">AltOp</ATT>
+            <ATT name="LineNumber">346</ATT>
             <ATT name="Name"><![CDATA[CombinedFragment]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
             <COMP relation="Operand">
               <OBJECT>
-                <ID name="" mc="InteractionOperand" uid="9d8d9c8e-8d51-4d38-90d6-42ea74bad8f0"/>
+                <ID name="" mc="InteractionOperand" uid="d6ad5a56-6c34-4933-8f8f-105e963629f2"/>
                 <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
                 <ATTRIBUTES>
-                  <ATT name="Guard"></ATT>
-                  <ATT name="EndLineNumber">469</ATT>
-                  <ATT name="LineNumber">366</ATT>
+                  <ATT name="Guard"><![CDATA[связь с каталогом установлена]]></ATT>
+                  <ATT name="EndLineNumber">781</ATT>
+                  <ATT name="LineNumber">346</ATT>
                   <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="InteractionOperand" mc="InteractionOperand" uid="a0226df9-144e-4c80-86f4-90aa89d0448c"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"><![CDATA[else]]></ATT>
+                  <ATT name="EndLineNumber">838</ATT>
+                  <ATT name="LineNumber">782</ATT>
+                  <ATT name="Name"><![CDATA[InteractionOperand]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES></DEPENDENCIES>
@@ -1170,15 +1297,769 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="InteractionUse" mc="InteractionUse" uid="5f150350-2920-4844-a4e2-162166a68587"/>
+          <ID name="InteractionOperand" mc="InteractionOperand" uid="a0226df9-144e-4c80-86f4-90aa89d0448c"/>
           <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
           <ATTRIBUTES>
-            <ATT name="EndLineNumber">430</ATT>
-            <ATT name="LineNumber">360</ATT>
-            <ATT name="Name"><![CDATA[InteractionUse]]></ATT>
+            <ATT name="Guard"><![CDATA[else]]></ATT>
+            <ATT name="EndLineNumber">838</ATT>
+            <ATT name="LineNumber">782</ATT>
+            <ATT name="Name"><![CDATA[InteractionOperand]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="376fd1db-1341-49b3-ba5b-77a019aba86c"/>
+          <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">791</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="displayError" mc="Message" uid="955d7a13-a677-4af3-ae57-6090852e7cde"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"><![CDATA[displayError]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="001485bd-837d-4274-9b06-55f25e4e5545"/>
+                      <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="Invoked">
+                    <REFOBJ>
+                      <ID name="//displayError" mc="Operation" uid="1bc88702-ade5-4e3f-ad80-7b11795ab82e"/>
+                      <PID name="RegisterForCoursesForm" mc="Class" uid="0ef2b7bb-54a0-489c-889f-9527e57f36f9"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="menu" mc="Lifeline" uid="4465cf04-432f-4644-8efc-d45949bf798e"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="001485bd-837d-4274-9b06-55f25e4e5545"/>
+          <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">816</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="11ea06a2-c462-4dc8-90df-ab0ae0f6366c"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="menu" mc="Lifeline" uid="4465cf04-432f-4644-8efc-d45949bf798e"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="f6078bcd-d27d-4142-9291-210d3c84f5dd"/>
+          <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">836</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="menu" mc="Lifeline" uid="4465cf04-432f-4644-8efc-d45949bf798e"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="11ea06a2-c462-4dc8-90df-ab0ae0f6366c"/>
+          <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">816</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="f6078bcd-d27d-4142-9291-210d3c84f5dd"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="menu" mc="Lifeline" uid="4465cf04-432f-4644-8efc-d45949bf798e"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="3b8d5c4a-63d5-49e4-a64c-150d25f50217"/>
+          <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">836</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="menu" mc="Lifeline" uid="4465cf04-432f-4644-8efc-d45949bf798e"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="f030afa7-9152-4003-92af-b2f90fc50287"/>
+          <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">860</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="c8620363-ee42-42e3-bf7c-410a3a0377ce"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="controll" mc="Lifeline" uid="742a0cca-4d2f-4319-bfa4-01bc586fe0a5"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="3b6f4930-bcd7-421c-8279-e913d4e0d0a7"/>
+          <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">910</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="controll" mc="Lifeline" uid="742a0cca-4d2f-4319-bfa4-01bc586fe0a5"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="c8620363-ee42-42e3-bf7c-410a3a0377ce"/>
+          <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">860</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="3b6f4930-bcd7-421c-8279-e913d4e0d0a7"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="controll" mc="Lifeline" uid="742a0cca-4d2f-4319-bfa4-01bc586fe0a5"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="8f55d383-4a2f-4c3f-a6b3-859f0f5d8a75"/>
+          <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">868</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="disconnectWithCatalog" mc="Message" uid="2c4cc7f0-fe8b-4176-a789-ea30254aaf43"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"><![CDATA[disconnectWithCatalog]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="432e79dc-0f68-45c4-adef-3321c2804583"/>
+                      <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="Invoked">
+                    <REFOBJ>
+                      <ID name="//disconnectWithCatalog" mc="Operation" uid="17de8cc0-2c02-411d-b577-eb11503700cb"/>
+                      <PID name="CourseCatalogSystem" mc="Class" uid="ee968a3a-58d5-426f-8406-08e9ad6228d8"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="controll" mc="Lifeline" uid="742a0cca-4d2f-4319-bfa4-01bc586fe0a5"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="432e79dc-0f68-45c4-adef-3321c2804583"/>
+          <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">868</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="97e6e66c-d5f0-4ca9-9879-ab2b0bee020e"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="catsys" mc="Lifeline" uid="112e900f-225c-4e2d-af4e-33f062a143ea"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="9614d4a9-141e-489a-bc2e-4b480e58207b"/>
+          <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">899</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="" mc="Message" uid="c5efb041-deca-4868-b36c-94b75cb65481"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">ReturnMessage</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="1998ded7-317b-4679-bb66-4d7d7abcb9f9"/>
+                      <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="catsys" mc="Lifeline" uid="112e900f-225c-4e2d-af4e-33f062a143ea"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="97e6e66c-d5f0-4ca9-9879-ab2b0bee020e"/>
+          <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">868</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="9614d4a9-141e-489a-bc2e-4b480e58207b"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="catsys" mc="Lifeline" uid="112e900f-225c-4e2d-af4e-33f062a143ea"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="1998ded7-317b-4679-bb66-4d7d7abcb9f9"/>
+          <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">899</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="controll" mc="Lifeline" uid="742a0cca-4d2f-4319-bfa4-01bc586fe0a5"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="01fcb963-f623-4382-b153-cb55611d4a73"/>
+          <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">870</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="closeSession" mc="Message" uid="c5af3959-0c7b-4727-afe8-5abea813228a"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"><![CDATA[closeSession]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="1400c6de-1708-4059-9751-43a07b14de1b"/>
+                      <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="catsys" mc="Lifeline" uid="112e900f-225c-4e2d-af4e-33f062a143ea"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="1400c6de-1708-4059-9751-43a07b14de1b"/>
+          <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">870</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="43e726de-66ae-4556-b31e-7c2108f4c1ac"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="catalog " mc="Lifeline" uid="751b7566-51d4-4b39-9912-8db9ccb54be7"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="965974f2-4c90-41c8-ba0a-bbe9a7b67c73"/>
+          <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">891</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="" mc="Message" uid="7d1f637f-3b20-4779-9d07-cf4c56aead95"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">ReturnMessage</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="dd5a8559-1d80-46bd-92bc-8a2914d7cc27"/>
+                      <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="catalog " mc="Lifeline" uid="751b7566-51d4-4b39-9912-8db9ccb54be7"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="43e726de-66ae-4556-b31e-7c2108f4c1ac"/>
+          <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">870</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="965974f2-4c90-41c8-ba0a-bbe9a7b67c73"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="catalog " mc="Lifeline" uid="751b7566-51d4-4b39-9912-8db9ccb54be7"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="dd5a8559-1d80-46bd-92bc-8a2914d7cc27"/>
+          <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">891</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="catsys" mc="Lifeline" uid="112e900f-225c-4e2d-af4e-33f062a143ea"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="e0818439-95a7-4030-ac0f-d08a1ca9b31d"/>
+          <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">364</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="displayPossibleOperations" mc="Message" uid="1846dd6e-16c5-4af6-8e80-6cec4696d4af"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"><![CDATA[displayPossibleOperations]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="376824ca-f505-4eba-98ba-ee6b2673a59d"/>
+                      <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="Invoked">
+                    <REFOBJ>
+                      <ID name="//displayPossibleOperations" mc="Operation" uid="7351a272-54dc-4710-9fc7-c547e4aea361"/>
+                      <PID name="RegisterForCoursesForm" mc="Class" uid="0ef2b7bb-54a0-489c-889f-9527e57f36f9"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="menu" mc="Lifeline" uid="4465cf04-432f-4644-8efc-d45949bf798e"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="376824ca-f505-4eba-98ba-ee6b2673a59d"/>
+          <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">380</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="95e1db4c-5c2e-47e3-a9bf-450e8967d827"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="menu" mc="Lifeline" uid="4465cf04-432f-4644-8efc-d45949bf798e"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="2cda6d8a-efca-4b36-9152-5d4711ab31df"/>
+          <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">400</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="menu" mc="Lifeline" uid="4465cf04-432f-4644-8efc-d45949bf798e"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="95e1db4c-5c2e-47e3-a9bf-450e8967d827"/>
+          <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">380</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="2cda6d8a-efca-4b36-9152-5d4711ab31df"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="menu" mc="Lifeline" uid="4465cf04-432f-4644-8efc-d45949bf798e"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="63daa093-3b84-4700-89f5-a1b14bdef619"/>
+          <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">421</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="menu" mc="Lifeline" uid="4465cf04-432f-4644-8efc-d45949bf798e"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="CombinedFragment" mc="CombinedFragment" uid="132d609f-2f65-454a-8b35-745dd3df6b86"/>
+          <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+          <ATTRIBUTES>
+            <ATT name="Operator">AltOp</ATT>
+            <ATT name="LineNumber">426</ATT>
+            <ATT name="Name"><![CDATA[CombinedFragment]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Operand">
+              <OBJECT>
+                <ID name="" mc="InteractionOperand" uid="f0d96dc3-b940-44e7-9e7d-ebf7663e6bb4"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"><![CDATA[создается новый план-график]]></ATT>
+                  <ATT name="EndLineNumber">515</ATT>
+                  <ATT name="LineNumber">426</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="InteractionOperand" mc="InteractionOperand" uid="9fd79f2d-fd7c-49b5-b175-fcf5f150bf24"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"><![CDATA[редактируется план-график]]></ATT>
+                  <ATT name="EndLineNumber">596</ATT>
+                  <ATT name="LineNumber">516</ATT>
+                  <ATT name="Name"><![CDATA[InteractionOperand]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="InteractionOperand" mc="InteractionOperand" uid="7021e06c-b5b2-4826-89ba-d9bf85a38b30"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"><![CDATA[удаляется план-график]]></ATT>
+                  <ATT name="EndLineNumber">677</ATT>
+                  <ATT name="LineNumber">597</ATT>
+                  <ATT name="Name"><![CDATA[InteractionOperand]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="InteractionOperand" mc="InteractionOperand" uid="0de39cf9-a689-4539-bfe4-24eea4db5743"/>
+                <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"><![CDATA[обновляется план-график]]></ATT>
+                  <ATT name="EndLineNumber">758</ATT>
+                  <ATT name="LineNumber">678</ATT>
+                  <ATT name="Name"><![CDATA[InteractionOperand]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="InteractionOperand" mc="InteractionOperand" uid="9fd79f2d-fd7c-49b5-b175-fcf5f150bf24"/>
+          <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+          <ATTRIBUTES>
+            <ATT name="Guard"><![CDATA[редактируется план-график]]></ATT>
+            <ATT name="EndLineNumber">596</ATT>
+            <ATT name="LineNumber">516</ATT>
+            <ATT name="Name"><![CDATA[InteractionOperand]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="InteractionOperand" mc="InteractionOperand" uid="7021e06c-b5b2-4826-89ba-d9bf85a38b30"/>
+          <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+          <ATTRIBUTES>
+            <ATT name="Guard"><![CDATA[удаляется план-график]]></ATT>
+            <ATT name="EndLineNumber">677</ATT>
+            <ATT name="LineNumber">597</ATT>
+            <ATT name="Name"><![CDATA[InteractionOperand]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="InteractionOperand" mc="InteractionOperand" uid="0de39cf9-a689-4539-bfe4-24eea4db5743"/>
+          <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+          <ATTRIBUTES>
+            <ATT name="Guard"><![CDATA[обновляется план-график]]></ATT>
+            <ATT name="EndLineNumber">758</ATT>
+            <ATT name="LineNumber">678</ATT>
+            <ATT name="Name"><![CDATA[InteractionOperand]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="InteractionUse" mc="InteractionUse" uid="856ba3a2-7217-424a-94b9-5cb5d0813e86"/>
+          <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+          <ATTRIBUTES>
+            <ATT name="EndLineNumber">501</ATT>
+            <ATT name="LineNumber">440</ATT>
+            <ATT name="Name"><![CDATA[InteractionUse]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="RefersTo">
+              <ID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="InteractionUse" mc="InteractionUse" uid="b91da30a-cee2-4fbe-8a3c-226664a77056"/>
+          <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+          <ATTRIBUTES>
+            <ATT name="EndLineNumber">581</ATT>
+            <ATT name="LineNumber">520</ATT>
+            <ATT name="Name"><![CDATA[InteractionUse]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="RefersTo">
+              <ID name="Update Schedule subflow" mc="Interaction" uid="bee35185-4a64-4afa-ad55-e521c2ea47f2"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="InteractionUse" mc="InteractionUse" uid="5c36331e-8c19-4b1f-8d01-83e9348775a5"/>
+          <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+          <ATTRIBUTES>
+            <ATT name="EndLineNumber">661</ATT>
+            <ATT name="LineNumber">600</ATT>
+            <ATT name="Name"><![CDATA[InteractionUse]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="RefersTo">
+              <ID name="Delete Schedule subflow" mc="Interaction" uid="c8759d0f-baaa-44b7-b630-f8a47601fa5a"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="InteractionUse" mc="InteractionUse" uid="e6052536-01b1-4c2a-8806-c8aebf388ba9"/>
+          <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+          <ATTRIBUTES>
+            <ATT name="EndLineNumber">741</ATT>
+            <ATT name="LineNumber">680</ATT>
+            <ATT name="Name"><![CDATA[InteractionUse]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="RefersTo">
+              <ID name="Submit Schedule subflow" mc="Interaction" uid="3f9a8afd-1848-4a10-a57e-07f33b02b6f4"/>
+            </LINK>
+          </DEPENDENCIES>
         </OBJECT>
       </COMP>
       <COMP relation="OwnedLine">
@@ -1284,6 +2165,9 @@
           <DEPENDENCIES>
             <COMP relation="OwnedBehavior">
               <COMPID name="Create Schedule subflow" mc="Interaction" uid="19b4760a-9735-4fbe-a563-5d133665663c"/>
+              <COMPID name="Update Schedule subflow" mc="Interaction" uid="bee35185-4a64-4afa-ad55-e521c2ea47f2"/>
+              <COMPID name="Delete Schedule subflow" mc="Interaction" uid="c8759d0f-baaa-44b7-b630-f8a47601fa5a"/>
+              <COMPID name="Submit Schedule subflow" mc="Interaction" uid="3f9a8afd-1848-4a10-a57e-07f33b02b6f4"/>
             </COMP>
             <COMP relation="Declared">
               <OBJECT>

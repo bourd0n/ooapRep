@@ -3,8 +3,10 @@
   <DEPS>
     <ID name="CourseOffering" mc="Class" uid="a453e17a-b737-489c-89b0-afabdd16e749"/>
     <EXTID name="Course" mc="Class" uid="72805292-dde3-4132-9ac1-b2277e7f50e2"/>
+    <EXTID name="Professor" mc="Class" uid="e1bce0c2-4e02-40bc-9019-eb05e89657d1"/>
     <EXTID name="Schedule" mc="Class" uid="2d2c825e-7be1-4881-90a6-7e7e269518da"/>
     <EXTID name="entity" mc="Stereotype" uid="9020c6e6-d043-4f26-899a-037950006692"/>
+    <FOREIGNID name="undefined" mc="DataType" uid="00000004-0000-000f-0000-000000000000"/>
   </DEPS>
   <OBJECT>
     <ID name="CourseOffering" mc="Class" uid="a453e17a-b737-489c-89b0-afabdd16e749"/>
@@ -21,6 +23,108 @@
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
+      <COMP relation="OwnedAttribute">
+        <OBJECT>
+          <ID name="number" mc="Attribute" uid="694e4252-54d1-4f07-8dc1-9727860b2389"/>
+          <PID name="CourseOffering" mc="Class" uid="a453e17a-b737-489c-89b0-afabdd16e749"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">ReadWrite</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[number]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="undefined" mc="DataType" uid="00000004-0000-000f-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="day" mc="Attribute" uid="fcfddd21-98e9-43ac-bf11-f1b3ce9105a9"/>
+          <PID name="CourseOffering" mc="Class" uid="a453e17a-b737-489c-89b0-afabdd16e749"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">ReadWrite</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[day]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="undefined" mc="DataType" uid="00000004-0000-000f-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="pair" mc="Attribute" uid="09169335-3f8d-44ed-819b-4398526f8856"/>
+          <PID name="CourseOffering" mc="Class" uid="a453e17a-b737-489c-89b0-afabdd16e749"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">ReadWrite</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[pair]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="undefined" mc="DataType" uid="00000004-0000-000f-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="numStudents" mc="Attribute" uid="f194420e-b0ca-4d57-84dd-10670ab8cd51"/>
+          <PID name="CourseOffering" mc="Class" uid="a453e17a-b737-489c-89b0-afabdd16e749"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">ReadWrite</ATT>
+            <ATT name="IsDerived">true</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[numStudents]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="undefined" mc="DataType" uid="00000004-0000-000f-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
       <COMP relation="OwnedEnd">
         <OBJECT>
           <ID name="" mc="AssociationEnd" uid="d354f378-d0a6-4693-b0f0-7ae5a84239d4"/>
@@ -32,7 +136,7 @@
             <ATT name="IsDerived">false</ATT>
             <ATT name="IsOrdered">false</ATT>
             <ATT name="IsUnique">false</ATT>
-            <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
             <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
             <ATT name="Visibility">Private</ATT>
             <ATT name="IsClass">false</ATT>
@@ -119,13 +223,155 @@
           <DEPENDENCIES>
             <COMP relation="Opposite">
               <REFOBJ>
-                <ID name="altCourses" mc="AssociationEnd" uid="0d4e5c5c-4ad7-4c08-ad5a-6f5b203992d9"/>
+                <ID name="alternativeCourses" mc="AssociationEnd" uid="0d4e5c5c-4ad7-4c08-ad5a-6f5b203992d9"/>
                 <PID name="Schedule" mc="Class" uid="2d2c825e-7be1-4881-90a6-7e7e269518da"/>
               </REFOBJ>
             </COMP>
             <COMP relation="Association">
               <OBJECT>
                 <ID name="" mc="Association" uid="77ce635e-dae3-4b57-8ae2-85bd2d68751f"/>
+                <PID name="CourseOffering" mc="Class" uid="a453e17a-b737-489c-89b0-afabdd16e749"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <REFOBJ>
+          <ID name="" mc="AssociationEnd" uid="e9a0cfde-20d7-4fa6-850f-30e5af9d8d24"/>
+          <PID name="Professor" mc="Class" uid="e1bce0c2-4e02-40bc-9019-eb05e89657d1"/>
+        </REFOBJ>
+        <OBJECT>
+          <ID name="" mc="AssociationEnd" uid="4b5e5f05-ee7c-4ca5-a1dc-33209cd6cc98"/>
+          <PID name="CourseOffering" mc="Class" uid="a453e17a-b737-489c-89b0-afabdd16e749"/>
+          <ATTRIBUTES>
+            <ATT name="Aggregation">KindIsAssociation</ATT>
+            <ATT name="IsChangeable">true</ATT>
+            <ATT name="Changeable">ReadWrite</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[*]]></ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Opposite">
+              <OBJECT>
+                <ID name="primaryCourses" mc="AssociationEnd" uid="598dc5b2-27ea-4f56-bfef-0f2fe21b6a5c"/>
+                <PID name="CourseOffering" mc="Class" uid="a453e17a-b737-489c-89b0-afabdd16e749"/>
+                <ATTRIBUTES>
+                  <ATT name="Aggregation">KindIsAssociation</ATT>
+                  <ATT name="IsChangeable">true</ATT>
+                  <ATT name="Changeable">ReadWrite</ATT>
+                  <ATT name="IsDerived">false</ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[4]]></ATT>
+                  <ATT name="Visibility">Private</ATT>
+                  <ATT name="IsClass">false</ATT>
+                  <ATT name="IsAbstract">false</ATT>
+                  <ATT name="Name"><![CDATA[primaryCourses]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Opposite">
+                    <COMPID name="" mc="AssociationEnd" uid="4b5e5f05-ee7c-4ca5-a1dc-33209cd6cc98"/>
+                  </COMP>
+                  <COMP relation="Association">
+                    <OBJECT>
+                      <ID name="" mc="Association" uid="78e29a83-f436-4436-b88f-1b3501d847e8"/>
+                      <PID name="CourseOffering" mc="Class" uid="a453e17a-b737-489c-89b0-afabdd16e749"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Association">
+              <OBJECT>
+                <ID name="" mc="Association" uid="78e29a83-f436-4436-b88f-1b3501d847e8"/>
+                <PID name="CourseOffering" mc="Class" uid="a453e17a-b737-489c-89b0-afabdd16e749"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="AssociationEnd" uid="ca604801-3421-4cfa-aaad-18ae9f3a366f"/>
+          <PID name="CourseOffering" mc="Class" uid="a453e17a-b737-489c-89b0-afabdd16e749"/>
+          <ATTRIBUTES>
+            <ATT name="Aggregation">KindIsAssociation</ATT>
+            <ATT name="IsChangeable">true</ATT>
+            <ATT name="Changeable">ReadWrite</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[*]]></ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Opposite">
+              <OBJECT>
+                <ID name="alternativeCourses" mc="AssociationEnd" uid="8e1bc5c6-26a8-4b77-9aa2-ac9bbba66501"/>
+                <PID name="CourseOffering" mc="Class" uid="a453e17a-b737-489c-89b0-afabdd16e749"/>
+                <ATTRIBUTES>
+                  <ATT name="Aggregation">KindIsAssociation</ATT>
+                  <ATT name="IsChangeable">true</ATT>
+                  <ATT name="Changeable">ReadWrite</ATT>
+                  <ATT name="IsDerived">false</ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[2]]></ATT>
+                  <ATT name="Visibility">Private</ATT>
+                  <ATT name="IsClass">false</ATT>
+                  <ATT name="IsAbstract">false</ATT>
+                  <ATT name="Name"><![CDATA[alternativeCourses]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Opposite">
+                    <COMPID name="" mc="AssociationEnd" uid="ca604801-3421-4cfa-aaad-18ae9f3a366f"/>
+                  </COMP>
+                  <COMP relation="Association">
+                    <OBJECT>
+                      <ID name="" mc="Association" uid="efaeb8c3-4465-44c3-906b-8d9f84b4d7d1"/>
+                      <PID name="CourseOffering" mc="Class" uid="a453e17a-b737-489c-89b0-afabdd16e749"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Association">
+              <OBJECT>
+                <ID name="" mc="Association" uid="efaeb8c3-4465-44c3-906b-8d9f84b4d7d1"/>
                 <PID name="CourseOffering" mc="Class" uid="a453e17a-b737-489c-89b0-afabdd16e749"/>
                 <ATTRIBUTES>
                   <ATT name="Name"></ATT>

@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Delete Schedule subflow" version="3">
+  <DEPS>
+    <ID name="Delete Schedule subflow" mc="Interaction" uid="c8759d0f-baaa-44b7-b630-f8a47601fa5a"/>
+    <COMPID name="Interaction Sequence diagram" mc="SequenceDiagram" uid="ffefef72-269b-4476-93ca-c5f68f9b308e"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Delete Schedule subflow" mc="Interaction" uid="c8759d0f-baaa-44b7-b630-f8a47601fa5a"/>
+    <PID name="RegisterForCourses" mc="Interaction" uid="e0aa7315-1b87-4417-a733-d5eca6d610f7"/>
+    <ATTRIBUTES>
+      <ATT name="IsReentrant">false</ATT>
+      <ATT name="Name"><![CDATA[Delete Schedule subflow]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedCollaboration">
+        <OBJECT>
+          <ID name="locals" mc="Collaboration" uid="542aca69-8c81-409a-8a0f-cf030d6d7e61"/>
+          <PID name="Delete Schedule subflow" mc="Interaction" uid="c8759d0f-baaa-44b7-b630-f8a47601fa5a"/>
+          <ATTRIBUTES>
+            <ATT name="IsConcurrent">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[locals]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Interaction Sequence diagram" mc="SequenceDiagram" uid="ffefef72-269b-4476-93ca-c5f68f9b308e"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

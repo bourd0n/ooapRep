@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Обновить график" version="3">
+  <DEPS>
+    <ID name="Обновить график" mc="Activity" uid="f0a1f2ad-811f-46bc-a6a7-165f00b3e688"/>
+    <COMPID name="Activity diagram" mc="ActivityDiagram" uid="474eb316-6aab-47b6-bd37-50f3557c8c51"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Обновить график" mc="Activity" uid="f0a1f2ad-811f-46bc-a6a7-165f00b3e688"/>
+    <PID name="Зарегистрироваться на курсы" mc="UseCase" uid="04ae44ab-05ca-42ff-897b-53ad8669ab23"/>
+    <ATTRIBUTES>
+      <ATT name="IsSingleExecution">false</ATT>
+      <ATT name="IsReadOnly">false</ATT>
+      <ATT name="IsReentrant">false</ATT>
+      <ATT name="Name"><![CDATA[Обновить график]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedCollaboration">
+        <OBJECT>
+          <ID name="locals" mc="Collaboration" uid="04c886f6-0fdc-4bb8-9f2f-f510ac52d7a7"/>
+          <PID name="Обновить график" mc="Activity" uid="f0a1f2ad-811f-46bc-a6a7-165f00b3e688"/>
+          <ATTRIBUTES>
+            <ATT name="IsConcurrent">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[locals]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Activity diagram" mc="ActivityDiagram" uid="474eb316-6aab-47b6-bd37-50f3557c8c51"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
