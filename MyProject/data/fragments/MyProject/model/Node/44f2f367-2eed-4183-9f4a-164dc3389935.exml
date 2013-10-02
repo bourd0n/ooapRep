@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="ProfessorDestop" version="3">
+  <DEPS>
+    <ID name="ProfessorDestop" mc="Node" uid="44f2f367-2eed-4183-9f4a-164dc3389935"/>
+    <COMPID name="ProfessorApp" mc="Node" uid="0c159658-d926-4e78-b7cc-f2d20311bd47"/>
+    <EXTID name="Registration Server" mc="Node" uid="fa369808-a3a2-46a7-a0b7-c9f4785d3d49"/>
+    <FOREIGNID name="UML2ExecutionEnvironment" mc="Stereotype" uid="8e76c95f-5821-11df-be59-001302895b2b"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="ProfessorDestop" mc="Node" uid="44f2f367-2eed-4183-9f4a-164dc3389935"/>
+    <PID name="Deployment View" mc="Package" uid="0433357e-ca96-48b3-97c9-3425e1e5593e"/>
+    <ATTRIBUTES>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[ProfessorDestop]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedEnd">
+        <REFOBJ>
+          <ID name="" mc="AssociationEnd" uid="cf54fb30-5576-4049-a0f3-16091d0f3246"/>
+          <PID name="Registration Server" mc="Node" uid="fa369808-a3a2-46a7-a0b7-c9f4785d3d49"/>
+        </REFOBJ>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <COMPID name="ProfessorApp" mc="Node" uid="0c159658-d926-4e78-b7cc-f2d20311bd47"/>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="UML2ExecutionEnvironment" mc="Stereotype" uid="8e76c95f-5821-11df-be59-001302895b2b"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

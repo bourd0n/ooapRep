@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="StudentDesktop" version="3">
+  <DEPS>
+    <ID name="StudentDesktop" mc="Node" uid="754ee993-39a7-4420-a713-59faafb3b55a"/>
+    <COMPID name="StudentApllication" mc="Node" uid="2c210dc1-b45c-4192-80ab-bbd9a6f6bd81"/>
+    <EXTID name="Registration Server" mc="Node" uid="fa369808-a3a2-46a7-a0b7-c9f4785d3d49"/>
+    <FOREIGNID name="UML2ExecutionEnvironment" mc="Stereotype" uid="8e76c95f-5821-11df-be59-001302895b2b"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="StudentDesktop" mc="Node" uid="754ee993-39a7-4420-a713-59faafb3b55a"/>
+    <PID name="Deployment View" mc="Package" uid="0433357e-ca96-48b3-97c9-3425e1e5593e"/>
+    <ATTRIBUTES>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[StudentDesktop]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedEnd">
+        <REFOBJ>
+          <ID name="" mc="AssociationEnd" uid="fedd9b12-fafe-4e2a-8671-3cd1a5fbcd21"/>
+          <PID name="Registration Server" mc="Node" uid="fa369808-a3a2-46a7-a0b7-c9f4785d3d49"/>
+        </REFOBJ>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <COMPID name="StudentApllication" mc="Node" uid="2c210dc1-b45c-4192-80ab-bbd9a6f6bd81"/>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="UML2ExecutionEnvironment" mc="Stereotype" uid="8e76c95f-5821-11df-be59-001302895b2b"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

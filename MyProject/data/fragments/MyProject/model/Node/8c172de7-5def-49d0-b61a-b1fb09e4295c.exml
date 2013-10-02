@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="RegistrarApp" version="3">
+  <DEPS>
+    <ID name="RegistrarApp" mc="Node" uid="8c172de7-5def-49d0-b61a-b1fb09e4295c"/>
+    <FOREIGNID name="process" mc="Stereotype" uid="00700680-0000-01ef-0000-000000000000"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="RegistrarApp" mc="Node" uid="8c172de7-5def-49d0-b61a-b1fb09e4295c"/>
+    <PID name="RegistrarDesktop" mc="Node" uid="6bc17732-9a7b-4cb3-a72e-77112ee1afa8"/>
+    <ATTRIBUTES>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[RegistrarApp]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Extension">
+        <FOREIGNID name="process" mc="Stereotype" uid="00700680-0000-01ef-0000-000000000000"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,129 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="CourseOfferingList" version="3">
+  <DEPS>
+    <ID name="CourseOfferingList" mc="Interface" uid="edac47b3-4779-46fc-b37f-5ff7edd3557e"/>
+    <EXTID name="CourseOffering" mc="Class" uid="917427ed-73a2-478e-94a1-ad3b97607fad"/>
+    <EXTID name="List" mc="Interface" uid="af189184-d986-4955-bfc7-5f8e88677597"/>
+    <EXTID name="boolean" mc="DataType" uid="7b296c6a-4e09-485b-b2ee-a220f91d8821"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="CourseOfferingList" mc="Interface" uid="edac47b3-4779-46fc-b37f-5ff7edd3557e"/>
+    <PID name="UniversityArtefacts" mc="Package" uid="9b67fad1-4eb4-44db-a636-3096c829ee7e"/>
+    <ATTRIBUTES>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">true</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[CourseOfferingList]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedOperation">
+        <OBJECT>
+          <ID name="add" mc="Operation" uid="86744854-b976-4be4-814f-77546a72405f"/>
+          <PID name="CourseOfferingList" mc="Interface" uid="edac47b3-4779-46fc-b37f-5ff7edd3557e"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[add]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="e" mc="Parameter" uid="304d78d4-1d1c-42aa-82ac-79044d2a0505"/>
+                <PID name="CourseOfferingList" mc="Interface" uid="edac47b3-4779-46fc-b37f-5ff7edd3557e"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[e]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="CourseOffering" mc="Class" uid="917427ed-73a2-478e-94a1-ad3b97607fad"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Return">
+              <OBJECT>
+                <ID name="" mc="Parameter" uid="b8f6c895-06b7-4ec0-8e4e-332b7f77acba"/>
+                <PID name="CourseOfferingList" mc="Interface" uid="edac47b3-4779-46fc-b37f-5ff7edd3557e"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="boolean" mc="DataType" uid="7b296c6a-4e09-485b-b2ee-a220f91d8821"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="TemplateInstanciation">
+        <OBJECT>
+          <ID name="-&gt;List" mc="TemplateBinding" uid="7c294fa4-4f4a-4fe9-a161-4b3ee22ffe02"/>
+          <PID name="CourseOfferingList" mc="Interface" uid="edac47b3-4779-46fc-b37f-5ff7edd3557e"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[->List]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="ParameterSubstitution">
+              <OBJECT>
+                <ID name="E" mc="TemplateParameterSubstitution" uid="92adb1d1-267d-4cbe-a7e4-18a250322346"/>
+                <PID name="CourseOfferingList" mc="Interface" uid="edac47b3-4779-46fc-b37f-5ff7edd3557e"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"><![CDATA[E]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Actual">
+                    <ID name="CourseOffering" mc="Class" uid="917427ed-73a2-478e-94a1-ad3b97607fad"/>
+                  </LINK>
+                  <LINK relation="FormalParameter">
+                    <REFOBJ>
+                      <ID name="E" mc="TemplateParameter" uid="5f46fbb3-3488-4cd1-a75c-6b6f38df6863"/>
+                      <PID name="List" mc="Interface" uid="af189184-d986-4955-bfc7-5f8e88677597"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="InstanciatedTemplate">
+              <ID name="List" mc="Interface" uid="af189184-d986-4955-bfc7-5f8e88677597"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

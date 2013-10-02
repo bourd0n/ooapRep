@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Printer" version="3">
+  <DEPS>
+    <ID name="Printer" mc="Node" uid="26ad3d17-ca68-4b66-9645-1557db4f4e3f"/>
+    <EXTID name="Registration Server" mc="Node" uid="fa369808-a3a2-46a7-a0b7-c9f4785d3d49"/>
+    <FOREIGNID name="UML2Device" mc="Stereotype" uid="6f3c6234-52b8-11df-a320-001302895b2b"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Printer" mc="Node" uid="26ad3d17-ca68-4b66-9645-1557db4f4e3f"/>
+    <PID name="Deployment View" mc="Package" uid="0433357e-ca96-48b3-97c9-3425e1e5593e"/>
+    <ATTRIBUTES>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Printer]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedEnd">
+        <REFOBJ>
+          <ID name="" mc="AssociationEnd" uid="9a45cd59-9798-4d35-b6c3-4dc445cca701"/>
+          <PID name="Registration Server" mc="Node" uid="fa369808-a3a2-46a7-a0b7-c9f4785d3d49"/>
+        </REFOBJ>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="UML2Device" mc="Stereotype" uid="6f3c6234-52b8-11df-a320-001302895b2b"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

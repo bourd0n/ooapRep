@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="RegistrarDesktop" version="3">
+  <DEPS>
+    <ID name="RegistrarDesktop" mc="Node" uid="6bc17732-9a7b-4cb3-a72e-77112ee1afa8"/>
+    <COMPID name="RegistrarApp" mc="Node" uid="8c172de7-5def-49d0-b61a-b1fb09e4295c"/>
+    <EXTID name="Registration Server" mc="Node" uid="fa369808-a3a2-46a7-a0b7-c9f4785d3d49"/>
+    <FOREIGNID name="UML2ExecutionEnvironment" mc="Stereotype" uid="8e76c95f-5821-11df-be59-001302895b2b"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="RegistrarDesktop" mc="Node" uid="6bc17732-9a7b-4cb3-a72e-77112ee1afa8"/>
+    <PID name="Deployment View" mc="Package" uid="0433357e-ca96-48b3-97c9-3425e1e5593e"/>
+    <ATTRIBUTES>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[RegistrarDesktop]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedEnd">
+        <REFOBJ>
+          <ID name="" mc="AssociationEnd" uid="f791d754-e3b6-477f-a746-b7b4ee2a906a"/>
+          <PID name="Registration Server" mc="Node" uid="fa369808-a3a2-46a7-a0b7-c9f4785d3d49"/>
+        </REFOBJ>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <COMPID name="RegistrarApp" mc="Node" uid="8c172de7-5def-49d0-b61a-b1fb09e4295c"/>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="UML2ExecutionEnvironment" mc="Stereotype" uid="8e76c95f-5821-11df-be59-001302895b2b"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

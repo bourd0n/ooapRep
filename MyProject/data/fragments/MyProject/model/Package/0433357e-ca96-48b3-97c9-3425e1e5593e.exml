@@ -2,6 +2,14 @@
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Deployment View" version="3">
   <DEPS>
     <ID name="Deployment View" mc="Package" uid="0433357e-ca96-48b3-97c9-3425e1e5593e"/>
+    <COMPID name="BillingSystem" mc="Node" uid="785e9b1b-6a41-4680-b23d-9f017c9f8838"/>
+    <COMPID name="CourseCatalog" mc="Node" uid="ea770d58-8651-4076-9f74-4ccd23cc0c93"/>
+    <COMPID name="Deployment View Deployment diagram" mc="DeploymentDiagram" uid="b5845774-fc92-471f-8f74-b556410e2859"/>
+    <COMPID name="Printer" mc="Node" uid="26ad3d17-ca68-4b66-9645-1557db4f4e3f"/>
+    <COMPID name="ProfessorDestop" mc="Node" uid="44f2f367-2eed-4183-9f4a-164dc3389935"/>
+    <COMPID name="RegistrarDesktop" mc="Node" uid="6bc17732-9a7b-4cb3-a72e-77112ee1afa8"/>
+    <COMPID name="Registration Server" mc="Node" uid="fa369808-a3a2-46a7-a0b7-c9f4785d3d49"/>
+    <COMPID name="StudentDesktop" mc="Node" uid="754ee993-39a7-4420-a713-59faafb3b55a"/>
     <EXTID name="architectural view" mc="Stereotype" uid="d89a3286-3680-49a0-9090-29c181a879ec"/>
   </DEPS>
   <OBJECT>
@@ -17,9 +25,21 @@
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Registration Server" mc="Node" uid="fa369808-a3a2-46a7-a0b7-c9f4785d3d49"/>
+        <COMPID name="CourseCatalog" mc="Node" uid="ea770d58-8651-4076-9f74-4ccd23cc0c93"/>
+        <COMPID name="BillingSystem" mc="Node" uid="785e9b1b-6a41-4680-b23d-9f017c9f8838"/>
+        <COMPID name="StudentDesktop" mc="Node" uid="754ee993-39a7-4420-a713-59faafb3b55a"/>
+        <COMPID name="ProfessorDestop" mc="Node" uid="44f2f367-2eed-4183-9f4a-164dc3389935"/>
+        <COMPID name="RegistrarDesktop" mc="Node" uid="6bc17732-9a7b-4cb3-a72e-77112ee1afa8"/>
+        <COMPID name="Printer" mc="Node" uid="26ad3d17-ca68-4b66-9645-1557db4f4e3f"/>
+      </COMP>
       <LINK relation="Extension">
         <ID name="architectural view" mc="Stereotype" uid="d89a3286-3680-49a0-9090-29c181a879ec"/>
       </LINK>
+      <COMP relation="Product">
+        <COMPID name="Deployment View Deployment diagram" mc="DeploymentDiagram" uid="b5845774-fc92-471f-8f74-b556410e2859"/>
+      </COMP>
     </DEPENDENCIES>
   </OBJECT>
 </EXT>

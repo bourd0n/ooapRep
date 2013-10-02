@@ -7,7 +7,6 @@
     <COMPID name="Delete Schedule subflow" mc="Interaction" uid="5d322f21-2e54-49f7-a707-3289d7584eb2"/>
     <COMPID name="Submit Schedule subflow" mc="Interaction" uid="776abaeb-9520-4794-ab2f-4fcdec1fdbef"/>
     <COMPID name="Update Schedule subflow" mc="Interaction" uid="bcbb907f-0936-412d-a840-ca5a84732d1b"/>
-    <EXTID name="CourseCatalogSystem" mc="Class" uid="6532bb1b-2344-4cc6-b851-f90d0a426f79"/>
     <EXTID name="Create Schedule subflow" mc="Interaction" uid="a3633d19-48dc-4038-8925-3b66b4d799bb"/>
     <EXTID name="Delete Schedule subflow" mc="Interaction" uid="5d322f21-2e54-49f7-a707-3289d7584eb2"/>
     <EXTID name="ICourseCatalogSystem" mc="Interface" uid="8a78d3ce-5e32-44f9-9373-46f3d3d3bc14"/>
@@ -885,12 +884,6 @@
                 <PID name="RegisterForCourses" mc="Interaction" uid="d4e84265-cb2a-4207-9fd5-35c407158c46"/>
               </REFOBJ>
             </LINK>
-            <LINK relation="Covered">
-              <REFOBJ>
-                <ID name="catalog " mc="Lifeline" uid="7779ed32-80b8-4cdf-9b52-eb8c4c655636"/>
-                <PID name="RegisterForCourses" mc="Interaction" uid="d4e84265-cb2a-4207-9fd5-35c407158c46"/>
-              </REFOBJ>
-            </LINK>
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
@@ -923,12 +916,6 @@
                 </DEPENDENCIES>
               </OBJECT>
             </COMP>
-            <LINK relation="Covered">
-              <REFOBJ>
-                <ID name="catalog " mc="Lifeline" uid="7779ed32-80b8-4cdf-9b52-eb8c4c655636"/>
-                <PID name="RegisterForCourses" mc="Interaction" uid="d4e84265-cb2a-4207-9fd5-35c407158c46"/>
-              </REFOBJ>
-            </LINK>
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
@@ -943,12 +930,6 @@
             <LINK relation="Finish">
               <REFOBJ>
                 <ID name="" mc="ExecutionOccurenceSpecification" uid="3160812d-c73b-48d3-a381-bb5933bc8162"/>
-                <PID name="RegisterForCourses" mc="Interaction" uid="d4e84265-cb2a-4207-9fd5-35c407158c46"/>
-              </REFOBJ>
-            </LINK>
-            <LINK relation="Covered">
-              <REFOBJ>
-                <ID name="catalog " mc="Lifeline" uid="7779ed32-80b8-4cdf-9b52-eb8c4c655636"/>
                 <PID name="RegisterForCourses" mc="Interaction" uid="d4e84265-cb2a-4207-9fd5-35c407158c46"/>
               </REFOBJ>
             </LINK>
@@ -1694,12 +1675,6 @@
                 <PID name="RegisterForCourses" mc="Interaction" uid="d4e84265-cb2a-4207-9fd5-35c407158c46"/>
               </REFOBJ>
             </LINK>
-            <LINK relation="Covered">
-              <REFOBJ>
-                <ID name="catalog " mc="Lifeline" uid="7779ed32-80b8-4cdf-9b52-eb8c4c655636"/>
-                <PID name="RegisterForCourses" mc="Interaction" uid="d4e84265-cb2a-4207-9fd5-35c407158c46"/>
-              </REFOBJ>
-            </LINK>
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
@@ -1732,12 +1707,6 @@
                 </DEPENDENCIES>
               </OBJECT>
             </COMP>
-            <LINK relation="Covered">
-              <REFOBJ>
-                <ID name="catalog " mc="Lifeline" uid="7779ed32-80b8-4cdf-9b52-eb8c4c655636"/>
-                <PID name="RegisterForCourses" mc="Interaction" uid="d4e84265-cb2a-4207-9fd5-35c407158c46"/>
-              </REFOBJ>
-            </LINK>
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
@@ -1752,12 +1721,6 @@
             <LINK relation="Finish">
               <REFOBJ>
                 <ID name="" mc="ExecutionOccurenceSpecification" uid="35d6b442-c3f1-43ad-8058-d2f6110cc95b"/>
-                <PID name="RegisterForCourses" mc="Interaction" uid="d4e84265-cb2a-4207-9fd5-35c407158c46"/>
-              </REFOBJ>
-            </LINK>
-            <LINK relation="Covered">
-              <REFOBJ>
-                <ID name="catalog " mc="Lifeline" uid="7779ed32-80b8-4cdf-9b52-eb8c4c655636"/>
                 <PID name="RegisterForCourses" mc="Interaction" uid="d4e84265-cb2a-4207-9fd5-35c407158c46"/>
               </REFOBJ>
             </LINK>
@@ -2132,23 +2095,6 @@
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
-        <OBJECT>
-          <ID name="catalog " mc="Lifeline" uid="7779ed32-80b8-4cdf-9b52-eb8c4c655636"/>
-          <PID name="RegisterForCourses" mc="Interaction" uid="d4e84265-cb2a-4207-9fd5-35c407158c46"/>
-          <ATTRIBUTES>
-            <ATT name="Selector"></ATT>
-            <ATT name="Name"><![CDATA[catalog ]]></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="Represented">
-              <REFOBJ>
-                <ID name="catalog " mc="BindableInstance" uid="17a6fc30-fa8b-4b09-ac15-a020860ac07e"/>
-                <PID name="RegisterForCourses" mc="Interaction" uid="d4e84265-cb2a-4207-9fd5-35c407158c46"/>
-              </REFOBJ>
-            </LINK>
-          </DEPENDENCIES>
-        </OBJECT>
       </COMP>
       <COMP relation="OwnedCollaboration">
         <OBJECT>
@@ -2235,7 +2181,7 @@
                 </ATTRIBUTES>
                 <DEPENDENCIES>
                   <LINK relation="Base">
-                    <ID name="CourseCatalogSystem" mc="Class" uid="6532bb1b-2344-4cc6-b851-f90d0a426f79"/>
+                    <ID name="ICourseCatalogSystem" mc="Interface" uid="8a78d3ce-5e32-44f9-9373-46f3d3d3bc14"/>
                   </LINK>
                 </DEPENDENCIES>
               </OBJECT>

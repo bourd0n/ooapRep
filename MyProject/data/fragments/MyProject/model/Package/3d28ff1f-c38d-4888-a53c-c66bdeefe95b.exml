@@ -2,8 +2,18 @@
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="CourseCatalogSystem" version="3">
   <DEPS>
     <ID name="CourseCatalogSystem" mc="Package" uid="3d28ff1f-c38d-4888-a53c-c66bdeefe95b"/>
+    <COMPID name="CourseCatalogSystem" mc="ClassDiagram" uid="dbd9e6ca-4af4-47f7-88a1-93eb89cc5a20"/>
     <COMPID name="CourseCatalogSystem" mc="Class" uid="6532bb1b-2344-4cc6-b851-f90d0a426f79"/>
+    <COMPID name="Main" mc="CompositeStructureDiagram" uid="ce929048-b216-4c11-80a7-96f224d8323f"/>
+    <COMPID name="connectWithCatalog" mc="Interaction" uid="2c170673-1f20-4244-96b6-8d297b37aa07"/>
+    <COMPID name="disconnectWithCatalog" mc="Interaction" uid="2bd36aa7-9103-4861-8527-38a5b86b09a2"/>
+    <COMPID name="getCourseOfferings" mc="Interaction" uid="546796d6-c113-45ad-bd81-cc11fcd64efd"/>
+    <EXTID name="CourseCatalogSystem" mc="Class" uid="6532bb1b-2344-4cc6-b851-f90d0a426f79"/>
+    <EXTID name="CourseOffering" mc="Class" uid="917427ed-73a2-478e-94a1-ad3b97607fad"/>
+    <EXTID name="CourseOfferingList" mc="Interface" uid="edac47b3-4779-46fc-b37f-5ff7edd3557e"/>
+    <EXTID name="DriverManager" mc="Class" uid="2e6bcb70-8094-4ee8-a73d-e60455a13462"/>
     <EXTID name="Interfaces" mc="Package" uid="1ddfccc2-db57-4679-a278-bdd04c8693b5"/>
+    <EXTID name="RDBMS-JDBC" mc="Package" uid="bb773d29-1b34-4dd6-9d70-2dfcd5ce44b5"/>
     <FOREIGNID name="subsystem" mc="Stereotype" uid="00700680-0000-01d3-0000-000000000000"/>
   </DEPS>
   <OBJECT>
@@ -37,10 +47,152 @@
       </COMP>
       <COMP relation="OwnedElement">
         <COMPID name="CourseCatalogSystem" mc="Class" uid="6532bb1b-2344-4cc6-b851-f90d0a426f79"/>
+        <OBJECT>
+          <ID name="ICCSystem" mc="Collaboration" uid="5e5c1bad-7a63-4099-a217-7a0abcfe5014"/>
+          <PID name="CourseCatalogSystem" mc="Package" uid="3d28ff1f-c38d-4888-a53c-c66bdeefe95b"/>
+          <ATTRIBUTES>
+            <ATT name="IsConcurrent">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[ICCSystem]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="TemplateInstanciation">
+              <OBJECT>
+                <ID name="-&gt;RDBMS-JDBC" mc="TemplateBinding" uid="101ddadf-1283-4919-80fa-77f59a690ecb"/>
+                <PID name="CourseCatalogSystem" mc="Package" uid="3d28ff1f-c38d-4888-a53c-c66bdeefe95b"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[->RDBMS-JDBC]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="ParameterSubstitution">
+                    <OBJECT>
+                      <ID name="DBClass" mc="TemplateParameterSubstitution" uid="5c9a6b22-e3dc-415b-adc3-819f394d3b80"/>
+                      <PID name="CourseCatalogSystem" mc="Package" uid="3d28ff1f-c38d-4888-a53c-c66bdeefe95b"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"></ATT>
+                        <ATT name="Name"><![CDATA[DBClass]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Actual">
+                          <ID name="CourseCatalogSystem" mc="Class" uid="6532bb1b-2344-4cc6-b851-f90d0a426f79"/>
+                        </LINK>
+                        <LINK relation="FormalParameter">
+                          <REFOBJ>
+                            <ID name="DBClass" mc="TemplateParameter" uid="899cdf2d-3a1f-4d0f-8af1-36e685a85b23"/>
+                            <PID name="RDBMS-JDBC" mc="Package" uid="bb773d29-1b34-4dd6-9d70-2dfcd5ce44b5"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="PersistentClass" mc="TemplateParameterSubstitution" uid="9d87d763-7ba6-4b49-9777-74e0d38f48ff"/>
+                      <PID name="CourseCatalogSystem" mc="Package" uid="3d28ff1f-c38d-4888-a53c-c66bdeefe95b"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"></ATT>
+                        <ATT name="Name"><![CDATA[PersistentClass]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Actual">
+                          <ID name="CourseOffering" mc="Class" uid="917427ed-73a2-478e-94a1-ad3b97607fad"/>
+                        </LINK>
+                        <LINK relation="FormalParameter">
+                          <REFOBJ>
+                            <ID name="PersistentClass" mc="TemplateParameter" uid="3804e109-0c02-48ce-98f1-e4f7ed0a2094"/>
+                            <PID name="RDBMS-JDBC" mc="Package" uid="bb773d29-1b34-4dd6-9d70-2dfcd5ce44b5"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="PesistentClassList" mc="TemplateParameterSubstitution" uid="1b845277-d06e-441d-a213-d72c00794921"/>
+                      <PID name="CourseCatalogSystem" mc="Package" uid="3d28ff1f-c38d-4888-a53c-c66bdeefe95b"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"></ATT>
+                        <ATT name="Name"><![CDATA[PesistentClassList]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Actual">
+                          <ID name="CourseOfferingList" mc="Interface" uid="edac47b3-4779-46fc-b37f-5ff7edd3557e"/>
+                        </LINK>
+                        <LINK relation="FormalParameter">
+                          <REFOBJ>
+                            <ID name="PesistentClassList" mc="TemplateParameter" uid="f29bcc9d-1fbf-403c-b752-aacaacd24046"/>
+                            <PID name="RDBMS-JDBC" mc="Package" uid="bb773d29-1b34-4dd6-9d70-2dfcd5ce44b5"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="InstanciatedTemplate">
+                    <REFOBJ>
+                      <ID name="RDBMS-JDBC" mc="Collaboration" uid="3120e8c6-7394-438d-bae1-5ac884964bd5"/>
+                      <PID name="RDBMS-JDBC" mc="Package" uid="bb773d29-1b34-4dd6-9d70-2dfcd5ce44b5"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="OwnedBehavior">
+              <COMPID name="disconnectWithCatalog" mc="Interaction" uid="2bd36aa7-9103-4861-8527-38a5b86b09a2"/>
+              <COMPID name="getCourseOfferings" mc="Interaction" uid="546796d6-c113-45ad-bd81-cc11fcd64efd"/>
+              <COMPID name="connectWithCatalog" mc="Interaction" uid="2c170673-1f20-4244-96b6-8d297b37aa07"/>
+            </COMP>
+            <COMP relation="Declared">
+              <OBJECT>
+                <ID name="drMan" mc="BindableInstance" uid="d8ae1bc0-11de-4c0b-aae4-0674391e4e71"/>
+                <PID name="CourseCatalogSystem" mc="Package" uid="3d28ff1f-c38d-4888-a53c-c66bdeefe95b"/>
+                <ATTRIBUTES>
+                  <ATT name="IsConstant">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"><![CDATA[drMan]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Base">
+                    <ID name="DriverManager" mc="Class" uid="2e6bcb70-8094-4ee8-a73d-e60455a13462"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="persistObjList" mc="BindableInstance" uid="7e42b8e4-421a-485c-958a-b7d2be5390d5"/>
+                <PID name="CourseCatalogSystem" mc="Package" uid="3d28ff1f-c38d-4888-a53c-c66bdeefe95b"/>
+                <ATTRIBUTES>
+                  <ATT name="IsConstant">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"><![CDATA[persistObjList]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Base">
+                    <ID name="CourseOfferingList" mc="Interface" uid="edac47b3-4779-46fc-b37f-5ff7edd3557e"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Product">
+              <COMPID name="Main" mc="CompositeStructureDiagram" uid="ce929048-b216-4c11-80a7-96f224d8323f"/>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
       </COMP>
       <LINK relation="Extension">
         <FOREIGNID name="subsystem" mc="Stereotype" uid="00700680-0000-01d3-0000-000000000000"/>
       </LINK>
+      <COMP relation="Product">
+        <COMPID name="CourseCatalogSystem" mc="ClassDiagram" uid="dbd9e6ca-4af4-47f7-88a1-93eb89cc5a20"/>
+      </COMP>
     </DEPENDENCIES>
   </OBJECT>
 </EXT>

@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="BillingSystemAccess" version="3">
+  <DEPS>
+    <ID name="BillingSystemAccess" mc="Node" uid="a7173ab5-6132-4d15-95b9-4edec4e4d8a5"/>
+    <FOREIGNID name="process" mc="Stereotype" uid="00700680-0000-01ef-0000-000000000000"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="BillingSystemAccess" mc="Node" uid="a7173ab5-6132-4d15-95b9-4edec4e4d8a5"/>
+    <PID name="Registration Server" mc="Node" uid="fa369808-a3a2-46a7-a0b7-c9f4785d3d49"/>
+    <ATTRIBUTES>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[BillingSystemAccess]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Extension">
+        <FOREIGNID name="process" mc="Stereotype" uid="00700680-0000-01ef-0000-000000000000"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

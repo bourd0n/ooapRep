@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="BillingSystem" version="3">
+  <DEPS>
+    <ID name="BillingSystem" mc="Node" uid="785e9b1b-6a41-4680-b23d-9f017c9f8838"/>
+    <EXTID name="Registration Server" mc="Node" uid="fa369808-a3a2-46a7-a0b7-c9f4785d3d49"/>
+    <FOREIGNID name="UML2ExecutionEnvironment" mc="Stereotype" uid="8e76c95f-5821-11df-be59-001302895b2b"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="BillingSystem" mc="Node" uid="785e9b1b-6a41-4680-b23d-9f017c9f8838"/>
+    <PID name="Deployment View" mc="Package" uid="0433357e-ca96-48b3-97c9-3425e1e5593e"/>
+    <ATTRIBUTES>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[BillingSystem]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedEnd">
+        <REFOBJ>
+          <ID name="" mc="AssociationEnd" uid="2eb399c0-e653-40ff-8b2e-d5f1d125ec40"/>
+          <PID name="Registration Server" mc="Node" uid="fa369808-a3a2-46a7-a0b7-c9f4785d3d49"/>
+        </REFOBJ>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="UML2ExecutionEnvironment" mc="Stereotype" uid="8e76c95f-5821-11df-be59-001302895b2b"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

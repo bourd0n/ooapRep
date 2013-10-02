@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="StudentApllication" version="3">
+  <DEPS>
+    <ID name="StudentApllication" mc="Node" uid="2c210dc1-b45c-4192-80ab-bbd9a6f6bd81"/>
+    <FOREIGNID name="process" mc="Stereotype" uid="00700680-0000-01ef-0000-000000000000"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="StudentApllication" mc="Node" uid="2c210dc1-b45c-4192-80ab-bbd9a6f6bd81"/>
+    <PID name="StudentDesktop" mc="Node" uid="754ee993-39a7-4420-a713-59faafb3b55a"/>
+    <ATTRIBUTES>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[StudentApllication]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Extension">
+        <FOREIGNID name="process" mc="Stereotype" uid="00700680-0000-01ef-0000-000000000000"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
