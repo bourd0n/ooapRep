@@ -1,0 +1,127 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="TablePartTimeClassification" version="3">
+  <DEPS>
+    <ID name="TablePartTimeClassification" mc="Class" uid="1378f701-b70a-4f5d-a69f-217a72e9bbcd"/>
+    <EXTID name="fk" mc="Stereotype" uid="a28d3983-6448-4745-ba1e-a7dce9e8f7ec"/>
+    <EXTID name="int" mc="DataType" uid="4896428e-280b-409b-9855-6da96049be4a"/>
+    <EXTID name="long" mc="DataType" uid="26abfd96-4e80-47bf-887e-9992249d0908"/>
+    <EXTID name="pk" mc="Stereotype" uid="6742644a-d677-425d-94dc-c054f36f0ee9"/>
+    <EXTID name="table" mc="Stereotype" uid="54d385e5-51fc-40bc-b7e6-f0cf1875d1ef"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="TablePartTimeClassification" mc="Class" uid="1378f701-b70a-4f5d-a69f-217a72e9bbcd"/>
+    <PID name="Database Schema" mc="Package" uid="a2b74353-85bf-4047-ab46-20f3fc6377e3"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[TablePartTimeClassification]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedOperation">
+        <OBJECT>
+          <ID name="pkPartTimeClassification" mc="Operation" uid="6994da52-14c7-4f14-a4a7-ff422fcd3679"/>
+          <PID name="TablePartTimeClassification" mc="Class" uid="1378f701-b70a-4f5d-a69f-217a72e9bbcd"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[pkPartTimeClassification]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Extension">
+              <ID name="pk" mc="Stereotype" uid="6742644a-d677-425d-94dc-c054f36f0ee9"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="fkPartTimeClassification" mc="Operation" uid="db56fad4-34cc-4401-a893-845169b188bd"/>
+          <PID name="TablePartTimeClassification" mc="Class" uid="1378f701-b70a-4f5d-a69f-217a72e9bbcd"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[fkPartTimeClassification]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Extension">
+              <ID name="fk" mc="Stereotype" uid="a28d3983-6448-4745-ba1e-a7dce9e8f7ec"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedAttribute">
+        <OBJECT>
+          <ID name="maxNumOfCourses" mc="Attribute" uid="de148d0a-d467-4f24-87c7-9fbed3e76d41"/>
+          <PID name="TablePartTimeClassification" mc="Class" uid="1378f701-b70a-4f5d-a69f-217a72e9bbcd"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">ReadWrite</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[maxNumOfCourses]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <ID name="int" mc="DataType" uid="4896428e-280b-409b-9855-6da96049be4a"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="idStudent" mc="Attribute" uid="347bdd6a-b27b-4990-944d-fa5ada16854b"/>
+          <PID name="TablePartTimeClassification" mc="Class" uid="1378f701-b70a-4f5d-a69f-217a72e9bbcd"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">ReadWrite</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[idStudent]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <ID name="long" mc="DataType" uid="26abfd96-4e80-47bf-887e-9992249d0908"/>
+            </LINK>
+            <LINK relation="Extension">
+              <ID name="fk" mc="Stereotype" uid="a28d3983-6448-4745-ba1e-a7dce9e8f7ec"/>
+              <ID name="pk" mc="Stereotype" uid="6742644a-d677-425d-94dc-c054f36f0ee9"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <LINK relation="Extension">
+        <ID name="table" mc="Stereotype" uid="54d385e5-51fc-40bc-b7e6-f0cf1875d1ef"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

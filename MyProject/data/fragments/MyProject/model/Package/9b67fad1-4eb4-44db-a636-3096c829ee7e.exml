@@ -2,14 +2,16 @@
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="UniversityArtefacts" version="3">
   <DEPS>
     <ID name="UniversityArtefacts" mc="Package" uid="9b67fad1-4eb4-44db-a636-3096c829ee7e"/>
+    <COMPID name="Classification" mc="Class" uid="bb6c296d-c162-44bf-8b53-f50e138de9db"/>
     <COMPID name="Course" mc="Class" uid="e354f2b4-27a5-4e69-84e6-7c3c256e38da"/>
     <COMPID name="CourseOffering" mc="Class" uid="917427ed-73a2-478e-94a1-ad3b97607fad"/>
     <COMPID name="CourseOfferingList" mc="Interface" uid="edac47b3-4779-46fc-b37f-5ff7edd3557e"/>
-    <COMPID name="FullTimeStudent" mc="Class" uid="620e35bc-bff3-402b-91a3-bc80b647c18b"/>
+    <COMPID name="FullTimeClassification" mc="Class" uid="620e35bc-bff3-402b-91a3-bc80b647c18b"/>
     <COMPID name="Key Abstractions" mc="ClassDiagram" uid="aedb5ed5-0057-4be6-bc7f-654b311cbfed"/>
-    <COMPID name="PartTimeStudent" mc="Class" uid="42ffee88-088c-47d0-a066-609941437684"/>
+    <COMPID name="PartTimeClassification" mc="Class" uid="42ffee88-088c-47d0-a066-609941437684"/>
     <COMPID name="Professor" mc="Class" uid="4202c952-eb71-4faa-9f52-a460ce5fbc4e"/>
     <COMPID name="Schedule" mc="Class" uid="63f29c0b-fbfd-40cc-aa6d-c278ad946fc9"/>
+    <COMPID name="Student" mc="ClassDiagram" uid="b87dadf4-fd8f-4665-9ce0-60ab8070b6e1"/>
     <COMPID name="Student" mc="Class" uid="12bb94b2-674e-4bf6-aebf-049d5cea6c20"/>
   </DEPS>
   <OBJECT>
@@ -27,16 +29,18 @@
     <DEPENDENCIES>
       <COMP relation="OwnedElement">
         <COMPID name="Schedule" mc="Class" uid="63f29c0b-fbfd-40cc-aa6d-c278ad946fc9"/>
-        <COMPID name="PartTimeStudent" mc="Class" uid="42ffee88-088c-47d0-a066-609941437684"/>
-        <COMPID name="FullTimeStudent" mc="Class" uid="620e35bc-bff3-402b-91a3-bc80b647c18b"/>
+        <COMPID name="PartTimeClassification" mc="Class" uid="42ffee88-088c-47d0-a066-609941437684"/>
+        <COMPID name="FullTimeClassification" mc="Class" uid="620e35bc-bff3-402b-91a3-bc80b647c18b"/>
         <COMPID name="CourseOffering" mc="Class" uid="917427ed-73a2-478e-94a1-ad3b97607fad"/>
         <COMPID name="Student" mc="Class" uid="12bb94b2-674e-4bf6-aebf-049d5cea6c20"/>
         <COMPID name="Professor" mc="Class" uid="4202c952-eb71-4faa-9f52-a460ce5fbc4e"/>
         <COMPID name="Course" mc="Class" uid="e354f2b4-27a5-4e69-84e6-7c3c256e38da"/>
         <COMPID name="CourseOfferingList" mc="Interface" uid="edac47b3-4779-46fc-b37f-5ff7edd3557e"/>
+        <COMPID name="Classification" mc="Class" uid="bb6c296d-c162-44bf-8b53-f50e138de9db"/>
       </COMP>
       <COMP relation="Product">
         <COMPID name="Key Abstractions" mc="ClassDiagram" uid="aedb5ed5-0057-4be6-bc7f-654b311cbfed"/>
+        <COMPID name="Student" mc="ClassDiagram" uid="b87dadf4-fd8f-4665-9ce0-60ab8070b6e1"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>

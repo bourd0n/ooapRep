@@ -5,6 +5,7 @@
     <COMPID name="Application" mc="Package" uid="e53e7335-df98-4164-ace3-6e208a4ee7e4"/>
     <COMPID name="Architectural Mechanisms" mc="Package" uid="3c3ddbe5-b5ee-4dc2-b22a-88b369ce5a03"/>
     <COMPID name="BusinessServices" mc="Package" uid="a66f3ccf-eee4-4d67-af3a-1c398627d6ba"/>
+    <COMPID name="Database Schema" mc="Package" uid="a2b74353-85bf-4047-ab46-20f3fc6377e3"/>
     <COMPID name="Main" mc="ClassDiagram" uid="426fcf57-f5d9-46be-9c91-a4b65411f836"/>
     <COMPID name="Middleware" mc="Package" uid="d5480057-6bbe-4238-9ef0-68b6937d17f6"/>
     <COMPID name="Use Case Realizations" mc="Package" uid="823215d5-c4fc-4fcb-a526-52e3b0162496"/>
@@ -29,6 +30,7 @@
         <COMPID name="Application" mc="Package" uid="e53e7335-df98-4164-ace3-6e208a4ee7e4"/>
         <COMPID name="BusinessServices" mc="Package" uid="a66f3ccf-eee4-4d67-af3a-1c398627d6ba"/>
         <COMPID name="Use Case Realizations" mc="Package" uid="823215d5-c4fc-4fcb-a526-52e3b0162496"/>
+        <COMPID name="Database Schema" mc="Package" uid="a2b74353-85bf-4047-ab46-20f3fc6377e3"/>
       </COMP>
       <LINK relation="Extension">
         <ID name="model" mc="Stereotype" uid="f75794cc-275e-4a8a-917f-2d05de475859"/>

@@ -1,0 +1,504 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="State Machine" version="3">
+  <DEPS>
+    <ID name="State Machine" mc="StateMachine" uid="4f3afa22-a04f-40d9-8109-520bf71cd830"/>
+    <COMPID name="State Machine State Machine diagram" mc="StateMachineDiagram" uid="b6710a46-556f-4d3f-a821-42639f63a159"/>
+    <EXTID name="CourseOffering" mc="Class" uid="917427ed-73a2-478e-94a1-ad3b97607fad"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="State Machine" mc="StateMachine" uid="4f3afa22-a04f-40d9-8109-520bf71cd830"/>
+    <PID name="CourseOffering" mc="Class" uid="917427ed-73a2-478e-94a1-ad3b97607fad"/>
+    <ATTRIBUTES>
+      <ATT name="Kind">Dynamic</ATT>
+      <ATT name="IsReentrant">false</ATT>
+      <ATT name="Name"><![CDATA[State Machine]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Top">
+        <OBJECT>
+          <ID name="" mc="Region" uid="51e71ba0-8588-44f2-8ae9-999dc89670fb"/>
+          <PID name="State Machine" mc="StateMachine" uid="4f3afa22-a04f-40d9-8109-520bf71cd830"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Sub">
+              <OBJECT>
+                <ID name="Initial State" mc="InitialPseudoState" uid="3c9be784-7702-46d9-b404-940ead55af12"/>
+                <PID name="State Machine" mc="StateMachine" uid="4f3afa22-a04f-40d9-8109-520bf71cd830"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Initial State]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="OutGoing">
+                    <OBJECT>
+                      <ID name="Transition" mc="Transition" uid="d1e4ce35-7c03-486e-8866-8fff985d50f5"/>
+                      <PID name="State Machine" mc="StateMachine" uid="4f3afa22-a04f-40d9-8109-520bf71cd830"/>
+                      <ATTRIBUTES>
+                        <ATT name="Effect"><![CDATA[numstudents=0]]></ATT>
+                        <ATT name="ReceivedEvents"></ATT>
+                        <ATT name="SentEvents"><![CDATA[courseRoaster.create()]]></ATT>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="PostCondition"></ATT>
+                        <ATT name="Name"><![CDATA[Transition]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Open" mc="State" uid="b06fb36d-f1f7-4405-8345-83ea0e021e2f"/>
+                            <PID name="State Machine" mc="StateMachine" uid="4f3afa22-a04f-40d9-8109-520bf71cd830"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Final State" mc="FinalState" uid="3ddf5707-3503-4412-9dc0-3371096c8356"/>
+                <PID name="State Machine" mc="StateMachine" uid="4f3afa22-a04f-40d9-8109-520bf71cd830"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Final State]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Open" mc="State" uid="b06fb36d-f1f7-4405-8345-83ea0e021e2f"/>
+                <PID name="State Machine" mc="StateMachine" uid="4f3afa22-a04f-40d9-8109-520bf71cd830"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Open]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="OutGoing">
+                    <OBJECT>
+                      <ID name="Transition" mc="Transition" uid="4d2390dd-ea12-4491-a4a6-5e32dc9e95fb"/>
+                      <PID name="State Machine" mc="StateMachine" uid="4f3afa22-a04f-40d9-8109-520bf71cd830"/>
+                      <ATTRIBUTES>
+                        <ATT name="Effect"><![CDATA[numstudents++]]></ATT>
+                        <ATT name="ReceivedEvents"></ATT>
+                        <ATT name="SentEvents"><![CDATA[roaster.add(s)]]></ATT>
+                        <ATT name="Guard"><![CDATA[numStudents<10]]></ATT>
+                        <ATT name="PostCondition"></ATT>
+                        <ATT name="Name"><![CDATA[Transition]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Trigger">
+                          <REFOBJ>
+                            <ID name="addStudent" mc="Event" uid="687111d6-a079-4363-ba51-88e3092f36bc"/>
+                            <PID name="State Machine" mc="StateMachine" uid="4f3afa22-a04f-40d9-8109-520bf71cd830"/>
+                          </REFOBJ>
+                        </LINK>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Open" mc="State" uid="b06fb36d-f1f7-4405-8345-83ea0e021e2f"/>
+                            <PID name="State Machine" mc="StateMachine" uid="4f3afa22-a04f-40d9-8109-520bf71cd830"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="Transition1" mc="Transition" uid="acef8c06-6eb0-4df3-98e7-0724ff195e65"/>
+                      <PID name="State Machine" mc="StateMachine" uid="4f3afa22-a04f-40d9-8109-520bf71cd830"/>
+                      <ATTRIBUTES>
+                        <ATT name="Effect"></ATT>
+                        <ATT name="ReceivedEvents"></ATT>
+                        <ATT name="SentEvents"></ATT>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="PostCondition"></ATT>
+                        <ATT name="Name"><![CDATA[Transition1]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Trigger">
+                          <REFOBJ>
+                            <ID name="when(numStudents==10)" mc="Event" uid="9e284a74-fe6f-4cd8-ab5f-00b8806035eb"/>
+                            <PID name="State Machine" mc="StateMachine" uid="4f3afa22-a04f-40d9-8109-520bf71cd830"/>
+                          </REFOBJ>
+                        </LINK>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Closed" mc="State" uid="bee21d9a-b010-4b46-b5e9-81d301a1e14b"/>
+                            <PID name="State Machine" mc="StateMachine" uid="4f3afa22-a04f-40d9-8109-520bf71cd830"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="Transition2" mc="Transition" uid="ab29e2ad-a2f7-4302-8f75-d87420d0e0c0"/>
+                      <PID name="State Machine" mc="StateMachine" uid="4f3afa22-a04f-40d9-8109-520bf71cd830"/>
+                      <ATTRIBUTES>
+                        <ATT name="Effect"></ATT>
+                        <ATT name="ReceivedEvents"></ATT>
+                        <ATT name="SentEvents"></ATT>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="PostCondition"></ATT>
+                        <ATT name="Name"><![CDATA[Transition2]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Trigger">
+                          <REFOBJ>
+                            <ID name="close" mc="Event" uid="8f329827-641b-470a-a14f-7a9f5f6ab98c"/>
+                            <PID name="State Machine" mc="StateMachine" uid="4f3afa22-a04f-40d9-8109-520bf71cd830"/>
+                          </REFOBJ>
+                        </LINK>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Choice" mc="ChoicePseudoState" uid="8b7c1bb8-d57c-4371-8334-1a22270633a4"/>
+                            <PID name="State Machine" mc="StateMachine" uid="4f3afa22-a04f-40d9-8109-520bf71cd830"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="Transition3" mc="Transition" uid="9c0c3aa4-9950-47c1-a5f2-72ff097ff402"/>
+                      <PID name="State Machine" mc="StateMachine" uid="4f3afa22-a04f-40d9-8109-520bf71cd830"/>
+                      <ATTRIBUTES>
+                        <ATT name="Effect"><![CDATA[numStudents--;]]></ATT>
+                        <ATT name="ReceivedEvents"></ATT>
+                        <ATT name="SentEvents"><![CDATA[roaster.remove(s)]]></ATT>
+                        <ATT name="Guard"><![CDATA[numstudents>0]]></ATT>
+                        <ATT name="PostCondition"></ATT>
+                        <ATT name="Name"><![CDATA[Transition3]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Trigger">
+                          <REFOBJ>
+                            <ID name="removeStudent" mc="Event" uid="f46077e1-e15f-4908-b8f3-e6fb025973f2"/>
+                            <PID name="State Machine" mc="StateMachine" uid="4f3afa22-a04f-40d9-8109-520bf71cd830"/>
+                          </REFOBJ>
+                        </LINK>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Open" mc="State" uid="b06fb36d-f1f7-4405-8345-83ea0e021e2f"/>
+                            <PID name="State Machine" mc="StateMachine" uid="4f3afa22-a04f-40d9-8109-520bf71cd830"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="Transition4" mc="Transition" uid="df250c7b-810b-4c54-bde1-7c310280f3ec"/>
+                      <PID name="State Machine" mc="StateMachine" uid="4f3afa22-a04f-40d9-8109-520bf71cd830"/>
+                      <ATTRIBUTES>
+                        <ATT name="Effect"></ATT>
+                        <ATT name="ReceivedEvents"></ATT>
+                        <ATT name="SentEvents"></ATT>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="PostCondition"></ATT>
+                        <ATT name="Name"><![CDATA[Transition4]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Trigger">
+                          <REFOBJ>
+                            <ID name="cancel" mc="Event" uid="2616bb47-7b40-45ae-91e8-c253a443c012"/>
+                            <PID name="State Machine" mc="StateMachine" uid="4f3afa22-a04f-40d9-8109-520bf71cd830"/>
+                          </REFOBJ>
+                        </LINK>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Cancelled" mc="State" uid="6fdfdd52-03f3-4ec9-8a4c-525c728354c0"/>
+                            <PID name="State Machine" mc="StateMachine" uid="4f3afa22-a04f-40d9-8109-520bf71cd830"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Closed" mc="State" uid="bee21d9a-b010-4b46-b5e9-81d301a1e14b"/>
+                <PID name="State Machine" mc="StateMachine" uid="4f3afa22-a04f-40d9-8109-520bf71cd830"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Closed]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="OutGoing">
+                    <OBJECT>
+                      <ID name="Transition" mc="Transition" uid="e17257f7-7b1d-44b1-adbd-2e1c8ccba953"/>
+                      <PID name="State Machine" mc="StateMachine" uid="4f3afa22-a04f-40d9-8109-520bf71cd830"/>
+                      <ATTRIBUTES>
+                        <ATT name="Effect"></ATT>
+                        <ATT name="ReceivedEvents"></ATT>
+                        <ATT name="SentEvents"></ATT>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="PostCondition"></ATT>
+                        <ATT name="Name"><![CDATA[Transition]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Trigger">
+                          <REFOBJ>
+                            <ID name="cancel" mc="Event" uid="2616bb47-7b40-45ae-91e8-c253a443c012"/>
+                            <PID name="State Machine" mc="StateMachine" uid="4f3afa22-a04f-40d9-8109-520bf71cd830"/>
+                          </REFOBJ>
+                        </LINK>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Cancelled" mc="State" uid="6fdfdd52-03f3-4ec9-8a4c-525c728354c0"/>
+                            <PID name="State Machine" mc="StateMachine" uid="4f3afa22-a04f-40d9-8109-520bf71cd830"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="Transition1" mc="Transition" uid="2466e6f0-22b3-4e04-9130-7ee30548742d"/>
+                      <PID name="State Machine" mc="StateMachine" uid="4f3afa22-a04f-40d9-8109-520bf71cd830"/>
+                      <ATTRIBUTES>
+                        <ATT name="Effect"></ATT>
+                        <ATT name="ReceivedEvents"></ATT>
+                        <ATT name="SentEvents"><![CDATA[roaster.delete()]]></ATT>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="PostCondition"></ATT>
+                        <ATT name="Name"><![CDATA[Transition1]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Trigger">
+                          <REFOBJ>
+                            <ID name="delete" mc="Event" uid="2a8d27e1-5cca-4ac7-86fb-a9940d4e2cc4"/>
+                            <PID name="State Machine" mc="StateMachine" uid="4f3afa22-a04f-40d9-8109-520bf71cd830"/>
+                          </REFOBJ>
+                        </LINK>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Final State" mc="FinalState" uid="3ddf5707-3503-4412-9dc0-3371096c8356"/>
+                            <PID name="State Machine" mc="StateMachine" uid="4f3afa22-a04f-40d9-8109-520bf71cd830"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Cancelled" mc="State" uid="6fdfdd52-03f3-4ec9-8a4c-525c728354c0"/>
+                <PID name="State Machine" mc="StateMachine" uid="4f3afa22-a04f-40d9-8109-520bf71cd830"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Cancelled]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Internal">
+                    <OBJECT>
+                      <ID name="Do" mc="InternalTransition" uid="a8340c02-c22d-412b-b852-438769ac95e4"/>
+                      <PID name="State Machine" mc="StateMachine" uid="4f3afa22-a04f-40d9-8109-520bf71cd830"/>
+                      <ATTRIBUTES>
+                        <ATT name="Effect"></ATT>
+                        <ATT name="ReceivedEvents"><![CDATA[Exit]]></ATT>
+                        <ATT name="SentEvents"><![CDATA[roaster.delete()]]></ATT>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="PostCondition"></ATT>
+                        <ATT name="Name"><![CDATA[Do]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <COMP relation="OutGoing">
+                    <OBJECT>
+                      <ID name="Transition" mc="Transition" uid="e54cb840-bc86-4d26-90b4-710409510ce4"/>
+                      <PID name="State Machine" mc="StateMachine" uid="4f3afa22-a04f-40d9-8109-520bf71cd830"/>
+                      <ATTRIBUTES>
+                        <ATT name="Effect"></ATT>
+                        <ATT name="ReceivedEvents"></ATT>
+                        <ATT name="SentEvents"><![CDATA[roaster.delete()]]></ATT>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="PostCondition"></ATT>
+                        <ATT name="Name"><![CDATA[Transition]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Trigger">
+                          <REFOBJ>
+                            <ID name="delete" mc="Event" uid="2a8d27e1-5cca-4ac7-86fb-a9940d4e2cc4"/>
+                            <PID name="State Machine" mc="StateMachine" uid="4f3afa22-a04f-40d9-8109-520bf71cd830"/>
+                          </REFOBJ>
+                        </LINK>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Final State" mc="FinalState" uid="3ddf5707-3503-4412-9dc0-3371096c8356"/>
+                            <PID name="State Machine" mc="StateMachine" uid="4f3afa22-a04f-40d9-8109-520bf71cd830"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Choice" mc="ChoicePseudoState" uid="8b7c1bb8-d57c-4371-8334-1a22270633a4"/>
+                <PID name="State Machine" mc="StateMachine" uid="4f3afa22-a04f-40d9-8109-520bf71cd830"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Choice]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="OutGoing">
+                    <OBJECT>
+                      <ID name="Transition" mc="Transition" uid="91cbbc62-a656-4c90-a0b0-60d20784c59a"/>
+                      <PID name="State Machine" mc="StateMachine" uid="4f3afa22-a04f-40d9-8109-520bf71cd830"/>
+                      <ATTRIBUTES>
+                        <ATT name="Effect"></ATT>
+                        <ATT name="ReceivedEvents"></ATT>
+                        <ATT name="SentEvents"></ATT>
+                        <ATT name="Guard"><![CDATA[numStudents > 3]]></ATT>
+                        <ATT name="PostCondition"></ATT>
+                        <ATT name="Name"><![CDATA[Transition]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Closed" mc="State" uid="bee21d9a-b010-4b46-b5e9-81d301a1e14b"/>
+                            <PID name="State Machine" mc="StateMachine" uid="4f3afa22-a04f-40d9-8109-520bf71cd830"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="Transition1" mc="Transition" uid="b8d94118-457f-43ec-9357-3c932b3e69f6"/>
+                      <PID name="State Machine" mc="StateMachine" uid="4f3afa22-a04f-40d9-8109-520bf71cd830"/>
+                      <ATTRIBUTES>
+                        <ATT name="Effect"></ATT>
+                        <ATT name="ReceivedEvents"></ATT>
+                        <ATT name="SentEvents"></ATT>
+                        <ATT name="Guard"><![CDATA[else]]></ATT>
+                        <ATT name="PostCondition"></ATT>
+                        <ATT name="Name"><![CDATA[Transition1]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Cancelled" mc="State" uid="6fdfdd52-03f3-4ec9-8a4c-525c728354c0"/>
+                            <PID name="State Machine" mc="StateMachine" uid="4f3afa22-a04f-40d9-8109-520bf71cd830"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="EComponent">
+        <OBJECT>
+          <ID name="addStudent" mc="Event" uid="687111d6-a079-4363-ba51-88e3092f36bc"/>
+          <PID name="State Machine" mc="StateMachine" uid="4f3afa22-a04f-40d9-8109-520bf71cd830"/>
+          <ATTRIBUTES>
+            <ATT name="Expression"></ATT>
+            <ATT name="Kind">CallEvent</ATT>
+            <ATT name="Name"><![CDATA[addStudent]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Called">
+              <REFOBJ>
+                <ID name="addStudent" mc="Operation" uid="a605ef8d-8817-484c-a9bc-1e1afc42fb0e"/>
+                <PID name="CourseOffering" mc="Class" uid="917427ed-73a2-478e-94a1-ad3b97607fad"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="removeStudent" mc="Event" uid="f46077e1-e15f-4908-b8f3-e6fb025973f2"/>
+          <PID name="State Machine" mc="StateMachine" uid="4f3afa22-a04f-40d9-8109-520bf71cd830"/>
+          <ATTRIBUTES>
+            <ATT name="Expression"></ATT>
+            <ATT name="Kind">CallEvent</ATT>
+            <ATT name="Name"><![CDATA[removeStudent]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Called">
+              <REFOBJ>
+                <ID name="removeStudent" mc="Operation" uid="738e2252-367f-4a39-a7b1-19aefc97d113"/>
+                <PID name="CourseOffering" mc="Class" uid="917427ed-73a2-478e-94a1-ad3b97607fad"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="delete" mc="Event" uid="2a8d27e1-5cca-4ac7-86fb-a9940d4e2cc4"/>
+          <PID name="State Machine" mc="StateMachine" uid="4f3afa22-a04f-40d9-8109-520bf71cd830"/>
+          <ATTRIBUTES>
+            <ATT name="Expression"></ATT>
+            <ATT name="Kind">CallEvent</ATT>
+            <ATT name="Name"><![CDATA[delete]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Called">
+              <REFOBJ>
+                <ID name="delete" mc="Operation" uid="96da16ac-dfd5-4824-9567-34b919ef7cbb"/>
+                <PID name="CourseOffering" mc="Class" uid="917427ed-73a2-478e-94a1-ad3b97607fad"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="close" mc="Event" uid="8f329827-641b-470a-a14f-7a9f5f6ab98c"/>
+          <PID name="State Machine" mc="StateMachine" uid="4f3afa22-a04f-40d9-8109-520bf71cd830"/>
+          <ATTRIBUTES>
+            <ATT name="Expression"></ATT>
+            <ATT name="Kind">CallEvent</ATT>
+            <ATT name="Name"><![CDATA[close]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Called">
+              <REFOBJ>
+                <ID name="close" mc="Operation" uid="0bf14337-ffe7-40b7-b3f4-5e04a8a89d04"/>
+                <PID name="CourseOffering" mc="Class" uid="917427ed-73a2-478e-94a1-ad3b97607fad"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="cancel" mc="Event" uid="2616bb47-7b40-45ae-91e8-c253a443c012"/>
+          <PID name="State Machine" mc="StateMachine" uid="4f3afa22-a04f-40d9-8109-520bf71cd830"/>
+          <ATTRIBUTES>
+            <ATT name="Expression"></ATT>
+            <ATT name="Kind">CallEvent</ATT>
+            <ATT name="Name"><![CDATA[cancel]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Called">
+              <REFOBJ>
+                <ID name="cancel" mc="Operation" uid="9320a2e3-4e9b-4133-bea2-c244849c2e09"/>
+                <PID name="CourseOffering" mc="Class" uid="917427ed-73a2-478e-94a1-ad3b97607fad"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="when(numStudents==10)" mc="Event" uid="9e284a74-fe6f-4cd8-ab5f-00b8806035eb"/>
+          <PID name="State Machine" mc="StateMachine" uid="4f3afa22-a04f-40d9-8109-520bf71cd830"/>
+          <ATTRIBUTES>
+            <ATT name="Expression"><![CDATA[numStudents==10]]></ATT>
+            <ATT name="Kind">ChangeEvent</ATT>
+            <ATT name="Name"><![CDATA[when(numStudents==10)]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="State Machine State Machine diagram" mc="StateMachineDiagram" uid="b6710a46-556f-4d3f-a821-42639f63a159"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

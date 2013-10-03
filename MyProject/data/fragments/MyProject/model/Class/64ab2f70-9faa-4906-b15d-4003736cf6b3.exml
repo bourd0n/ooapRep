@@ -1,15 +1,18 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="RegistrationController" version="3">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="TableClassificaion" version="3">
   <DEPS>
-    <ID name="RegistrationController" mc="Class" uid="4b9ea2a8-6a94-415b-a696-af31ea8611ce"/>
-    <EXTID name="ICourseCatalogSystem" mc="Interface" uid="8a78d3ce-5e32-44f9-9373-46f3d3d3bc14"/>
-    <EXTID name="Schedule" mc="Class" uid="63f29c0b-fbfd-40cc-aa6d-c278ad946fc9"/>
-    <EXTID name="Student" mc="Class" uid="12bb94b2-674e-4bf6-aebf-049d5cea6c20"/>
-    <EXTID name="control" mc="Stereotype" uid="8c041908-c99d-4163-9d89-db5baf97d301"/>
+    <ID name="TableClassificaion" mc="Class" uid="64ab2f70-9faa-4906-b15d-4003736cf6b3"/>
+    <EXTID name="TableFullTimeClassification" mc="Class" uid="7a28beb4-137a-4403-b530-5f2d0430030a"/>
+    <EXTID name="TablePartTimeClassification" mc="Class" uid="1378f701-b70a-4f5d-a69f-217a72e9bbcd"/>
+    <EXTID name="fk" mc="Stereotype" uid="a28d3983-6448-4745-ba1e-a7dce9e8f7ec"/>
+    <EXTID name="long" mc="DataType" uid="26abfd96-4e80-47bf-887e-9992249d0908"/>
+    <EXTID name="pk" mc="Stereotype" uid="6742644a-d677-425d-94dc-c054f36f0ee9"/>
+    <EXTID name="table" mc="Stereotype" uid="54d385e5-51fc-40bc-b7e6-f0cf1875d1ef"/>
+    <EXTID name="unique" mc="Stereotype" uid="e414fccd-ce3a-44dc-be90-ccb90f627b1c"/>
   </DEPS>
   <OBJECT>
-    <ID name="RegistrationController" mc="Class" uid="4b9ea2a8-6a94-415b-a696-af31ea8611ce"/>
-    <PID name="Registration" mc="Package" uid="fbf51014-7b4a-401f-b86a-e693994ce59a"/>
+    <ID name="TableClassificaion" mc="Class" uid="64ab2f70-9faa-4906-b15d-4003736cf6b3"/>
+    <PID name="Database Schema" mc="Package" uid="a2b74353-85bf-4047-ab46-20f3fc6377e3"/>
     <ATTRIBUTES>
       <ATT name="IsActive">false</ATT>
       <ATT name="IsMain">false</ATT>
@@ -18,14 +21,14 @@
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[RegistrationController]]></ATT>
+      <ATT name="Name"><![CDATA[TableClassificaion]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
       <COMP relation="OwnedOperation">
         <OBJECT>
-          <ID name="//registerForCourses " mc="Operation" uid="1b29fa7a-9c59-4dbc-a26a-5703ec24e623"/>
-          <PID name="RegistrationController" mc="Class" uid="4b9ea2a8-6a94-415b-a696-af31ea8611ce"/>
+          <ID name="pkClassification" mc="Operation" uid="12928238-2498-43c3-af50-6af6d53dd10e"/>
+          <PID name="TableClassificaion" mc="Class" uid="64ab2f70-9faa-4906-b15d-4003736cf6b3"/>
           <ATTRIBUTES>
             <ATT name="Concurrency">false</ATT>
             <ATT name="Final">false</ATT>
@@ -33,14 +36,18 @@
             <ATT name="Visibility">Public</ATT>
             <ATT name="IsClass">false</ATT>
             <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"><![CDATA[//registerForCourses ]]></ATT>
+            <ATT name="Name"><![CDATA[pkClassification]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
-          <DEPENDENCIES></DEPENDENCIES>
+          <DEPENDENCIES>
+            <LINK relation="Extension">
+              <ID name="pk" mc="Stereotype" uid="6742644a-d677-425d-94dc-c054f36f0ee9"/>
+            </LINK>
+          </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="//isRegistrationOpened" mc="Operation" uid="1d96aaa4-8026-48b3-927a-ccbdc0600939"/>
-          <PID name="RegistrationController" mc="Class" uid="4b9ea2a8-6a94-415b-a696-af31ea8611ce"/>
+          <ID name="fkClassification" mc="Operation" uid="1431a659-7882-4053-8c01-6e8e56ffb5c7"/>
+          <PID name="TableClassificaion" mc="Class" uid="64ab2f70-9faa-4906-b15d-4003736cf6b3"/>
           <ATTRIBUTES>
             <ATT name="Concurrency">false</ATT>
             <ATT name="Final">false</ATT>
@@ -48,14 +55,18 @@
             <ATT name="Visibility">Public</ATT>
             <ATT name="IsClass">false</ATT>
             <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"><![CDATA[//isRegistrationOpened]]></ATT>
+            <ATT name="Name"><![CDATA[fkClassification]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
-          <DEPENDENCIES></DEPENDENCIES>
+          <DEPENDENCIES>
+            <LINK relation="Extension">
+              <ID name="fk" mc="Stereotype" uid="a28d3983-6448-4745-ba1e-a7dce9e8f7ec"/>
+            </LINK>
+          </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="//createSchedule" mc="Operation" uid="6f4fd50a-f661-4b65-8538-d2cea1aea09b"/>
-          <PID name="RegistrationController" mc="Class" uid="4b9ea2a8-6a94-415b-a696-af31ea8611ce"/>
+          <ID name="constraint" mc="Operation" uid="f79ff9f3-0d58-4422-aef4-9004364dfb83"/>
+          <PID name="TableClassificaion" mc="Class" uid="64ab2f70-9faa-4906-b15d-4003736cf6b3"/>
           <ATTRIBUTES>
             <ATT name="Concurrency">false</ATT>
             <ATT name="Final">false</ATT>
@@ -63,39 +74,59 @@
             <ATT name="Visibility">Public</ATT>
             <ATT name="IsClass">false</ATT>
             <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"><![CDATA[//createSchedule]]></ATT>
+            <ATT name="Name"><![CDATA[constraint]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
-          <DEPENDENCIES></DEPENDENCIES>
+          <DEPENDENCIES>
+            <LINK relation="Extension">
+              <ID name="unique" mc="Stereotype" uid="e414fccd-ce3a-44dc-be90-ccb90f627b1c"/>
+            </LINK>
+          </DEPENDENCIES>
         </OBJECT>
+      </COMP>
+      <COMP relation="OwnedAttribute">
         <OBJECT>
-          <ID name="//newScheduleWithSelection" mc="Operation" uid="700937a8-a826-4d08-b708-8a3a2ea10788"/>
-          <PID name="RegistrationController" mc="Class" uid="4b9ea2a8-6a94-415b-a696-af31ea8611ce"/>
+          <ID name="idStudent" mc="Attribute" uid="79ad14ca-bdd8-4656-ad04-3992411731ea"/>
+          <PID name="TableClassificaion" mc="Class" uid="64ab2f70-9faa-4906-b15d-4003736cf6b3"/>
           <ATTRIBUTES>
-            <ATT name="Concurrency">false</ATT>
-            <ATT name="Final">false</ATT>
-            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">ReadWrite</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
             <ATT name="Visibility">Public</ATT>
             <ATT name="IsClass">false</ATT>
             <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"><![CDATA[//newScheduleWithSelection]]></ATT>
+            <ATT name="Name"><![CDATA[idStudent]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
-          <DEPENDENCIES></DEPENDENCIES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <ID name="long" mc="DataType" uid="26abfd96-4e80-47bf-887e-9992249d0908"/>
+            </LINK>
+            <LINK relation="Extension">
+              <ID name="fk" mc="Stereotype" uid="a28d3983-6448-4745-ba1e-a7dce9e8f7ec"/>
+              <ID name="pk" mc="Stereotype" uid="6742644a-d677-425d-94dc-c054f36f0ee9"/>
+            </LINK>
+          </DEPENDENCIES>
         </OBJECT>
       </COMP>
       <COMP relation="OwnedEnd">
         <OBJECT>
-          <ID name="" mc="AssociationEnd" uid="a1fb367f-5a2e-47cf-b61f-80bc7fcba3f6"/>
-          <PID name="RegistrationController" mc="Class" uid="4b9ea2a8-6a94-415b-a696-af31ea8611ce"/>
+          <ID name="" mc="AssociationEnd" uid="0c8cd43d-1941-4f21-b05f-0f25e588314f"/>
+          <PID name="TableClassificaion" mc="Class" uid="64ab2f70-9faa-4906-b15d-4003736cf6b3"/>
           <ATTRIBUTES>
-            <ATT name="Aggregation">KindIsAggregation</ATT>
+            <ATT name="Aggregation">KindIsComposition</ATT>
             <ATT name="IsChangeable">true</ATT>
             <ATT name="Changeable">ReadWrite</ATT>
             <ATT name="IsDerived">false</ATT>
             <ATT name="IsOrdered">false</ATT>
             <ATT name="IsUnique">false</ATT>
-            <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
             <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
             <ATT name="Visibility">Private</ATT>
             <ATT name="IsClass">false</ATT>
@@ -105,12 +136,12 @@
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="Target">
-              <ID name="Student" mc="Class" uid="12bb94b2-674e-4bf6-aebf-049d5cea6c20"/>
+              <ID name="TablePartTimeClassification" mc="Class" uid="1378f701-b70a-4f5d-a69f-217a72e9bbcd"/>
             </LINK>
             <COMP relation="Opposite">
               <OBJECT>
-                <ID name="" mc="AssociationEnd" uid="556bbb34-9d1a-471b-9326-5272fab836af"/>
-                <PID name="RegistrationController" mc="Class" uid="4b9ea2a8-6a94-415b-a696-af31ea8611ce"/>
+                <ID name="" mc="AssociationEnd" uid="3430ca69-26f7-4fc0-85ce-a39a1b1c43ad"/>
+                <PID name="TableClassificaion" mc="Class" uid="64ab2f70-9faa-4906-b15d-4003736cf6b3"/>
                 <ATTRIBUTES>
                   <ATT name="Aggregation">KindIsAssociation</ATT>
                   <ATT name="IsChangeable">true</ATT>
@@ -118,7 +149,7 @@
                   <ATT name="IsDerived">false</ATT>
                   <ATT name="IsOrdered">false</ATT>
                   <ATT name="IsUnique">false</ATT>
-                  <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
                   <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
                   <ATT name="Visibility">Private</ATT>
                   <ATT name="IsClass">false</ATT>
@@ -128,14 +159,14 @@
                 </ATTRIBUTES>
                 <DEPENDENCIES>
                   <COMP relation="Opposite">
-                    <COMPID name="" mc="AssociationEnd" uid="a1fb367f-5a2e-47cf-b61f-80bc7fcba3f6"/>
+                    <COMPID name="" mc="AssociationEnd" uid="0c8cd43d-1941-4f21-b05f-0f25e588314f"/>
                   </COMP>
                   <COMP relation="Association">
                     <OBJECT>
-                      <ID name="" mc="Association" uid="b686c401-c20e-4cef-ace0-b2d6ef46cf16"/>
-                      <PID name="RegistrationController" mc="Class" uid="4b9ea2a8-6a94-415b-a696-af31ea8611ce"/>
+                      <ID name="&quot;identifying&quot;" mc="Association" uid="846f1c97-2066-4719-873d-22077cb96f63"/>
+                      <PID name="TableClassificaion" mc="Class" uid="64ab2f70-9faa-4906-b15d-4003736cf6b3"/>
                       <ATTRIBUTES>
-                        <ATT name="Name"></ATT>
+                        <ATT name="Name"><![CDATA["identifying"]]></ATT>
                         <ATT name="status">1970354901745664</ATT>
                       </ATTRIBUTES>
                       <DEPENDENCIES></DEPENDENCIES>
@@ -146,10 +177,10 @@
             </COMP>
             <COMP relation="Association">
               <OBJECT>
-                <ID name="" mc="Association" uid="b686c401-c20e-4cef-ace0-b2d6ef46cf16"/>
-                <PID name="RegistrationController" mc="Class" uid="4b9ea2a8-6a94-415b-a696-af31ea8611ce"/>
+                <ID name="&quot;identifying&quot;" mc="Association" uid="846f1c97-2066-4719-873d-22077cb96f63"/>
+                <PID name="TableClassificaion" mc="Class" uid="64ab2f70-9faa-4906-b15d-4003736cf6b3"/>
                 <ATTRIBUTES>
-                  <ATT name="Name"></ATT>
+                  <ATT name="Name"><![CDATA["identifying"]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES></DEPENDENCIES>
@@ -158,16 +189,16 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="AssociationEnd" uid="fe70d543-0d72-4eac-863b-c8e6aef0b964"/>
-          <PID name="RegistrationController" mc="Class" uid="4b9ea2a8-6a94-415b-a696-af31ea8611ce"/>
+          <ID name="" mc="AssociationEnd" uid="3965fb04-82fb-48e5-9b97-8afbea38538b"/>
+          <PID name="TableClassificaion" mc="Class" uid="64ab2f70-9faa-4906-b15d-4003736cf6b3"/>
           <ATTRIBUTES>
-            <ATT name="Aggregation">KindIsAggregation</ATT>
+            <ATT name="Aggregation">KindIsComposition</ATT>
             <ATT name="IsChangeable">true</ATT>
             <ATT name="Changeable">ReadWrite</ATT>
             <ATT name="IsDerived">false</ATT>
             <ATT name="IsOrdered">false</ATT>
             <ATT name="IsUnique">false</ATT>
-            <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
             <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
             <ATT name="Visibility">Private</ATT>
             <ATT name="IsClass">false</ATT>
@@ -177,12 +208,12 @@
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="Target">
-              <ID name="Schedule" mc="Class" uid="63f29c0b-fbfd-40cc-aa6d-c278ad946fc9"/>
+              <ID name="TableFullTimeClassification" mc="Class" uid="7a28beb4-137a-4403-b530-5f2d0430030a"/>
             </LINK>
             <COMP relation="Opposite">
               <OBJECT>
-                <ID name="" mc="AssociationEnd" uid="c5c862fe-fa00-4665-b119-4982c79a7bf3"/>
-                <PID name="RegistrationController" mc="Class" uid="4b9ea2a8-6a94-415b-a696-af31ea8611ce"/>
+                <ID name="" mc="AssociationEnd" uid="4d6b0590-00b3-4b53-9308-ef0194b8008e"/>
+                <PID name="TableClassificaion" mc="Class" uid="64ab2f70-9faa-4906-b15d-4003736cf6b3"/>
                 <ATTRIBUTES>
                   <ATT name="Aggregation">KindIsAssociation</ATT>
                   <ATT name="IsChangeable">true</ATT>
@@ -190,7 +221,7 @@
                   <ATT name="IsDerived">false</ATT>
                   <ATT name="IsOrdered">false</ATT>
                   <ATT name="IsUnique">false</ATT>
-                  <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
                   <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
                   <ATT name="Visibility">Private</ATT>
                   <ATT name="IsClass">false</ATT>
@@ -200,14 +231,14 @@
                 </ATTRIBUTES>
                 <DEPENDENCIES>
                   <COMP relation="Opposite">
-                    <COMPID name="" mc="AssociationEnd" uid="fe70d543-0d72-4eac-863b-c8e6aef0b964"/>
+                    <COMPID name="" mc="AssociationEnd" uid="3965fb04-82fb-48e5-9b97-8afbea38538b"/>
                   </COMP>
                   <COMP relation="Association">
                     <OBJECT>
-                      <ID name="" mc="Association" uid="5d96e8de-a518-457d-910f-07b7447bda52"/>
-                      <PID name="RegistrationController" mc="Class" uid="4b9ea2a8-6a94-415b-a696-af31ea8611ce"/>
+                      <ID name="&quot;identifying&quot;" mc="Association" uid="3987c950-cdff-42d9-8266-f03721d89927"/>
+                      <PID name="TableClassificaion" mc="Class" uid="64ab2f70-9faa-4906-b15d-4003736cf6b3"/>
                       <ATTRIBUTES>
-                        <ATT name="Name"></ATT>
+                        <ATT name="Name"><![CDATA["identifying"]]></ATT>
                         <ATT name="status">1970354901745664</ATT>
                       </ATTRIBUTES>
                       <DEPENDENCIES></DEPENDENCIES>
@@ -218,10 +249,10 @@
             </COMP>
             <COMP relation="Association">
               <OBJECT>
-                <ID name="" mc="Association" uid="5d96e8de-a518-457d-910f-07b7447bda52"/>
-                <PID name="RegistrationController" mc="Class" uid="4b9ea2a8-6a94-415b-a696-af31ea8611ce"/>
+                <ID name="&quot;identifying&quot;" mc="Association" uid="3987c950-cdff-42d9-8266-f03721d89927"/>
+                <PID name="TableClassificaion" mc="Class" uid="64ab2f70-9faa-4906-b15d-4003736cf6b3"/>
                 <ATTRIBUTES>
-                  <ATT name="Name"></ATT>
+                  <ATT name="Name"><![CDATA["identifying"]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES></DEPENDENCIES>
@@ -231,25 +262,8 @@
         </OBJECT>
       </COMP>
       <LINK relation="Extension">
-        <ID name="control" mc="Stereotype" uid="8c041908-c99d-4163-9d89-db5baf97d301"/>
+        <ID name="table" mc="Stereotype" uid="54d385e5-51fc-40bc-b7e6-f0cf1875d1ef"/>
       </LINK>
-      <COMP relation="DependsOnDependency">
-        <OBJECT>
-          <ID name="" mc="Usage" uid="fc9816ab-6dc9-4ce2-b091-47049eb0a47f"/>
-          <PID name="RegistrationController" mc="Class" uid="4b9ea2a8-6a94-415b-a696-af31ea8611ce"/>
-          <ATTRIBUTES>
-            <ATT name="DependsOnId"></ATT>
-            <ATT name="DependsOnName"></ATT>
-            <ATT name="Name"></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="DependsOn">
-              <ID name="ICourseCatalogSystem" mc="Interface" uid="8a78d3ce-5e32-44f9-9373-46f3d3d3bc14"/>
-            </LINK>
-          </DEPENDENCIES>
-        </OBJECT>
-      </COMP>
     </DEPENDENCIES>
   </OBJECT>
 </EXT>

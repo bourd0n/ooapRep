@@ -1,0 +1,127 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="TableFullTimeClassification" version="3">
+  <DEPS>
+    <ID name="TableFullTimeClassification" mc="Class" uid="7a28beb4-137a-4403-b530-5f2d0430030a"/>
+    <EXTID name="Date" mc="Class" uid="84ede37d-2555-4221-adb3-80e3754f78ec"/>
+    <EXTID name="Long" mc="Class" uid="63d393a0-f4e0-4089-bfd4-3a2e27774cd6"/>
+    <EXTID name="fk" mc="Stereotype" uid="a28d3983-6448-4745-ba1e-a7dce9e8f7ec"/>
+    <EXTID name="pk" mc="Stereotype" uid="6742644a-d677-425d-94dc-c054f36f0ee9"/>
+    <EXTID name="table" mc="Stereotype" uid="54d385e5-51fc-40bc-b7e6-f0cf1875d1ef"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="TableFullTimeClassification" mc="Class" uid="7a28beb4-137a-4403-b530-5f2d0430030a"/>
+    <PID name="Database Schema" mc="Package" uid="a2b74353-85bf-4047-ab46-20f3fc6377e3"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[TableFullTimeClassification]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedOperation">
+        <OBJECT>
+          <ID name="pkFullTimeClassification" mc="Operation" uid="11cf85cc-a7ea-4be6-821a-ec53cc29e4dd"/>
+          <PID name="TableFullTimeClassification" mc="Class" uid="7a28beb4-137a-4403-b530-5f2d0430030a"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[pkFullTimeClassification]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Extension">
+              <ID name="pk" mc="Stereotype" uid="6742644a-d677-425d-94dc-c054f36f0ee9"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="fkFullTimeClassification" mc="Operation" uid="2790b861-c648-4713-b98c-73fe4bcd5239"/>
+          <PID name="TableFullTimeClassification" mc="Class" uid="7a28beb4-137a-4403-b530-5f2d0430030a"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[fkFullTimeClassification]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Extension">
+              <ID name="fk" mc="Stereotype" uid="a28d3983-6448-4745-ba1e-a7dce9e8f7ec"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedAttribute">
+        <OBJECT>
+          <ID name="graduateDay" mc="Attribute" uid="edc60f57-1c2f-4dc5-87bf-ce92589d7c18"/>
+          <PID name="TableFullTimeClassification" mc="Class" uid="7a28beb4-137a-4403-b530-5f2d0430030a"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">ReadWrite</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[graduateDay]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <ID name="Date" mc="Class" uid="84ede37d-2555-4221-adb3-80e3754f78ec"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="idStudent" mc="Attribute" uid="217aa068-6f4c-4b4e-84dc-dbd47b7d3213"/>
+          <PID name="TableFullTimeClassification" mc="Class" uid="7a28beb4-137a-4403-b530-5f2d0430030a"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">ReadWrite</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[idStudent]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <ID name="Long" mc="Class" uid="63d393a0-f4e0-4089-bfd4-3a2e27774cd6"/>
+            </LINK>
+            <LINK relation="Extension">
+              <ID name="fk" mc="Stereotype" uid="a28d3983-6448-4745-ba1e-a7dce9e8f7ec"/>
+              <ID name="pk" mc="Stereotype" uid="6742644a-d677-425d-94dc-c054f36f0ee9"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <LINK relation="Extension">
+        <ID name="table" mc="Stereotype" uid="54d385e5-51fc-40bc-b7e6-f0cf1875d1ef"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
